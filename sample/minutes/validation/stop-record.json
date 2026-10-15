@@ -1,0 +1,91 @@
+{
+  "record_id": "hold-20261015T103552+0900-6d0fff5b",
+  "case_id": "trial-20261015-minutes",
+  "case_id_source": "records/placement.v001.json#case_id（会議IDとは別）",
+  "status": "awaiting_input",
+  "stage": "prestart_stopped",
+  "created_at": "2026-10-15T10:35:52.330307+09:00",
+  "procedure_version": "0.1.0-trial",
+  "procedure_path": ".claude/skills/work-0001/SKILL.md",
+  "procedure_sha256": "66a1cf2f9691296caff73427342b78778a76961cecaca8815542fa9f082b89eb",
+  "received_parameters": {
+    "input_path": "inputs/minutes-fictional.txt"
+  },
+  "missing_parameters": [
+    "meeting_id"
+  ],
+  "meeting_id": null,
+  "parameter_source": "当回のユーザー明示依頼。meeting_idは未指定であり入力本文・配置記録から補完しない。",
+  "input_sha256": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c",
+  "input_sha256_unavailable_reason": null,
+  "confirmed_input": {
+    "path": "inputs/minutes-fictional.txt",
+    "resolved_path": "<employee-workspace>/inputs/minutes-fictional.txt",
+    "within_workspace": true,
+    "readable": true,
+    "read_scope": "SHA-256取得用バイト読取りのみ。本文の意味処理・資料ID抽出は未実施。",
+    "placement_copy_sha256": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c",
+    "matches_placement_copy_sha256": true
+  },
+  "completed": [
+    "Wの実パス、AGENTS、正本Skill、定義記録、配置記録を確認",
+    "records直下を確認し、直前の停止/run記録が存在しないことを確認",
+    "入力と参照先の実パスがW内であること、SkillリンクがW内の正本を指すことを確認",
+    "当回の試験実行依頼とinput_pathを受領し、meeting_idの未指定を確認",
+    "Python3標準ライブラリの利用とrecordsの読取り・新規保存に必要な権限を確認",
+    "指定済みW内入力と手順のSHA-256を取得"
+  ],
+  "not_started": [
+    "業務runの開始と開始記録作成",
+    "入力本文のUTF-8・会議ID・根拠IDの形式検証と依頼値照合",
+    "会議概要・決定・提案・作業・未決の整理と根拠対応作成",
+    "outputsディレクトリ及びreport.md/report.jsonの作成",
+    "業務成果物の自己検査",
+    "人の成果検収"
+  ],
+  "partial_outputs": [],
+  "outputs_created": false,
+  "reason": "実行時必須値meeting_idが未指定。SKL-004、SKL-006手順2、SKL-010に従い業務開始前で停止する。",
+  "resume_conditions": [
+    "依頼者からmeeting_id（資料ID）を明示してもらう",
+    "この停止記録を参照し、input_pathとmeeting_idが揃った後に新しいrun_idで開始する",
+    "W内入力の版・SHA-256と入力内会議IDの完全一致及び形式を検証する",
+    "旧記録と既存ファイルは置換せず、新規records/outputsへ保存する"
+  ],
+  "confirmation_target": "当回の依頼者（研究担当への引継ぎ）",
+  "previous_record": null,
+  "previous_record_reason": "records直下に既存の停止/runディレクトリなし。定義履歴は業務runではない。",
+  "authorization": {
+    "source": "当回のユーザー依頼",
+    "scope": "指定された許可済み架空資料の試験整理と手順に沿った新規記録・成果物保存",
+    "generation_authorization_used_as_business_authorization": false,
+    "human_acceptance_authorized_or_performed": false
+  },
+  "environment": {
+    "cwd": "<employee-workspace>",
+    "python_version": "3.11.5",
+    "python_standard_library_only": true,
+    "session_declared_sandbox": "workspace-write / managed restricted filesystem",
+    "workspace_write_allowed_by_session": true,
+    "session_declared_network": "restricted",
+    "approval_configuration": "サンドボックス外操作にはrequire_escalatedによる承認要求が可能。今回は未使用。",
+    "prior_environment_not_inherited": "定義記録のdanger-full-access/approval neverは配置時の履歴であり当回の設定ではない。",
+    "measured_checks": {
+      "records_readable": true,
+      "records_writable": true,
+      "records_searchable": true,
+      "new_record_directory_created": true,
+      "skill_link_target": "../../.claude/skills/work-0001",
+      "skill_link_resolves_to_canonical": true
+    },
+    "network_mcp_mail_browser_install_actions_performed": false,
+    "external_original_accessed": false,
+    "not_verified": [
+      "アカウント全体の設定",
+      "接続先や通信の遮断を含むアクセス制御全体の保証"
+    ],
+    "access_control_guaranteed": false
+  },
+  "human_acceptance": false,
+  "business_self_inspection": "not_started"
+}

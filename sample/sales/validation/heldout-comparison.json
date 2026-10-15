@@ -1,0 +1,126 @@
+{
+  "all_passed": true,
+  "checks": {
+    "period": {
+      "expected": [
+        "2026-10-01",
+        "2026-10-03"
+      ],
+      "actual": [
+        "2026-10-01",
+        "2026-10-03"
+      ],
+      "passed": true
+    },
+    "input_rows": {
+      "expected": 8,
+      "actual": 8,
+      "passed": true
+    },
+    "period_rows": {
+      "expected": 7,
+      "actual": 7,
+      "passed": true
+    },
+    "included_rows": {
+      "expected": 6,
+      "actual": 6,
+      "passed": true
+    },
+    "unresolved_rows": {
+      "expected": [
+        "S006"
+      ],
+      "actual": [
+        "S006"
+      ],
+      "passed": true
+    },
+    "out_of_period": {
+      "expected": [
+        "S007"
+      ],
+      "actual": [
+        "S007"
+      ],
+      "passed": true
+    },
+    "known_subtotal_jpy": {
+      "expected": 9150,
+      "actual": 9150,
+      "passed": true
+    },
+    "included_quantity": {
+      "expected": 17,
+      "actual": 17,
+      "passed": true
+    },
+    "by_product_jpy": {
+      "expected": {
+        "ドリップバッグ": 4050,
+        "マグカップ": 3600,
+        "焼き菓子": 1500
+      },
+      "actual": {
+        "ドリップバッグ": 4050,
+        "マグカップ": 3600,
+        "焼き菓子": 1500
+      },
+      "passed": true
+    },
+    "by_date_jpy": {
+      "expected": {
+        "2026-10-01": 3750,
+        "2026-10-02": 3300,
+        "2026-10-03": 2100
+      },
+      "actual": {
+        "2026-10-01": 3750,
+        "2026-10-02": 3300,
+        "2026-10-03": 2100
+      },
+      "passed": true
+    },
+    "by_channel_jpy": {
+      "expected": {
+        "店頭": 4950,
+        "EC": 4200
+      },
+      "actual": {
+        "EC": 4200,
+        "店頭": 4950
+      },
+      "passed": true
+    },
+    "line_amounts_jpy": {
+      "expected": {
+        "S001": 1350,
+        "S002": 2400,
+        "S003": 1800,
+        "S004": 1500,
+        "S005": 1200,
+        "S008": 900
+      },
+      "actual": {
+        "S001": 1350,
+        "S002": 2400,
+        "S003": 1800,
+        "S004": 1500,
+        "S005": 1200,
+        "S008": 900
+      },
+      "passed": true
+    },
+    "total_is_provisional": {
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    "source_unchanged": {
+      "expected": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+      "actual": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+      "passed": true
+    }
+  },
+  "human_acceptance": "not_performed"
+}

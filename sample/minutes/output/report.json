@@ -1,0 +1,341 @@
+{
+  "run_id": "run-20261015T103736+0900-44bcfa58",
+  "case_id": "trial-20261015-minutes",
+  "meeting_id": "MEET-001",
+  "status": "自己検査済み・人の検収待ち",
+  "human_acceptance": false,
+  "human_acceptance_role": "架空の会議進行担当",
+  "trial_only": true,
+  "procedure_version": "0.1.0-trial",
+  "procedure_sha256": "66a1cf2f9691296caff73427342b78778a76961cecaca8815542fa9f082b89eb",
+  "input": {
+    "path": "inputs/minutes-fictional.txt",
+    "sha256": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c",
+    "sha256_after": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c"
+  },
+  "previous_record": "records/hold-20261015T103552+0900-6d0fff5b/stopped.json",
+  "summary": {
+    "id": "summary",
+    "title": "架空の店舗・イベント準備会議（試験用）",
+    "title_location": {
+      "line_number": 1,
+      "raw_text": "架空の店舗・イベント準備会議（試験用）"
+    },
+    "meeting_id": "MEET-001",
+    "meeting_date": "2026-10-12",
+    "date_candidates": [
+      {
+        "value": "2026-10-12",
+        "source_ids": [
+          "M01"
+        ]
+      }
+    ],
+    "date_reason": null,
+    "participants_text": "企画担当A、販売担当B、進行担当C（全員架空の役割名）",
+    "source_ids": [
+      "M01"
+    ]
+  },
+  "decisions": [
+    {
+      "id": "decision-001",
+      "text": "体験会の開催日は2026-11-01、会場は仮想ホール。",
+      "source_ids": [
+        "M02"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "proposal-001",
+      "text": "SNS広告の出稿を検討したい。決定はしていない。",
+      "status": "未決定の提案",
+      "source_ids": [
+        "M04"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "A01",
+      "id_origin": "input",
+      "task": "案内文を作成する",
+      "owner": "企画担当A",
+      "owner_status": "入力に明記",
+      "owner_reason": null,
+      "deadline": null,
+      "deadline_candidates": [
+        {
+          "value": "2026-10-20",
+          "source_ids": [
+            "M03"
+          ]
+        },
+        {
+          "value": "2026-10-22",
+          "source_ids": [
+            "M06"
+          ]
+        }
+      ],
+      "deadline_reason": "期限に複数の記載があり、入力は優先関係不明としている。後の追記を自動優先しない。",
+      "source_ids": [
+        "M03",
+        "M06"
+      ],
+      "source_notes": [
+        {
+          "text": "企画担当Aが案内文を作成する。期限2026-10-20。",
+          "source_ids": [
+            "M03"
+          ]
+        },
+        {
+          "text": "案内文の期限は2026-10-22と書かれた追記あり。M03との優先関係は不明。",
+          "source_ids": [
+            "M06"
+          ]
+        }
+      ],
+      "confirmation_ids": [
+        "issue-002"
+      ]
+    },
+    {
+      "id": "A02",
+      "id_origin": "input",
+      "task": "備品の数を確認する",
+      "owner": null,
+      "owner_status": "担当未定・要確認",
+      "owner_reason": "入力に「担当は未定」と記載。",
+      "deadline": "2026-10-18",
+      "deadline_candidates": [
+        {
+          "value": "2026-10-18",
+          "source_ids": [
+            "M05"
+          ]
+        }
+      ],
+      "deadline_reason": null,
+      "source_ids": [
+        "M05"
+      ],
+      "source_notes": [
+        {
+          "text": "備品の数を確認する。担当は未定。期限2026-10-18。",
+          "source_ids": [
+            "M05"
+          ]
+        }
+      ],
+      "confirmation_ids": [
+        "issue-003"
+      ]
+    }
+  ],
+  "undecided": [
+    {
+      "id": "issue-001",
+      "kind": "next_meeting_date",
+      "task_id": null,
+      "value": null,
+      "candidates": [],
+      "reason": "次回会議の日程は未定。",
+      "question": "次回会議の日程を確認する。",
+      "source_ids": [
+        "M07"
+      ]
+    },
+    {
+      "id": "issue-002",
+      "kind": "deadline_conflict",
+      "task_id": "A01",
+      "value": null,
+      "candidates": [
+        {
+          "value": "2026-10-20",
+          "source_ids": [
+            "M03"
+          ]
+        },
+        {
+          "value": "2026-10-22",
+          "source_ids": [
+            "M06"
+          ]
+        }
+      ],
+      "reason": "期限に複数の記載があり、入力は優先関係不明としている。後の追記を自動優先しない。",
+      "question": "A01の期限候補の優先関係・確定期限を確認する。",
+      "source_ids": [
+        "M03",
+        "M06"
+      ]
+    },
+    {
+      "id": "issue-003",
+      "kind": "owner_unassigned",
+      "task_id": "A02",
+      "value": null,
+      "candidates": [],
+      "reason": "入力に「担当は未定」と記載。",
+      "question": "A02の担当を確認する。AIによる選定はしない。",
+      "source_ids": [
+        "M05"
+      ]
+    }
+  ],
+  "source_index": {
+    "M01": {
+      "line_number": 2,
+      "raw_text": "[M01] 会議ID MEET-001。開催日2026-10-12。参加者は企画担当A、販売担当B、進行担当C（全員架空の役割名）。",
+      "output_items": [
+        {
+          "id": "summary",
+          "json_pointer": "/summary"
+        }
+      ]
+    },
+    "M02": {
+      "line_number": 3,
+      "raw_text": "[M02] 決定: 体験会の開催日は2026-11-01、会場は仮想ホール。",
+      "output_items": [
+        {
+          "id": "decision-001",
+          "json_pointer": "/decisions/0"
+        }
+      ]
+    },
+    "M03": {
+      "line_number": 4,
+      "raw_text": "[M03] 作業 A01: 企画担当Aが案内文を作成する。期限2026-10-20。",
+      "output_items": [
+        {
+          "id": "A01",
+          "json_pointer": "/tasks/0"
+        },
+        {
+          "id": "issue-002",
+          "json_pointer": "/undecided/1"
+        }
+      ]
+    },
+    "M04": {
+      "line_number": 5,
+      "raw_text": "[M04] 提案: SNS広告の出稿を検討したい。決定はしていない。",
+      "output_items": [
+        {
+          "id": "proposal-001",
+          "json_pointer": "/proposals/0"
+        }
+      ]
+    },
+    "M05": {
+      "line_number": 6,
+      "raw_text": "[M05] 作業 A02: 備品の数を確認する。担当は未定。期限2026-10-18。",
+      "output_items": [
+        {
+          "id": "A02",
+          "json_pointer": "/tasks/1"
+        },
+        {
+          "id": "issue-003",
+          "json_pointer": "/undecided/2"
+        }
+      ]
+    },
+    "M06": {
+      "line_number": 7,
+      "raw_text": "[M06] 作業 A01: 案内文の期限は2026-10-22と書かれた追記あり。M03との優先関係は不明。",
+      "output_items": [
+        {
+          "id": "A01",
+          "json_pointer": "/tasks/0"
+        },
+        {
+          "id": "issue-002",
+          "json_pointer": "/undecided/1"
+        }
+      ]
+    },
+    "M07": {
+      "line_number": 8,
+      "raw_text": "[M07] 次回会議の日程は未定。",
+      "output_items": [
+        {
+          "id": "issue-001",
+          "json_pointer": "/undecided/0"
+        }
+      ]
+    }
+  },
+  "id_policy": "作業IDと根拠IDは入力の値を保持。summary、decision-*、proposal-*、issue-*は出力内追跡用に生成したID。",
+  "validation": {
+    "status": "passed",
+    "checks": [
+      {
+        "name": "資料の版・会議ID・会議日付",
+        "result": "passed",
+        "detail": "配置時SHA-256と依頼IDが一致。会議日付・参加者・表題を入力原値と照合。"
+      },
+      {
+        "name": "全根拠ID・逆引き対応",
+        "result": "passed",
+        "detail": "7件すべての原文・行番号・使用先を照合。欠落・架空ID・定義重複なし。"
+      },
+      {
+        "name": "決定と提案の区別",
+        "result": "passed",
+        "detail": "入力の決定・提案ラベルと本文を照合。未決定の提案を保持。"
+      },
+      {
+        "name": "作業ID・作業内容・担当",
+        "result": "passed",
+        "detail": "入力作業IDを保持し、追記を同じ作業へ統合。担当未定はnullで保持。"
+      },
+      {
+        "name": "期限候補・衝突",
+        "result": "passed",
+        "detail": "候補値と各根拠IDを原文から再抽出して照合。複数候補はdeadline:nullで保持。"
+      },
+      {
+        "name": "未確定点",
+        "result": "passed",
+        "detail": "担当未定・期限相違・次回日程未定の確認待ちを保持。次回日程を創作していない。"
+      },
+      {
+        "name": "検収状態",
+        "result": "passed",
+        "detail": "human_acceptance:false。試験専用、人の検収待ち。"
+      },
+      {
+        "name": "入力・既存ファイルの保持",
+        "result": "passed",
+        "detail": "W内入力の開始・整理後SHA-256が配置時と一致。参照した既存ファイルのハッシュ変化なし。外部原本は参照していない。"
+      },
+      {
+        "name": "JSON再読込み・原値照合",
+        "result": "passed",
+        "detail": "JSONを再読込みし、別の照合処理で入力原文・根拠・担当・期限候補・未確定値と照合。"
+      },
+      {
+        "name": "Markdown/JSONの意味一致",
+        "result": "passed",
+        "detail": "Markdown表を独立に読み戻し、JSON由来の項目・値・根拠・検査結果と一致。HTML・区切り文字・改行は表示用にエスケープ。"
+      }
+    ],
+    "not_performed": [
+      "人による成果物の検収"
+    ],
+    "post_save_record": "records/run-20261015T103736+0900-44bcfa58/validation.json"
+  },
+  "public_export": {
+    "kind": "anonymized_reference_copy",
+    "business_rerun": false,
+    "original_report_sha256": "259cb9a256a194286788bae2f5fca7ea56ca9d88252c82adb778fd4297fc1585",
+    "local_paths_replaced": true,
+    "human_acceptance": false
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "record_id": "run-20261015T103736+0900-44bcfa58",
+  "run_id": "run-20261015T103736+0900-44bcfa58",
+  "case_id": "trial-20261015-minutes",
+  "status": "self_checked_awaiting_human_acceptance",
+  "finished_at": "2026-10-15T10:41:26.170485+09:00",
+  "procedure_version": "0.1.0-trial",
+  "procedure_sha256": "66a1cf2f9691296caff73427342b78778a76961cecaca8815542fa9f082b89eb",
+  "received_parameters": {
+    "input_path": "inputs/minutes-fictional.txt",
+    "meeting_id": "MEET-001"
+  },
+  "missing_parameters": [],
+  "input_sha256_before": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c",
+  "input_sha256_after": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c",
+  "previous_record": "records/hold-20261015T103552+0900-6d0fff5b/stopped.json",
+  "completed": [
+    "入力検証",
+    "会議メモの構造化",
+    "全根拠の逆引き対応",
+    "Markdown/JSON新規保存",
+    "保存後再読込み・原文照合・ハッシュ確認"
+  ],
+  "not_started": [
+    "人による検収"
+  ],
+  "partial_outputs": [],
+  "outputs": [
+    "outputs/run-20261015T103736+0900-44bcfa58/report.md",
+    "outputs/run-20261015T103736+0900-44bcfa58/report.json"
+  ],
+  "validation_record": "records/run-20261015T103736+0900-44bcfa58/validation.json",
+  "unresolved": [
+    {
+      "id": "issue-001",
+      "kind": "next_meeting_date",
+      "task_id": null,
+      "value": null,
+      "candidates": [],
+      "reason": "次回会議の日程は未定。",
+      "question": "次回会議の日程を確認する。",
+      "source_ids": [
+        "M07"
+      ]
+    },
+    {
+      "id": "issue-002",
+      "kind": "deadline_conflict",
+      "task_id": "A01",
+      "value": null,
+      "candidates": [
+        {
+          "value": "2026-10-20",
+          "source_ids": [
+            "M03"
+          ]
+        },
+        {
+          "value": "2026-10-22",
+          "source_ids": [
+            "M06"
+          ]
+        }
+      ],
+      "reason": "期限に複数の記載があり、入力は優先関係不明としている。後の追記を自動優先しない。",
+      "question": "A01の期限候補の優先関係・確定期限を確認する。",
+      "source_ids": [
+        "M03",
+        "M06"
+      ]
+    },
+    {
+      "id": "issue-003",
+      "kind": "owner_unassigned",
+      "task_id": "A02",
+      "value": null,
+      "candidates": [],
+      "reason": "入力に「担当は未定」と記載。",
+      "question": "A02の担当を確認する。AIによる選定はしない。",
+      "source_ids": [
+        "M05"
+      ]
+    }
+  ],
+  "handoff_to": "架空の会議進行担当",
+  "human_acceptance": false,
+  "external_send_or_publish_performed": false
+}

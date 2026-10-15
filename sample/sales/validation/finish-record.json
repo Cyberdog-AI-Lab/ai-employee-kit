@@ -1,0 +1,118 @@
+{
+  "run_id": "20261015T012658993557Z-6353e1766f33",
+  "finished_at_utc": "2026-10-15T01:31:00.626550+00:00",
+  "status": "self_checked_awaiting_human_acceptance",
+  "procedure_version": "0.2.1-trial",
+  "procedure_sha256": "1484ef4f909d69bc5cc301756acce1884638a72d86cedbf91063a16ca60a6128",
+  "script_sha256": "9ca5147909fe28e4744586e1b6ee1903de20bf29d2c7362b6b7f90495e8b506a",
+  "parameters": {
+    "input_path": "inputs/sales-fictional.csv",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-03",
+    "inclusive_start": true,
+    "inclusive_end": true
+  },
+  "input": {
+    "path": "inputs/sales-fictional.csv",
+    "real_path": "<employee-workspace>/inputs/sales-fictional.csv",
+    "source_hash_only_path": "<test-fixtures>/sales-fictional.csv",
+    "copy_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "source_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "placement_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "copy_sha256_after_content_self_check": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "source_sha256_after_content_self_check": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c"
+  },
+  "previous_stop": {
+    "path": "records/20261015T012430604285Z-ebaf77cadd1d/stopped-before-start.json",
+    "sha256": "f0b8e3f9772df999e82d415957cd1d8fd49a94881a84cde03ab3786a470fb065",
+    "run_id": "20261015T012430604285Z-ebaf77cadd1d",
+    "previous_status": "stopped_before_start",
+    "resolved_missing_parameters": {
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-03"
+    },
+    "resolution_basis": "今回のユーザー回答。両端包含も明示。",
+    "input_unchanged_since_stop": true,
+    "definition_unchanged_since_stop": true,
+    "prior_record_preserved": true
+  },
+  "completed": [
+    "CSV全体の検証（到達範囲はinspection_scope参照）",
+    "全行分類・既知分集計",
+    "原値からの再計算・3内訳・追跡・未確定の自己検査",
+    "新規HTML/JSONの排他的保存",
+    "保存JSONの再読込みと原値再計算",
+    "保存HTMLの数値・表・棒グラフ・文字列エスケープ・外部資源不使用の静的点検",
+    "原本・コピーの前後ハッシュ照合",
+    "既存記録・成果物の保持確認"
+  ],
+  "not_performed": [
+    "ブラウザによる見た目確認",
+    "人間による成果検収"
+  ],
+  "artifacts": {
+    "outputs/20261015T012658993557Z-6353e1766f33/report.html": {
+      "sha256": "ec636ec91dbb5f93621dc985b2558fc62d6baffb9a04e611634b796ba9dec5d3",
+      "bytes": 9892
+    },
+    "outputs/20261015T012658993557Z-6353e1766f33/report.json": {
+      "sha256": "33ad3cde2e7bb0d60ac8ed87caf6ffbe8ca14848e5ac64057893eda641f62dd9",
+      "bytes": 13182
+    },
+    "records/20261015T012658993557Z-6353e1766f33/validation.json": {
+      "sha256": "b63cfdefedc9a399907cff1a1284bc2f22775afd4d25e3a255e44836e3b0f92b",
+      "bytes": 7493
+    },
+    "records/20261015T012658993557Z-6353e1766f33/generate_report.py": {
+      "sha256": "9ca5147909fe28e4744586e1b6ee1903de20bf29d2c7362b6b7f90495e8b506a",
+      "bytes": 32890
+    }
+  },
+  "known_totals": {
+    "quantity": 17,
+    "amount_jpy": 9150,
+    "accepted_count": 6
+  },
+  "row_counts": {
+    "input_data_rows": 8,
+    "accepted": 6,
+    "pending_quantity": 1,
+    "outside_period": 1,
+    "missing_quantity_all_input": 1,
+    "missing_quantity_inside_period": 1
+  },
+  "self_check": {
+    "result": "passed",
+    "record": "records/20261015T012658993557Z-6353e1766f33/validation.json"
+  },
+  "hashes_after": {
+    "copy_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "source_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "placement_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c"
+  },
+  "unresolved": [
+    {
+      "kind": "missing_quantity",
+      "row_id": "L7-L7",
+      "physical_line_start": 7,
+      "physical_line_end": 7,
+      "sale_id": "S006",
+      "classification": "pending_quantity",
+      "quantity_missing": true,
+      "quantity": null,
+      "amount_jpy": null,
+      "reason": "quantityが空欄。0や推測値で補わず、数量・金額は未確定。"
+    },
+    {
+      "kind": "human_acceptance",
+      "reason": "人間による成果検収は未実施。"
+    }
+  ],
+  "stop_reason": "自己検査済み・検収待ち。数量空欄は未確定のまま提示。",
+  "resume_conditions": [
+    "検収者が成果物・根拠・未確定行を確認する。条件や入力が変われば別runで再実行する。"
+  ],
+  "human_acceptance": false,
+  "production_use": false,
+  "network_browser_mcp_install_mail_used": false
+}

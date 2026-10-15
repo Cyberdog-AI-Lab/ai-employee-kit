@@ -1,0 +1,489 @@
+{
+  "run_id": "20261015T012658993557Z-6353e1766f33",
+  "created_at_utc": "2026-10-15T01:31:00.604602+00:00",
+  "procedure": "work-0001",
+  "procedure_version": "0.2.1-trial",
+  "procedure_sha256": "1484ef4f909d69bc5cc301756acce1884638a72d86cedbf91063a16ca60a6128",
+  "input": {
+    "path": "inputs/sales-fictional.csv",
+    "real_path": "<employee-workspace>/inputs/sales-fictional.csv",
+    "source_hash_only_path": "<test-fixtures>/sales-fictional.csv",
+    "copy_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "source_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "placement_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "copy_sha256_after_content_self_check": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "source_sha256_after_content_self_check": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c"
+  },
+  "start_date": "2026-10-01",
+  "end_date": "2026-10-03",
+  "inclusive_start": true,
+  "inclusive_end": true,
+  "status": "self_checked_awaiting_human_acceptance",
+  "status_label": "自己検査済み・検収待ち",
+  "aggregation_label": "既知分の暫定集計",
+  "is_provisional": true,
+  "known_totals": {
+    "quantity": 17,
+    "amount_jpy": 9150,
+    "accepted_count": 6
+  },
+  "row_counts": {
+    "input_data_rows": 8,
+    "accepted": 6,
+    "pending_quantity": 1,
+    "outside_period": 1,
+    "missing_quantity_all_input": 1,
+    "missing_quantity_inside_period": 1
+  },
+  "trace": [
+    {
+      "row_id": "L2-L2",
+      "physical_line_start": 2,
+      "physical_line_end": 2,
+      "sale_id": "S001",
+      "original": {
+        "sale_id": "S001",
+        "date": "2026-10-01",
+        "product": "ドリップバッグ",
+        "channel": "店頭",
+        "quantity": "3",
+        "unit_price_jpy": "450"
+      },
+      "raw_fields": [
+        "S001",
+        "2026-10-01",
+        "ドリップバッグ",
+        "店頭",
+        "3",
+        "450"
+      ],
+      "classification": "accepted",
+      "quantity_missing": false,
+      "quantity": 3,
+      "unit_price_jpy": 450,
+      "amount_jpy": 1350,
+      "reason": null
+    },
+    {
+      "row_id": "L3-L3",
+      "physical_line_start": 3,
+      "physical_line_end": 3,
+      "sale_id": "S002",
+      "original": {
+        "sale_id": "S002",
+        "date": "2026-10-01",
+        "product": "マグカップ",
+        "channel": "EC",
+        "quantity": "2",
+        "unit_price_jpy": "1200"
+      },
+      "raw_fields": [
+        "S002",
+        "2026-10-01",
+        "マグカップ",
+        "EC",
+        "2",
+        "1200"
+      ],
+      "classification": "accepted",
+      "quantity_missing": false,
+      "quantity": 2,
+      "unit_price_jpy": 1200,
+      "amount_jpy": 2400,
+      "reason": null
+    },
+    {
+      "row_id": "L4-L4",
+      "physical_line_start": 4,
+      "physical_line_end": 4,
+      "sale_id": "S003",
+      "original": {
+        "sale_id": "S003",
+        "date": "2026-10-02",
+        "product": "ドリップバッグ",
+        "channel": "EC",
+        "quantity": "4",
+        "unit_price_jpy": "450"
+      },
+      "raw_fields": [
+        "S003",
+        "2026-10-02",
+        "ドリップバッグ",
+        "EC",
+        "4",
+        "450"
+      ],
+      "classification": "accepted",
+      "quantity_missing": false,
+      "quantity": 4,
+      "unit_price_jpy": 450,
+      "amount_jpy": 1800,
+      "reason": null
+    },
+    {
+      "row_id": "L5-L5",
+      "physical_line_start": 5,
+      "physical_line_end": 5,
+      "sale_id": "S004",
+      "original": {
+        "sale_id": "S004",
+        "date": "2026-10-02",
+        "product": "焼き菓子",
+        "channel": "店頭",
+        "quantity": "5",
+        "unit_price_jpy": "300"
+      },
+      "raw_fields": [
+        "S004",
+        "2026-10-02",
+        "焼き菓子",
+        "店頭",
+        "5",
+        "300"
+      ],
+      "classification": "accepted",
+      "quantity_missing": false,
+      "quantity": 5,
+      "unit_price_jpy": 300,
+      "amount_jpy": 1500,
+      "reason": null
+    },
+    {
+      "row_id": "L6-L6",
+      "physical_line_start": 6,
+      "physical_line_end": 6,
+      "sale_id": "S005",
+      "original": {
+        "sale_id": "S005",
+        "date": "2026-10-03",
+        "product": "マグカップ",
+        "channel": "店頭",
+        "quantity": "1",
+        "unit_price_jpy": "1200"
+      },
+      "raw_fields": [
+        "S005",
+        "2026-10-03",
+        "マグカップ",
+        "店頭",
+        "1",
+        "1200"
+      ],
+      "classification": "accepted",
+      "quantity_missing": false,
+      "quantity": 1,
+      "unit_price_jpy": 1200,
+      "amount_jpy": 1200,
+      "reason": null
+    },
+    {
+      "row_id": "L7-L7",
+      "physical_line_start": 7,
+      "physical_line_end": 7,
+      "sale_id": "S006",
+      "original": {
+        "sale_id": "S006",
+        "date": "2026-10-03",
+        "product": "焼き菓子",
+        "channel": "EC",
+        "quantity": "",
+        "unit_price_jpy": "300"
+      },
+      "raw_fields": [
+        "S006",
+        "2026-10-03",
+        "焼き菓子",
+        "EC",
+        "",
+        "300"
+      ],
+      "classification": "pending_quantity",
+      "quantity_missing": true,
+      "quantity": null,
+      "unit_price_jpy": 300,
+      "amount_jpy": null,
+      "reason": "quantityが空欄。0や推測値で補わず、数量・金額は未確定。"
+    },
+    {
+      "row_id": "L8-L8",
+      "physical_line_start": 8,
+      "physical_line_end": 8,
+      "sale_id": "S007",
+      "original": {
+        "sale_id": "S007",
+        "date": "2026-10-04",
+        "product": "焼き菓子",
+        "channel": "EC",
+        "quantity": "2",
+        "unit_price_jpy": "300"
+      },
+      "raw_fields": [
+        "S007",
+        "2026-10-04",
+        "焼き菓子",
+        "EC",
+        "2",
+        "300"
+      ],
+      "classification": "outside_period",
+      "quantity_missing": false,
+      "quantity": 2,
+      "unit_price_jpy": 300,
+      "amount_jpy": null,
+      "reason": "指定期間外のため集計対象外。"
+    },
+    {
+      "row_id": "L9-L9",
+      "physical_line_start": 9,
+      "physical_line_end": 9,
+      "sale_id": "S008",
+      "original": {
+        "sale_id": "S008",
+        "date": "2026-10-03",
+        "product": "ドリップバッグ",
+        "channel": "店頭",
+        "quantity": "2",
+        "unit_price_jpy": "450"
+      },
+      "raw_fields": [
+        "S008",
+        "2026-10-03",
+        "ドリップバッグ",
+        "店頭",
+        "2",
+        "450"
+      ],
+      "classification": "accepted",
+      "quantity_missing": false,
+      "quantity": 2,
+      "unit_price_jpy": 450,
+      "amount_jpy": 900,
+      "reason": null
+    }
+  ],
+  "pending_rows": [
+    {
+      "row_id": "L7-L7",
+      "physical_line_start": 7,
+      "physical_line_end": 7,
+      "sale_id": "S006",
+      "classification": "pending_quantity",
+      "quantity_missing": true,
+      "quantity": null,
+      "amount_jpy": null,
+      "reason": "quantityが空欄。0や推測値で補わず、数量・金額は未確定。"
+    }
+  ],
+  "missing_quantity_rows": [
+    {
+      "row_id": "L7-L7",
+      "physical_line_start": 7,
+      "physical_line_end": 7,
+      "sale_id": "S006",
+      "classification": "pending_quantity",
+      "quantity_missing": true,
+      "quantity": null,
+      "amount_jpy": null,
+      "reason": "quantityが空欄。0や推測値で補わず、数量・金額は未確定。"
+    }
+  ],
+  "inspection_scope": {
+    "all_input_inspected": true,
+    "validation_before_period_filter": true,
+    "parsed_data_records": 8,
+    "last_reader_physical_line": 9,
+    "header": [
+      "sale_id",
+      "date",
+      "product",
+      "channel",
+      "quantity",
+      "unit_price_jpy"
+    ],
+    "uninspected_range": null,
+    "header_physical_line_start": 1,
+    "header_physical_line_end": 1
+  },
+  "unresolved": [
+    {
+      "kind": "missing_quantity",
+      "row_id": "L7-L7",
+      "physical_line_start": 7,
+      "physical_line_end": 7,
+      "sale_id": "S006",
+      "classification": "pending_quantity",
+      "quantity_missing": true,
+      "quantity": null,
+      "amount_jpy": null,
+      "reason": "quantityが空欄。0や推測値で補わず、数量・金額は未確定。"
+    },
+    {
+      "kind": "human_acceptance",
+      "reason": "人間による成果検収は未実施。"
+    }
+  ],
+  "previous_stop": {
+    "path": "records/20261015T012430604285Z-ebaf77cadd1d/stopped-before-start.json",
+    "sha256": "f0b8e3f9772df999e82d415957cd1d8fd49a94881a84cde03ab3786a470fb065",
+    "run_id": "20261015T012430604285Z-ebaf77cadd1d",
+    "previous_status": "stopped_before_start",
+    "resolved_missing_parameters": {
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-03"
+    },
+    "resolution_basis": "今回のユーザー回答。両端包含も明示。",
+    "input_unchanged_since_stop": true,
+    "definition_unchanged_since_stop": true,
+    "prior_record_preserved": true
+  },
+  "validation": {
+    "business_checks": [
+      {
+        "id": "full_validation",
+        "description": "期間選別前に全入力を検証済み",
+        "passed": true
+      },
+      {
+        "id": "trace_coverage",
+        "description": "全入力行を重複なく1回ずつ追跡",
+        "passed": true
+      },
+      {
+        "id": "original_values",
+        "description": "元フィールドと物理行番号を保持",
+        "passed": true
+      },
+      {
+        "id": "classification",
+        "description": "期間・数量に従う相互排他的な分類",
+        "passed": true
+      },
+      {
+        "id": "missing_null",
+        "description": "数量空欄は数量・金額nullと理由付き",
+        "passed": true
+      },
+      {
+        "id": "pending_count",
+        "description": "期間内未確定と全入力の空欄を区別",
+        "passed": true
+      },
+      {
+        "id": "provisional_label",
+        "description": "全入力に空欄があれば暫定集計と明示",
+        "passed": true
+      },
+      {
+        "id": "row_calculation",
+        "description": "採用行のみ単価×数量の整数円で計算",
+        "passed": true
+      },
+      {
+        "id": "known_quantity",
+        "description": "原値の数量再計算和＝既知分数量＝採用行数量和",
+        "passed": true
+      },
+      {
+        "id": "known_amount",
+        "description": "原値の金額再計算和＝既知分金額＝採用行金額和",
+        "passed": true
+      },
+      {
+        "id": "accepted_count",
+        "description": "採用件数を明示（既知行0件も0と表示）",
+        "passed": true
+      },
+      {
+        "id": "by_product",
+        "description": "product別の原値再集計・金額和・数量和が一致",
+        "passed": true
+      },
+      {
+        "id": "by_date",
+        "description": "date別の原値再集計・金額和・数量和が一致",
+        "passed": true
+      },
+      {
+        "id": "by_channel",
+        "description": "channel別の原値再集計・金額和・数量和が一致",
+        "passed": true
+      },
+      {
+        "id": "human_acceptance_false",
+        "description": "人の検収は未実施として保持",
+        "passed": true
+      }
+    ],
+    "generated_content_checks": "passed",
+    "html_static_checks": {
+      "no_external_resources_or_javascript": true,
+      "table_text_roundtrip_matches_data": true,
+      "raw_field_text_and_attribute_escaping": true,
+      "bar_values_and_proportions": true
+    },
+    "hashes_after_content_self_check": {
+      "copy_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+      "source_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+      "placement_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c"
+    },
+    "post_save_verification_record": "records/20261015T012658993557Z-6353e1766f33/validation.json",
+    "visual_check": "not_performed",
+    "human_acceptance": false
+  },
+  "visual_check": "not_performed",
+  "human_acceptance": false,
+  "production_use": false,
+  "by_product": [
+    {
+      "product": "ドリップバッグ",
+      "quantity": 9,
+      "amount_jpy": 4050
+    },
+    {
+      "product": "マグカップ",
+      "quantity": 3,
+      "amount_jpy": 3600
+    },
+    {
+      "product": "焼き菓子",
+      "quantity": 5,
+      "amount_jpy": 1500
+    }
+  ],
+  "by_date": [
+    {
+      "date": "2026-10-01",
+      "quantity": 5,
+      "amount_jpy": 3750
+    },
+    {
+      "date": "2026-10-02",
+      "quantity": 9,
+      "amount_jpy": 3300
+    },
+    {
+      "date": "2026-10-03",
+      "quantity": 3,
+      "amount_jpy": 2100
+    }
+  ],
+  "by_channel": [
+    {
+      "channel": "EC",
+      "quantity": 6,
+      "amount_jpy": 4200
+    },
+    {
+      "channel": "店頭",
+      "quantity": 11,
+      "amount_jpy": 4950
+    }
+  ],
+  "public_export": {
+    "kind": "anonymized_reference_copy",
+    "business_rerun": false,
+    "original_report_sha256": "33ad3cde2e7bb0d60ac8ed87caf6ffbe8ca14848e5ac64057893eda641f62dd9",
+    "local_paths_replaced": true,
+    "human_acceptance": false
+  }
+}

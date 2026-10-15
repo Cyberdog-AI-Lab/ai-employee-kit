@@ -1,0 +1,123 @@
+{
+  "run_id": "20261015T012430604285Z-ebaf77cadd1d",
+  "recorded_at_utc": "2026-10-15T01:24:30.604285+00:00",
+  "status": "stopped_before_start",
+  "procedure": "work-0001",
+  "procedure_version": "0.2.1-trial",
+  "procedure_path": "<employee-workspace>/.claude/skills/work-0001/SKILL.md",
+  "procedure_sha256": "1484ef4f909d69bc5cc301756acce1884638a72d86cedbf91063a16ca60a6128",
+  "agents_sha256": "fe8e8605e89158ee7a05e3d40b033441f1e5c2601f2b4a6c6fe83b732de79e09",
+  "definition_sha256": "299f1ba1d7945605586f91e610ebf05cfe7a51a82591d57ddb18072e0f194734",
+  "workspace": "<employee-workspace>",
+  "missing_parameters": [
+    "start_date",
+    "end_date"
+  ],
+  "invalid_parameters": [],
+  "parameters": {
+    "input_path": "inputs/sales-fictional.csv",
+    "start_date": null,
+    "end_date": null
+  },
+  "confirmed_runtime_values": {
+    "input_path": "inputs/sales-fictional.csv"
+  },
+  "date_boundary_rule": {
+    "inclusive_start": true,
+    "inclusive_end": true
+  },
+  "input": {
+    "path": "inputs/sales-fictional.csv",
+    "real_path": "<employee-workspace>/inputs/sales-fictional.csv",
+    "sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "sha256_after_hash_only_check": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "placement_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c",
+    "matches_placement": true,
+    "read_purpose": "指定入力コピーのSHA-256照合のみ。CSVの解析・検証・集計は未実施",
+    "external_source_sha256": null,
+    "external_source_check_status": "未確認",
+    "external_source_check_reason": "実行時必須値が未指定のため手順2へ未着手。業務開始時に照合する"
+  },
+  "save_destination": {
+    "records_real_path": "<employee-workspace>/records",
+    "record_real_path": "<employee-workspace>/records/20261015T012430604285Z-ebaf77cadd1d/stopped-before-start.json",
+    "inside_workspace": true,
+    "permitted_by_current_session": true,
+    "os_access_writable_indicator": true,
+    "new_run_directory_created": true,
+    "exclusive_new_file_open": "succeeded",
+    "write_check_scope": "この新規記録の保存操作のみ。端末全体のアクセス制御を保証しない"
+  },
+  "authorization": {
+    "basis": "今回のユーザーによる許可済み架空売上データの試運転依頼",
+    "scope": "指定入力から新規レポートを作成。ただし対象期間の確認が必要",
+    "definition_change_authorized": false,
+    "production_use": false
+  },
+  "environment": {
+    "python": "3.11.5 (main, Aug 24 2023, 15:09:45) [Clang 14.0.3 (clang-1403.0.22.14.1)]",
+    "executable": "/opt/homebrew/opt/python@3.11/bin/python3.11",
+    "cwd": "<employee-workspace>",
+    "filesystem_setting": "workspace-write",
+    "network_setting": "restricted",
+    "approval": "承認境界外の操作は環境の承認が必要。今回の操作で権限拡張なし",
+    "tools_used": [
+      "exec_command",
+      "local Python3 standard library",
+      "local file read/search"
+    ],
+    "network_browser_mcp_install_mail_used": false,
+    "not_verified": [
+      "OS/アカウント全体の実権限・接続状態",
+      "AIサービスへの転送不存在"
+    ],
+    "isolation_guaranteed": false
+  },
+  "preflight": {
+    "normative_files_match_placement": {
+      "AGENTS.md": true,
+      "CLAUDE.md": true,
+      ".claude/skills/work-0001/SKILL.md": true
+    },
+    "skill_link_matches_canonical": true,
+    "internal_references_match_workspace": true
+  },
+  "completed": [
+    "業務依頼・入力パスの確認",
+    "AGENTS・正本Skill・定義記録・配置記録・直前run記録の読取り",
+    "実パス・Python標準ライブラリ利用可否の確認",
+    "指定入力コピーのハッシュ照合",
+    "新規停止記録ディレクトリの作成"
+  ],
+  "not_performed": [
+    "対象期間の確定",
+    "外部原本の今回ハッシュ照合",
+    "CSV解析・全行検証",
+    "分類・集計",
+    "HTML/JSONレポート生成",
+    "成果物の自己検査",
+    "人間による成果検収"
+  ],
+  "partial_artifacts": [],
+  "outputs_created": false,
+  "stop_reason": "今回の依頼にstart_dateとend_dateが未指定。CSVや過去runの期間を流用せず、集計開始前に確認待ち。",
+  "resume_conditions": [
+    "開始日・終了日を実在するYYYY-MM-DDで受領し、開始日<=終了日を確認する",
+    "この停止recordと解消条件、入力・定義版を確認する",
+    "必要な実権限と原本/コピーのハッシュを確認し、別の新規runで再開する"
+  ],
+  "previous_records": [
+    {
+      "path": "records/20261015T010434913954Z-2dce8bc74776/start.json",
+      "sha256": "b37c8ebb1b620fc4d46f558578b33a7076dfcc9d4755f5c8855dc1cc958afc98"
+    },
+    {
+      "path": "records/20261015T010434913954Z-2dce8bc74776/finish.json",
+      "sha256": "274b8a7f72f3eec64e11c2db17dd2270151ba3327dc3092a4990899b637f5d0c"
+    }
+  ],
+  "previous_record_context": "過去runの条件・結果・手順版は歴史として参照し、今回の実行値や検収には流用しない。",
+  "human_acceptance": false,
+  "human_acceptance_status": "未実施",
+  "production_use": false
+}

@@ -1,0 +1,43 @@
+{
+  "prepared_at": "2026-10-14T22:34:51.350045+00:00",
+  "basis": "Manually specified from fixture, before report implementation; not computed by employee report code. Hold out until first output.",
+  "period": [
+    "2026-10-01",
+    "2026-10-03"
+  ],
+  "input_rows": 8,
+  "period_rows": 7,
+  "included_rows": 6,
+  "unresolved_rows": [
+    "S006"
+  ],
+  "out_of_period": [
+    "S007"
+  ],
+  "known_subtotal_jpy": 9150,
+  "included_quantity": 17,
+  "by_product_jpy": {
+    "ドリップバッグ": 4050,
+    "マグカップ": 3600,
+    "焼き菓子": 1500
+  },
+  "by_date_jpy": {
+    "2026-10-01": 3750,
+    "2026-10-02": 3300,
+    "2026-10-03": 2100
+  },
+  "by_channel_jpy": {
+    "店頭": 4950,
+    "EC": 4200
+  },
+  "line_amounts_jpy": {
+    "S001": 1350,
+    "S002": 2400,
+    "S003": 1800,
+    "S004": 1500,
+    "S005": 1200,
+    "S008": 900
+  },
+  "total_is_provisional": true,
+  "source_sha256": "983bdab063e53904a2e261ceb9a5a27ab8ccd24590b1c733b45f89bf9e21159c"
+}

@@ -1,0 +1,59 @@
+{
+  "record_id": "run-20261015T103736+0900-44bcfa58",
+  "run_id": "run-20261015T103736+0900-44bcfa58",
+  "case_id": "trial-20261015-minutes",
+  "status": "started",
+  "started_at": "2026-10-15T10:37:36.072434+09:00",
+  "procedure_version": "0.1.0-trial",
+  "procedure_path": ".claude/skills/work-0001/SKILL.md",
+  "procedure_sha256": "66a1cf2f9691296caff73427342b78778a76961cecaca8815542fa9f082b89eb",
+  "received_parameters": {
+    "input_path": "inputs/minutes-fictional.txt",
+    "meeting_id": "MEET-001"
+  },
+  "missing_parameters": [],
+  "previous_record": "records/hold-20261015T103552+0900-6d0fff5b/stopped.json",
+  "resolved_previous_stop": "当回のユーザー明示依頼でmeeting_id: MEET-001を受領。前回記録は保持。",
+  "input_path": "inputs/minutes-fictional.txt",
+  "input_sha256": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c",
+  "placement_copy_sha256": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c",
+  "input_matches_placement": true,
+  "input_matches_previous_stop": true,
+  "procedure_matches_previous_stop": true,
+  "existing_file_sha256_before": {
+    "AGENTS.md": "64e82def9b1a50301f2f40580668514733456c01614917a05f56528fd071c613",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    ".claude/skills/work-0001/SKILL.md": "66a1cf2f9691296caff73427342b78778a76961cecaca8815542fa9f082b89eb",
+    "records/definition.md": "7de962cdb6f214299626ead00e19cbbf4606979d0e0490b7214a66b4b8e2a343",
+    "records/placement.v001.json": "e3ce848e41b821ed2c60865a75ef48fd3832f63f3a920b347d8a8477a0dc611e",
+    "records/hold-20261015T103552+0900-6d0fff5b/stopped.json": "754937a4873c5d6401d8e1b9586b1bf60a953f9a02d418de152b6f31bec8ba5c",
+    "inputs/minutes-fictional.txt": "fb9792a3a1ccb60f20d4fcca98b8d22ddb6994d35d1cb91d33dbf22ff4c8c18c"
+  },
+  "planned_outputs": [
+    "outputs/run-20261015T103736+0900-44bcfa58/report.md",
+    "outputs/run-20261015T103736+0900-44bcfa58/report.json"
+  ],
+  "environment": {
+    "cwd": "<employee-workspace>",
+    "python_version": "3.11.5",
+    "libraries": "Python3標準ライブラリのみ",
+    "sandbox_declared": "workspace-write / managed restricted filesystem",
+    "network_declared": "restricted",
+    "approval": "必要時はrequire_escalated。今回の操作では要求なし。",
+    "observed_read_access": true,
+    "observed_new_record_directory_created": true,
+    "workspace_parent_writable": true,
+    "records_writable": true,
+    "input_resolves_within_workspace": true,
+    "skill_link_matches_canonical": true,
+    "prior_environment": "定義記録にあるdanger-full-access/approval neverは配置時履歴として扱い当回へ転用しない。",
+    "not_verified": [
+      "アカウント全設定",
+      "アクセス制御全体・接続遮断の保証"
+    ],
+    "external_original_accessed": false,
+    "network_mcp_mail_browser_install_actions_performed": false
+  },
+  "authorization_source": "当回のユーザーによる明示的な架空資料の試験実行依頼。生成/配置承認とは別。",
+  "human_acceptance": false
+}
