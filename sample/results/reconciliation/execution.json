@@ -1,0 +1,660 @@
+{
+  "run_id": "recon-20261016T135525-c1aaefa7",
+  "finished_at": "2026-10-16T14:06:46.764305+09:00",
+  "status": "自己検査済み・人の検収待ち",
+  "parameters_received": {
+    "input_dir": "inputs",
+    "dataset_id": "AR-DEMO-2026",
+    "as_of": "2026-10-15"
+  },
+  "versions": {
+    "definition": "runtime-v001",
+    "skill": "runtime-v001",
+    "fixture_revision": "v3",
+    "rules": "v1"
+  },
+  "inputs": {
+    "README.md": {
+      "path": "inputs/README.md",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/README.md",
+      "sha256": "00f813cc92ac2a5c92cc1f31d4363e24db9fd7fdf23ebd81b9ea9e43c3b94a78",
+      "bytes": 1126,
+      "physical_lines": 10,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    "manifest.json": {
+      "path": "inputs/manifest.json",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/manifest.json",
+      "sha256": "11d2cebcc03c73b2d4f9401a6656c6dfc5b999003d96bf9026c5a17102624106",
+      "bytes": 1011,
+      "physical_lines": 40,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    "matching-rules.md": {
+      "path": "inputs/matching-rules.md",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/matching-rules.md",
+      "sha256": "105ef9b70a54a3fed5d490d8ebfba62ff6d7e7f234366c5bbdfc57779a400987",
+      "bytes": 6630,
+      "physical_lines": 36,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    "customers.csv": {
+      "path": "inputs/customers.csv",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/customers.csv",
+      "sha256": "a6fe4916259bfc81947fd8060dd07de1c37482cc84405aa531902aec94e2fef6",
+      "bytes": 2816,
+      "physical_lines": 21,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    "invoices.csv": {
+      "path": "inputs/invoices.csv",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/invoices.csv",
+      "sha256": "63dca5233515d2132f482188799ee5d7a713b6e1e020e96eca477cbd8ca707af",
+      "bytes": 8597,
+      "physical_lines": 101,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    "bank-credits.csv": {
+      "path": "inputs/bank-credits.csv",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/bank-credits.csv",
+      "sha256": "8ab3e44f92e4f3b3449aa5013e6c0ecd58736b59b40ae908d7d5b5e960bb6004",
+      "bytes": 7961,
+      "physical_lines": 91,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    }
+  },
+  "definition_metadata": [
+    {
+      "path": "AGENTS.md",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/AGENTS.md",
+      "sha256": "099652675817b938a8861cbc70783c6cf339dd20fa08c16df0b321c9ac43a5dd",
+      "bytes": 12498,
+      "physical_lines": 131,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    {
+      "path": "CLAUDE.md",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/CLAUDE.md",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "bytes": 11,
+      "physical_lines": 1,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    {
+      "path": ".claude/skills/work-001/SKILL.md",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/.claude/skills/work-001/SKILL.md",
+      "sha256": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7",
+      "bytes": 20682,
+      "physical_lines": 219,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    {
+      "path": "records/definition.md",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/records/definition.md",
+      "sha256": "fb009ccaf6345ac8a5d9d36df4d60e3d77fc47577d7d92fc211b92cfed931a69",
+      "bytes": 7065,
+      "physical_lines": 60,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    {
+      "path": "records/provenance.runtime-v001.md",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/records/provenance.runtime-v001.md",
+      "sha256": "c8bc5734d69ba256d04b5f43485bb42292a37d1663764aa2259cf248e61c008f",
+      "bytes": 5125,
+      "physical_lines": 38,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    {
+      "path": "records/environment-observation.runtime-v001.json",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/records/environment-observation.runtime-v001.json",
+      "sha256": "1ebdc7712f073be9837022e63d77b28cb4784cf1e1c2d3b06174f09445f00071",
+      "bytes": 3445,
+      "physical_lines": 104,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    {
+      "path": "records/generation-manifest.runtime-v001.json",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/records/generation-manifest.runtime-v001.json",
+      "sha256": "6f1fcd887615672ebd77aeed48da9e506cfef88f8f11947e9f099aa6fc826695",
+      "bytes": 4999,
+      "physical_lines": 123,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    },
+    {
+      "path": "workspace-copy-receipt.json",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/workspace-copy-receipt.json",
+      "sha256": "c7044c27592a8dfba52ed0d7a2665e18e12a238bc16aaf0d4348c710a9b6c747",
+      "bytes": 1778,
+      "physical_lines": 37,
+      "readable": true,
+      "os_writable": true,
+      "handling": "read_only"
+    }
+  ],
+  "definition_content_sha256": "c4f02d7563317be806b52e7b50aad58f691f45194162304dd8d953f6c3e7af24",
+  "environment": {
+    "python": "3.11.5 (main, Aug 24 2023, 15:09:45) [Clang 14.0.3 (clang-1403.0.22.14.1)]",
+    "platform": "darwin",
+    "tool": "local exec_command / Python standard library",
+    "reported_sandbox": "workspace-write",
+    "reported_approval_policy": "never",
+    "reported_network": "restricted",
+    "realpaths_within_workspace": true,
+    "run_paths_collision_free": true,
+    "read_operations_succeeded": true,
+    "records_exclusive_creation_succeeded": true,
+    "outputs_parent_writable": true,
+    "scripts_directory_creation_succeeded": true,
+    "input_os_readonly_enforced": false,
+    "input_protection": "読取り専用で開き、保存先を分離し、完了時hashを再検査。OSの書込禁止保証とはしない。",
+    "unverified": [
+      "OSレベルの通信隔離",
+      "AIサービス基盤の通信経路",
+      "ユーザー提示の初期コンテキストとは別の自動読込み機構"
+    ],
+    "network_browser_gui_mcp_used": false,
+    "subagents_used": false
+  },
+  "recognition": {
+    "agents_in_initial_context": true,
+    "agents_applied": true,
+    "agents_local_file_read": true,
+    "skill_catalog_entry_present": true,
+    "skill_selected": "work-001",
+    "skill_selection_reason": "ユーザーの明示指定と架空照合依頼に適合",
+    "actual_skill_body_read": true,
+    "canonical_path": "EXECUTED_WORKSPACES/reconciliation/.claude/skills/work-001/SKILL.md",
+    "discovery_symlink_same_content": true,
+    "automatic_loader_independently_verified": false
+  },
+  "outputs": [
+    {
+      "path": "outputs/recon-20261016T135525-c1aaefa7/report.json",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/outputs/recon-20261016T135525-c1aaefa7/report.json",
+      "bytes": 741084,
+      "sha256": "2331e7d5af4b3b57e024096559f0b496da1a61fa067d3313947da16180e8fe36"
+    },
+    {
+      "path": "outputs/recon-20261016T135525-c1aaefa7/report.html",
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/outputs/recon-20261016T135525-c1aaefa7/report.html",
+      "bytes": 2670056,
+      "sha256": "b4e2f8bb62858d0507ce8905c2a00566ed1b4d67466df95cb537f0bf19228952"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/reconcile_recon_20261016_v001.py",
+      "sha256": "213677bcd7d4151b5ee92c53d70926510943e286c9ea300ab772b326753fdabf"
+    },
+    {
+      "path": "scripts/render_recon_20261016_v001.py",
+      "sha256": "fb405c79124fc584d6877fa28e19a1326ee1f390f5e2c8f0c0c85f111d0e385f"
+    },
+    {
+      "path": "scripts/check_recon_20261016_v001.py",
+      "sha256": "c830ab9e57afae45337cd3448611aba5cd5ae5b7169ec656e943beefdae692f3"
+    }
+  ],
+  "checks": [
+    {
+      "name": "原本・定義の不変",
+      "passed": true,
+      "details": "6入力と読取り済み定義・生成記録の開始時hashに一致。原本を読取り専用で開いた。"
+    },
+    {
+      "name": "全行・原文・物理行・名簿根拠",
+      "passed": true,
+      "details": "請求100件・入金90行・名簿20件を入力の全CSV物理行と照合。ID/原文/出典hash/parsed値一致。"
+    },
+    {
+      "name": "ルール節対応",
+      "passed": true,
+      "details": "R01〜R11の全文・物理行・hashを原本と照合。"
+    },
+    {
+      "name": "全割当・R02〜R07・二重割当防止",
+      "passed": true,
+      "details": "全割当の採用条件・名簿契約・実額を検査。組の重複なし、明細額と請求額の上限内、複数請求への配賦はR04のみ。"
+    },
+    {
+      "name": "全参照競合の事前評価",
+      "passed": true,
+      "details": "同一請求を参照する全明細の集合と総額を再計算。競合・超過請求への割当0。"
+    },
+    {
+      "name": "R08全候補・R09分類・将来入金分離",
+      "passed": true,
+      "details": "明示ID候補、IDなし完全同額、1000円以内参考、未登録名義の金額候補の集合を再計算。一部入金残額への参考照合なし。将来入金の当日候補0。"
+    },
+    {
+      "name": "R10整数検算・全行額と除外額",
+      "passed": true,
+      "details": "3式すべて差0円。銀行全行の既知額＝対象＋将来＋不正既知額、延滞3内訳の和も一致。"
+    },
+    {
+      "name": "HTML/JSON主要内容の一致",
+      "passed": true,
+      "details": "表示された全行・状態・行詳細・原文・全割当・全候補・主要金額をHTMLから抽出してJSONと一致確認。埋込みJSONも全体一致。"
+    },
+    {
+      "name": "単体HTML・外部依存なし・相互参照",
+      "passed": true,
+      "details": "全hrefは存在する内部ID。外部src/link/URL依存・イベント属性・動的HTML注入なし。CSPで通信を無効化。実画面は未検査。"
+    },
+    {
+      "name": "JavaScript構文・検索絞込みのコード検査",
+      "passed": true,
+      "details": "既存Nodeで構文確認。190行のHTML属性を使ったDOMスタブで状態/期日/将来入金/ID検索/0件表示/解除/相互参照を検査。ブラウザ・実画面検査ではない。"
+    }
+  ],
+  "completed": [
+    "6入力と定義の版・hash・実パス確認",
+    "R01〜R11照合",
+    "全行・全候補・全割当の追跡",
+    "整数検算",
+    "HTML/JSON静的一致検査",
+    "JavaScript構文・検索絞込みロジック検査"
+  ],
+  "unresolved": [
+    {
+      "priority": 1,
+      "invoice_ids": [
+        "INV-0092"
+      ],
+      "bank_ids": [
+        "BNK-0086"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 137500,
+      "question": "INV-0092とBNK-0086の対応根拠を確認。R08: 同顧客の完全同額なし。原額との差の絶対値1000円以下の参考候補のみ",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 2,
+      "invoice_ids": [
+        "INV-0091"
+      ],
+      "bank_ids": [
+        "BNK-0085"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 123450,
+      "question": "INV-0091とBNK-0085の対応根拠を確認。R08: 名義未登録。原額の完全一致だけの参考候補、顧客一致とは扱わない",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 3,
+      "invoice_ids": [
+        "INV-0082"
+      ],
+      "bank_ids": [
+        "BNK-0078"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 110000,
+      "question": "INV-0082とBNK-0078の対応根拠を確認。R02/R04/R05/R06: 名義が名簿の承認済み別名に一致しない",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 4,
+      "invoice_ids": [
+        "INV-0083"
+      ],
+      "bank_ids": [
+        "BNK-0079"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 99000,
+      "question": "INV-0083とBNK-0079の対応根拠を確認。R02/R04/R05/R06: 明示IDの顧客と振込名義の顧客が矛盾。別請求への振替不可",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 5,
+      "invoice_ids": [
+        "INV-0084"
+      ],
+      "bank_ids": [
+        "BNK-0080"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 99000,
+      "question": "INV-0084とBNK-0080の対応根拠を確認。R07: 事前評価で参照競合・超過または依存不正を検出",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 6,
+      "invoice_ids": [
+        "INV-0096"
+      ],
+      "bank_ids": [],
+      "due_bucket": "延滞",
+      "remaining_jpy": 99000,
+      "question": "INV-0096は当日時点の入金候補なし。基準日時点の入金資料と対象請求を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 7,
+      "invoice_ids": [
+        "INV-0075"
+      ],
+      "bank_ids": [
+        "BNK-0071"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 52800,
+      "question": "INV-0075の残額52,800円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 8,
+      "invoice_ids": [
+        "INV-0071"
+      ],
+      "bank_ids": [
+        "BNK-0066",
+        "BNK-0067"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 49000,
+      "question": "INV-0071の残額49,000円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 9,
+      "invoice_ids": [
+        "INV-0073"
+      ],
+      "bank_ids": [
+        "BNK-0069"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 39600,
+      "question": "INV-0073の残額39,600円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 10,
+      "invoice_ids": [
+        "INV-0090"
+      ],
+      "bank_ids": [
+        "BNK-0084"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 38500,
+      "question": "INV-0090とBNK-0084の対応根拠を確認。R04: 合算請求額49500円と入金49170円の差330円。配賦を推測しない / R06: 合算差額は手数料許容の対象外",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 11,
+      "invoice_ids": [
+        "INV-0085"
+      ],
+      "bank_ids": [
+        "BNK-0081"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 35000,
+      "question": "INV-0085とBNK-0081の対応根拠を確認。R03: 完全同額候補が複数または競合・保留あり",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 12,
+      "invoice_ids": [
+        "INV-0086"
+      ],
+      "bank_ids": [
+        "BNK-0081"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 35000,
+      "question": "INV-0086とBNK-0081の対応根拠を確認。R03: 完全同額候補が複数または競合・保留あり",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 13,
+      "invoice_ids": [
+        "INV-0095"
+      ],
+      "bank_ids": [],
+      "due_bucket": "延滞",
+      "remaining_jpy": 27500,
+      "question": "INV-0095は当日時点の入金候補なし。基準日時点の入金資料と対象請求を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 14,
+      "invoice_ids": [
+        "INV-0072"
+      ],
+      "bank_ids": [
+        "BNK-0068"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 26950,
+      "question": "INV-0072の残額26,950円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 15,
+      "invoice_ids": [
+        "INV-0087"
+      ],
+      "bank_ids": [
+        "BNK-0082",
+        "BNK-0083"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 22000,
+      "question": "INV-0087とBNK-0082, BNK-0083の対応根拠を確認。R07: 事前評価で参照競合・超過または依存不正を検出",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 16,
+      "invoice_ids": [
+        "INV-0089"
+      ],
+      "bank_ids": [
+        "BNK-0084"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 11000,
+      "question": "INV-0089とBNK-0084の対応根拠を確認。R04: 合算請求額49500円と入金49170円の差330円。配賦を推測しない / R06: 合算差額は手数料許容の対象外",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 17,
+      "invoice_ids": [
+        "INV-0074"
+      ],
+      "bank_ids": [
+        "BNK-0070"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 6600,
+      "question": "INV-0074の残額6,600円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 18,
+      "invoice_ids": [
+        "INV-0093"
+      ],
+      "bank_ids": [
+        "BNK-0087"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 550,
+      "question": "INV-0093の残額550円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 19,
+      "invoice_ids": [
+        "INV-0081"
+      ],
+      "bank_ids": [
+        "BNK-0077"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 330,
+      "question": "INV-0081の残額330円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 20,
+      "invoice_ids": [
+        "INV-0094"
+      ],
+      "bank_ids": [
+        "BNK-0088"
+      ],
+      "due_bucket": "延滞",
+      "remaining_jpy": 330,
+      "question": "INV-0094の残額330円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 21,
+      "invoice_ids": [
+        "INV-0097"
+      ],
+      "bank_ids": [],
+      "due_bucket": "本日期日",
+      "remaining_jpy": 33000,
+      "question": "INV-0097は当日時点の入金候補なし。基準日時点の入金資料と対象請求を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 22,
+      "invoice_ids": [
+        "INV-0076"
+      ],
+      "bank_ids": [
+        "BNK-0072"
+      ],
+      "due_bucket": "本日期日",
+      "remaining_jpy": 5500,
+      "question": "INV-0076の残額5,500円の内訳・予定を原資料で確認。差額を手数料と推定しない。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 23,
+      "invoice_ids": [
+        "INV-0098"
+      ],
+      "bank_ids": [],
+      "due_bucket": "期日未到来",
+      "remaining_jpy": 77000,
+      "question": "INV-0098は当日時点の入金候補なし。基準日時点の入金資料と対象請求を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 24,
+      "invoice_ids": [
+        "INV-0100"
+      ],
+      "bank_ids": [],
+      "due_bucket": "期日未到来",
+      "remaining_jpy": 66000,
+      "question": "INV-0100は当日時点の入金候補なし。基準日時点の入金資料と対象請求を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 25,
+      "invoice_ids": [
+        "INV-0099"
+      ],
+      "bank_ids": [],
+      "due_bucket": "期日未到来",
+      "remaining_jpy": 27500,
+      "question": "INV-0099は当日時点の入金候補なし。基準日時点の入金資料と対象請求を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 26,
+      "invoice_ids": [
+        "INV-0088"
+      ],
+      "bank_ids": [],
+      "due_bucket": "期日未到来",
+      "remaining_jpy": 22000,
+      "question": "INV-0088は当日時点の入金候補なし。基準日時点の入金資料と対象請求を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 27,
+      "invoice_ids": [],
+      "bank_ids": [
+        "BNK-0089"
+      ],
+      "question": "BNK-0089の未割当12,345円について、入金目的・相手・請求IDを裏付ける資料を確認。",
+      "answer_state": "unanswered",
+      "recipient": "試験依頼担当者"
+    }
+  ],
+  "not_performed": [
+    "UI実画面確認は未実施。後続の別担当が実施",
+    "独立レビューは未実施。後続の別担当が実施",
+    "人の検収・実業務での採用・会計消込・送信許可なし",
+    "延滞は照合上の期日超過残額であり、相手の支払遅延の断定ではない",
+    "AGENTSの初期コンテキスト提示と適用、Skill選択と実本文読取りを記録。自動読込み機構の独立検証は未実施"
+  ],
+  "human_acceptance": false,
+  "definition_answer_states_changed": false,
+  "network_browser_gui_mcp_used": false,
+  "subagents_used": false,
+  "handoff_to": "試験依頼担当者（取りまとめAIの確認を人の検収としない）"
+}

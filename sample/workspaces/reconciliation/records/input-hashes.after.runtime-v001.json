@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-10-16T13:45:59+09:00",
+  "files": [
+    {
+      "path": "inputs/README.md",
+      "sha256": "00f813cc92ac2a5c92cc1f31d4363e24db9fd7fdf23ebd81b9ea9e43c3b94a78",
+      "bytes": 1126
+    },
+    {
+      "path": "inputs/bank-credits.csv",
+      "sha256": "8ab3e44f92e4f3b3449aa5013e6c0ecd58736b59b40ae908d7d5b5e960bb6004",
+      "bytes": 7961
+    },
+    {
+      "path": "inputs/customers.csv",
+      "sha256": "a6fe4916259bfc81947fd8060dd07de1c37482cc84405aa531902aec94e2fef6",
+      "bytes": 2816
+    },
+    {
+      "path": "inputs/invoices.csv",
+      "sha256": "63dca5233515d2132f482188799ee5d7a713b6e1e020e96eca477cbd8ca707af",
+      "bytes": 8597
+    },
+    {
+      "path": "inputs/manifest.json",
+      "sha256": "11d2cebcc03c73b2d4f9401a6656c6dfc5b999003d96bf9026c5a17102624106",
+      "bytes": 1011
+    },
+    {
+      "path": "inputs/matching-rules.md",
+      "sha256": "105ef9b70a54a3fed5d490d8ebfba62ff6d7e7f234366c5bbdfc57779a400987",
+      "bytes": 6630
+    }
+  ],
+  "all_preserved": true
+}

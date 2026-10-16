@@ -1,0 +1,44 @@
+{
+  "version": "runtime-v001",
+  "all_passed": false,
+  "checks": {
+    "42_unique_ids": true,
+    "no_simulated_confirmed": true,
+    "three_parameters_proposed": true,
+    "input_unchanged_before_deploy": true,
+    "all_dependency_links_resolve": false,
+    "all_42_output_positions_exist": true,
+    "no_unexpanded_operational_symbols": true,
+    "no_outer_fences": true,
+    "skill_metadata": true,
+    "claude_import": true,
+    "fixed_rules_exact_from_spec": true,
+    "GEN007_plan": true,
+    "draft_non_executable": true,
+    "new_targets_absent": true
+  },
+  "errors": [
+    [
+      "records/runtime-v001/answers.md",
+      "references/input-contract.md",
+      "missing"
+    ]
+  ],
+  "definition_sha256": "69181c7387289d1fc3693ab0f0d26baec073721d8d7c543c371dba9f6324011e",
+  "record_files": [
+    "source-manifest.json",
+    "input-hashes.before.json",
+    "preflight.json",
+    "generation-values.json",
+    "current-request.record.md",
+    "migration.record.md",
+    "definition-manifest.json",
+    "answers.md",
+    "answers.json",
+    "parameter-definitions.json",
+    "output-map.json"
+  ],
+  "recognition_verified": false,
+  "business_verified": false,
+  "human_acceptance": false
+}

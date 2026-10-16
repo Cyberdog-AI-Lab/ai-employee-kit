@@ -1,4 +1,20 @@
-# キットを通した3つの参照サンプル
+# キットを通したサンプル
+
+**修正後の設定で生成した成果物を見る： [最新の売上・会議・請求入金レポート](results/README.md)。**
+
+## 正式な設定で試す
+
+AI社員を実行する入口は [実行用workspaceの準備手順](workspaces/README.md) です。正式なAGENTS.mdとSkill、必要資料・架空入力を揃え、キット外へコピーして使います。
+
+| 実行用サンプル | 正式な設定 | 保存済み結果と検証 |
+| --- | --- | --- |
+| [売上workspace](workspaces/sales/) | [AGENTS](workspaces/sales/AGENTS.md)・[Skill](workspaces/sales/.claude/skills/work-001/SKILL.md) | [検証記録](workspace-validation/README.md) |
+| [会議workspace](workspaces/minutes/) | [AGENTS](workspaces/minutes/AGENTS.md)・[Skill](workspaces/minutes/.claude/skills/work-002/SKILL.md) | [検証記録](workspace-validation/README.md) |
+| [請求入金workspace](workspaces/reconciliation/) | [AGENTS](workspaces/reconciliation/AGENTS.md)・[Skill](workspaces/reconciliation/.claude/skills/work-001/SKILL.md) | [検証記録](workspace-validation/README.md) |
+
+## 過去の試験を読む（説明用資料）
+
+以下の `sales/`・`minutes/`・`product/` は、小規模な試験の記録です。この3フォルダ内の `.sample.md` は自動認識される設定ではなく、実行用workspaceとは別の資料です。商品紹介の実行用workspaceは現在未配布です。
 
 各サンプルは、実際の `ai-employee-interview` による質問、AIによる模擬回答、`ai-employee-generate` による草稿・試験配置を経て、別のCodex会話で架空資料の仕事を実行した記録です。本人の業務ヒアリングや人の検収を再現した記録ではありません。
 
@@ -22,7 +38,7 @@ python3 scripts/verify_samples.py
 
 ## 公開時に変えたもの
 
-- 定義は自動読込みされないファイル名とコードブロックにし、sample内へ実行用AGENTS/CLAUDE/SKILLを置いていません。
+- 定義は自動読込みされないファイル名とコードブロックにし、これらの過去の参照フォルダへ実行用AGENTS/CLAUDE/SKILLを置いていません。新しい実行用はworkspaces/に分離しています。
 - ローカル絶対パスは記号的な保存先名に置き換えました。内部の会話運用情報は公開要約から除いています。
 - 仕事の入力、金額、未確定値、根拠IDは変えていません。出力JSONには公開複製を示すpublic_exportを加えました。
 - provenance.jsonは試験原本と公開複製のハッシュを分けます。匿名化されたファイルから元ファイルのハッシュを再計算することはできません。

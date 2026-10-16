@@ -1,0 +1,104 @@
+{
+  "observed_at": "2026-10-16T13:36:24+09:00",
+  "observer": "Codex generation agent",
+  "cwd": "KIT_ROOT",
+  "roots": {
+    "K": "KIT_ROOT",
+    "D": "GENERATION_DRAFTS/reconciliation",
+    "W": "GENERATED_WORKSPACES/reconciliation"
+  },
+  "realpath_separation": true,
+  "initial_D_entries": [],
+  "initial_W_entries": [
+    "inputs/"
+  ],
+  "input_manifest_checks": [
+    {
+      "path": "README.md",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "lines_match": true
+    },
+    {
+      "path": "bank-credits.csv",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "lines_match": true
+    },
+    {
+      "path": "customers.csv",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "lines_match": true
+    },
+    {
+      "path": "invoices.csv",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "lines_match": true
+    },
+    {
+      "path": "matching-rules.md",
+      "sha256_matches": true,
+      "bytes_match": true,
+      "lines_match": true
+    }
+  ],
+  "existing_instruction_files": [
+    {
+      "path": "KIT_ROOT/AGENTS.md",
+      "bytes": 7043,
+      "sha256": "d424ec6ec652eca4e3131ca328ece0763a0c12d690f94f196d80aae07829bf76"
+    },
+    {
+      "path": "KIT_ROOT/CLAUDE.md",
+      "bytes": 11,
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+    },
+    {
+      "path": "LOCAL_HOME/.codex/AGENTS.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LOCAL_HOME/Library/Application Support/orca/codex-accounts/6d9f42bf-3d20-47e3-a610-546dc1978b7fLOCAL_CONFIG_ROOT/AGENTS.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "instruction_search": "AGENTS.md / AGENTS.override.md / CLAUDE.md at K,D,W and every ancestor plus two Codex account homes and .claude home",
+  "configuration_search": [
+    {
+      "path": "LOCAL_HOME/.codex/config.toml",
+      "relevant_top_level_fields": {}
+    },
+    {
+      "path": "LOCAL_HOME/.claude/settings.json",
+      "relevant_top_level_fields": {}
+    },
+    {
+      "path": "LOCAL_HOME/.codex/config.toml",
+      "relevant_top_level_fields": {}
+    },
+    {
+      "path": "LOCAL_HOME/Library/Application Support/orca/codex-accounts/6d9f42bf-3d20-47e3-a610-546dc1978b7fLOCAL_CONFIG_ROOT/config.toml",
+      "relevant_top_level_fields": {}
+    }
+  ],
+  "D_discovery": "Outside .agents/skills and .claude/skills; no registration in inspected settings or supplied skill catalog; only non-runtime names will be written",
+  "generation_permissions": {
+    "reported_sandbox": "workspace-write",
+    "reported_approval_policy": "never",
+    "reported_network": "restricted",
+    "D_os_access_W_OK": true,
+    "W_os_access_W_OK": true,
+    "authority": "current user request TEST-PERMIT-RUNTIME-001"
+  },
+  "limitations": [
+    "Employee instruction auto-loading untested",
+    "Skill selector untested",
+    "Business tool permissions untested",
+    "No OS access-control guarantee",
+    "No external judgment tool used; external transmission outside user scope"
+  ]
+}

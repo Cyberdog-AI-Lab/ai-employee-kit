@@ -1,0 +1,18 @@
+{
+  "version": "runtime-v001",
+  "agents_canonical": "AGENTS.md",
+  "claude_import": {
+    "path": "CLAUDE.md",
+    "content": "@AGENTS.md\n"
+  },
+  "skill_key": "showcase-sales-001",
+  "canonical_skill": ".claude/skills/work-001/SKILL.md",
+  "connection": {
+    "path": ".agents/skills/work-001",
+    "target": "../../.claude/skills/work-001",
+    "type": "relative_symlink",
+    "same_workspace_only": true
+  },
+  "maintenance_role": "架空の店長（EMP-003）。リンク方式、コピー同期は非該当。改訂ごとに同じ正本への到達を検査。",
+  "recognition_verified": false
+}

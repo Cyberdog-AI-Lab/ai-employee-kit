@@ -1,0 +1,30 @@
+{
+  "version": "runtime-v001",
+  "all_passed": true,
+  "checks": {
+    "42_unique_ids": true,
+    "no_simulated_confirmed": true,
+    "three_parameters_proposed": true,
+    "input_unchanged_before_deploy": true,
+    "all_dependency_links_resolve": true,
+    "all_42_output_positions_exist": true,
+    "no_unexpanded_operational_symbols": true,
+    "no_outer_fences": true,
+    "skill_metadata": true,
+    "claude_import": true,
+    "fixed_rules_exact_from_spec": true,
+    "GEN007_plan": true,
+    "draft_non_executable": true,
+    "new_targets_absent": true,
+    "payload_hashes_unchanged": true,
+    "all_source_hashes_preserved": true,
+    "inputs_unchanged": true,
+    "W_only_inputs": true
+  },
+  "errors": [],
+  "resolved_prior_issue": "answers.md要約欄のSkill基準リンクを表示ラベルへ修正。before-link-fixを保全。定義本文不変。",
+  "definition_sha256": "69181c7387289d1fc3693ab0f0d26baec073721d8d7c543c371dba9f6324011e",
+  "recognition_verified": false,
+  "business_verified": false,
+  "human_acceptance": false
+}

@@ -1,0 +1,1285 @@
+{
+  "version": "runtime-v001",
+  "items": [
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E01",
+      "item_id": "EMP-001",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-001",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E02",
+      "item_id": "EMP-002",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-4",
+          "line": 85,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-002",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E03",
+      "item_id": "EMP-003",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-003",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E04",
+      "item_id": "EMP-004",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-004",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E05",
+      "item_id": "EMP-005",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-005",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E06",
+      "item_id": "EMP-006",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-5",
+          "line": 89,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-006",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E07",
+      "item_id": "EMP-007",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-6",
+          "line": 93,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-007",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E08",
+      "item_id": "EMP-008",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-3",
+          "line": 81,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-4",
+          "line": 85,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-008",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E09",
+      "item_id": "EMP-009",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-009",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E10",
+      "item_id": "EMP-010",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes",
+          "line": 69,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-010",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E11",
+      "item_id": "EMP-011",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-011",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E12",
+      "item_id": "EMP-012",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-012",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-E13",
+      "item_id": "EMP-013",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "AGENTS.md#emp-013",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S01",
+      "item_id": "SKL-001",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--docs--interview-qa.md.txt",
+          "section": "Q-S01",
+          "classification": "Q&A形式規則＋旧skill_key/slugの継続"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md:frontmatter.name",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S02",
+      "item_id": "SKL-002",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes",
+          "line": 69,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md:frontmatter.description",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S03",
+      "item_id": "SKL-003",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-4",
+          "line": 85,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-003",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S04",
+      "item_id": "SKL-004",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-004",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S05",
+      "item_id": "SKL-005",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-005",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S06",
+      "item_id": "SKL-006",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-2",
+          "line": 77,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-3",
+          "line": 81,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-4",
+          "line": 85,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-5",
+          "line": 89,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-6",
+          "line": 93,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-006",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S07",
+      "item_id": "SKL-007",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-5",
+          "line": 89,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-007",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S08",
+      "item_id": "SKL-008",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-6",
+          "line": 93,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-008",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S09",
+      "item_id": "SKL-009",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-009",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S10",
+      "item_id": "SKL-010",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-010",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S11",
+      "item_id": "SKL-011",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-011",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S12",
+      "item_id": "SKL-012",
+      "normal_status": "unanswered",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--answers-v002.md.txt",
+          "section": "SKL-012 任意未回答"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": "records/runtime-v001/answers.md#skl-012-status",
+      "draft_path": "answers.md",
+      "trial_condition": "任意省略可",
+      "unresolved": "任意の追加例未回答"
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "showcase-minutes-002",
+      "question_id": "Q-S13",
+      "item_id": "SKL-013",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview.md.txt",
+          "section": "sim-common / sim-case",
+          "classification": "AI作成の模擬回答。具体的作成者AI名/作成日時未提供。ユーザー経由。"
+        }
+      ],
+      "derivation": "本文・参照位置の現行仕様への整形。新しい技術パス/版はREQ-RUNTIME-001。意味は上記原文参照。",
+      "output": ".claude/skills/work-002/SKILL.md#skl-013",
+      "draft_path": "work-002.draft.md",
+      "trial_condition": "模擬試験の定義に必要な意味内容あり。通常の配置要件充足ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F01",
+      "item_id": "FIX-001",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-001"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F02",
+      "item_id": "FIX-002",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-002"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F03",
+      "item_id": "FIX-003",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-003"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F04",
+      "item_id": "FIX-004",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-004"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F05",
+      "item_id": "FIX-005",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-005"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F06",
+      "item_id": "FIX-006",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-006"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F07",
+      "item_id": "FIX-007",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-007"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F08",
+      "item_id": "FIX-008",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-008"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "employee",
+      "question_id": "Q-F09",
+      "item_id": "FIX-009",
+      "normal_status": "fixed-default",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "4 / FIX-009"
+        }
+      ],
+      "observation_status": "点検済み（現行仕様本文から収録）",
+      "output": "AGENTS.md#fixed-rules",
+      "draft_path": "employee-agents.draft.md",
+      "trial_condition": "固定規則を適用。業務回答ではない。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "generation",
+      "question_id": "Q-G01",
+      "item_id": "GEN-001",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/current-request.record.md",
+          "section": "REQ-RUNTIME-001"
+        },
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "2.1"
+        }
+      ],
+      "observation_status": "点検済み：候補段階。配置後検査はdeployment-receipt参照。",
+      "output": "records/definition.md#gen-001",
+      "draft_path": "definition.draft.md",
+      "trial_condition": "現在の試験範囲のみ。通常の配置条件充足・業務開始・検収とは別。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "generation",
+      "question_id": "Q-G02",
+      "item_id": "GEN-002",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/current-request.record.md",
+          "section": "REQ-RUNTIME-001"
+        },
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "2.1"
+        }
+      ],
+      "observation_status": "点検済み：候補段階。配置後検査はdeployment-receipt参照。",
+      "output": "records/definition.md#gen-002",
+      "draft_path": "definition.draft.md",
+      "trial_condition": "現在の試験範囲のみ。通常の配置条件充足・業務開始・検収とは別。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "generation",
+      "question_id": "Q-G03",
+      "item_id": "GEN-003",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/current-request.record.md",
+          "section": "REQ-RUNTIME-001"
+        },
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "2.1"
+        }
+      ],
+      "observation_status": "点検済み：候補段階。配置後検査はdeployment-receipt参照。",
+      "output": "records/definition.md#gen-003",
+      "draft_path": "definition.draft.md",
+      "trial_condition": "現在の試験範囲のみ。通常の配置条件充足・業務開始・検収とは別。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "generation",
+      "question_id": "Q-G04",
+      "item_id": "GEN-004",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/current-request.record.md",
+          "section": "REQ-RUNTIME-001"
+        },
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "2.1"
+        }
+      ],
+      "observation_status": "点検済み：候補段階。配置後検査はdeployment-receipt参照。",
+      "output": "records/definition.md#gen-004",
+      "draft_path": "definition.draft.md",
+      "trial_condition": "現在の試験範囲のみ。通常の配置条件充足・業務開始・検収とは別。",
+      "unresolved": null
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "generation",
+      "question_id": "Q-G05",
+      "item_id": "GEN-005",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/current-request.record.md",
+          "section": "REQ-RUNTIME-001"
+        },
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "2.1"
+        }
+      ],
+      "observation_status": "生成環境のみ観察、業務環境未点検",
+      "output": "records/definition.md#gen-005",
+      "draft_path": "definition.draft.md",
+      "trial_condition": "現在の試験範囲のみ。通常の配置条件充足・業務開始・検収とは別。",
+      "unresolved": "業務環境/実権限は実行開始前に確認"
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "generation",
+      "question_id": "Q-G06",
+      "item_id": "GEN-006",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/current-request.record.md",
+          "section": "REQ-RUNTIME-001"
+        },
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "2.1"
+        }
+      ],
+      "observation_status": "点検済み：候補段階。配置後検査はdeployment-receipt参照。",
+      "output": "records/definition.md#gen-006",
+      "draft_path": "definition.draft.md",
+      "trial_condition": "現在の試験範囲のみ。通常の配置条件充足・業務開始・検収とは別。",
+      "unresolved": "旧本文との三者比較不能・旧版非変更"
+    },
+    {
+      "case_id": "employee-showcase-minutes",
+      "scope": "generation",
+      "question_id": "Q-G07",
+      "item_id": "GEN-007",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/current-request.record.md",
+          "section": "REQ-RUNTIME-001"
+        },
+        {
+          "record": "records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+          "version": "0.1.4-draft",
+          "section": "2.1"
+        }
+      ],
+      "observation_status": "点検済み：候補段階。配置後検査はdeployment-receipt参照。",
+      "output": "records/definition.md#gen-007",
+      "draft_path": "definition.draft.md",
+      "trial_condition": "現在の試験範囲のみ。通常の配置条件充足・業務開始・検収とは別。",
+      "unresolved": null
+    }
+  ],
+  "parameters": [
+    {
+      "key": "input_dir",
+      "type": "パス文字列",
+      "required": true,
+      "validation": "毎回の依頼から受領。この社員workspaceのinputsディレクトリに実パスで一致し、参照する全入力がその範囲内にあり読めること。",
+      "source": "SIM-DETAIL-002/common、minutes-1",
+      "case_id": "employee-showcase-minutes",
+      "skill_key": "showcase-minutes-002",
+      "parent_id": "SKL-004",
+      "child_key": "showcase-minutes-002/SKL-004/input_dir",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "confirmation_source": {
+        "role": "取りまとめAI／架空の企画責任者",
+        "human_confirmation": false,
+        "source_recorded_at": "2026-10-15T07:01:09+00:00",
+        "creation_sending_time": null
+      },
+      "output": ".claude/skills/work-002/SKILL.md#skl-004 / input_dir",
+      "draft_path": "work-002.draft.md",
+      "missing_action": "SKL-006開始前停止→SKL-010新規停止記録→質問。outputs未作成。書込不可は会話記録、再開は別run。",
+      "runtime_value": null,
+      "runtime_value_status": "未受領。定義生成には要求しない。"
+    },
+    {
+      "key": "project_id",
+      "type": "文字列",
+      "required": true,
+      "validation": "毎回の依頼から受領。KOMOREBI-EVENT-2026に完全一致し、各会議の案件IDと一致すること。資料から依頼値を補わない。",
+      "source": "SIM-DETAIL-002/minutes-1",
+      "case_id": "employee-showcase-minutes",
+      "skill_key": "showcase-minutes-002",
+      "parent_id": "SKL-004",
+      "child_key": "showcase-minutes-002/SKL-004/project_id",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "confirmation_source": {
+        "role": "取りまとめAI／架空の企画責任者",
+        "human_confirmation": false,
+        "source_recorded_at": "2026-10-15T07:01:09+00:00",
+        "creation_sending_time": null
+      },
+      "output": ".claude/skills/work-002/SKILL.md#skl-004 / project_id",
+      "draft_path": "work-002.draft.md",
+      "missing_action": "SKL-006開始前停止→SKL-010新規停止記録→質問。outputs未作成。書込不可は会話記録、再開は別run。",
+      "runtime_value": null,
+      "runtime_value_status": "未受領。定義生成には要求しない。"
+    },
+    {
+      "key": "as_of",
+      "type": "ISO日付 YYYY-MM-DD",
+      "required": true,
+      "validation": "毎回の依頼から受領し、実在する暦日であること。開催日がこの日以前（当日を含む）の同案件メモを対象とする。今日や最終会議日を代用しない。",
+      "source": "SIM-DETAIL-002/minutes-1",
+      "case_id": "employee-showcase-minutes",
+      "skill_key": "showcase-minutes-002",
+      "parent_id": "SKL-004",
+      "child_key": "showcase-minutes-002/SKL-004/as_of",
+      "normal_status": "proposed",
+      "source_refs": [
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "common",
+          "line": 20,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        },
+        {
+          "record": "records/runtime-v001/sources/handoff--interview-v002.md.txt",
+          "section": "minutes-1",
+          "line": 73,
+          "original_source": "generation-inputs/minutes/interview-v002.md",
+          "classification": "AI作成の模擬回答"
+        }
+      ],
+      "confirmation_source": {
+        "role": "取りまとめAI／架空の企画責任者",
+        "human_confirmation": false,
+        "source_recorded_at": "2026-10-15T07:01:09+00:00",
+        "creation_sending_time": null
+      },
+      "output": ".claude/skills/work-002/SKILL.md#skl-004 / as_of",
+      "draft_path": "work-002.draft.md",
+      "missing_action": "SKL-006開始前停止→SKL-010新規停止記録→質問。outputs未作成。書込不可は会話記録、再開は別run。",
+      "runtime_value": null,
+      "runtime_value_status": "未受領。定義生成には要求しない。"
+    }
+  ],
+  "derived_values": [
+    {
+      "key": "skill_slug_and_paths",
+      "from": [
+        "SKL-001",
+        "skill_key=showcase-minutes-002",
+        "GEN-007"
+      ],
+      "transformation": "旧採番002を維持しwork-002。正本/接続を現在のW内へ。",
+      "outputs": [
+        ".claude/skills/work-002/SKILL.md",
+        ".agents/skills/work-002"
+      ],
+      "status": "fixed-default"
+    },
+    {
+      "key": "skill_description",
+      "from": [
+        "EMP-001",
+        "EMP-002",
+        "SKL-003"
+      ],
+      "transformation": "既存の模擬意味要約を保持",
+      "outputs": [
+        ".claude/skills/work-002/SKILL.md:frontmatter.description"
+      ],
+      "status": "proposed"
+    },
+    {
+      "key": "agents_definition_reference",
+      "from": [
+        "EMP-004"
+      ],
+      "transformation": "AGENTS所在rootからrecords/definition.md",
+      "outputs": [
+        "AGENTS.md → records/definition.md"
+      ],
+      "status": "形式導出"
+    },
+    {
+      "key": "skill_definition_reference",
+      "from": [
+        "EMP-004",
+        "SKL-001"
+      ],
+      "transformation": "正本.claude/skills/work-002から../../../records/definition.md",
+      "outputs": [
+        ".claude/skills/work-002/SKILL.md → ../../../records/definition.md"
+      ],
+      "status": "形式導出"
+    },
+    {
+      "key": "cwd",
+      "from": [
+        "EMP-004",
+        "GEN-001"
+      ],
+      "transformation": "業務cwdは今回の社員workspace root。本文に実絶対パスを埋め込まない。",
+      "outputs": [
+        ".claude/skills/work-002/SKILL.md#skl-005"
+      ],
+      "status": "形式導出"
+    },
+    {
+      "key": "output_and_stop_locations",
+      "from": [
+        "EMP-004",
+        "SKL-007",
+        "SKL-010"
+      ],
+      "transformation": "outputsとrecords/runsの新規UTC日時＋一意ID。停止時outputs未作成。",
+      "outputs": [
+        ".claude/skills/work-002/SKILL.md#skl-007",
+        ".claude/skills/work-002/SKILL.md#skl-010"
+      ],
+      "status": "proposedの業務値を相対化"
+    },
+    {
+      "key": "claude_import",
+      "from": [
+        "GEN-007"
+      ],
+      "transformation": "同一WのAGENTSを@AGENTS.mdで取込",
+      "outputs": [
+        "CLAUDE.md"
+      ],
+      "status": "固定契約"
+    },
+    {
+      "key": "input_contract",
+      "from": [
+        "SKL-004",
+        "SKL-011",
+        "EMP-004"
+      ],
+      "transformation": "実入力の名前・形式観察をsource-onlyで補足。正本referencesから../../../../inputsへ。",
+      "outputs": [
+        ".claude/skills/work-002/references/input-contract.md"
+      ],
+      "status": "source-only（形式観察）"
+    }
+  ],
+  "artifacts": [
+    {
+      "D": "employee-agents.draft.md",
+      "W": "AGENTS.md",
+      "sha256": "5c8e921f54e4d3738badc8458fc2cdaa0725575c6cbe3440cc9c54a606277568"
+    },
+    {
+      "D": "employee-claude.draft.md",
+      "W": "CLAUDE.md",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+    },
+    {
+      "D": "work-002.draft.md",
+      "W": ".claude/skills/work-002/SKILL.md",
+      "sha256": "8271d5db5f2f327bc9473ccfccec25f194d09c38cb4cee35705f568b2adda31c"
+    },
+    {
+      "D": "input-contract.draft.md",
+      "W": ".claude/skills/work-002/references/input-contract.md",
+      "sha256": "63015cb9ff1ee37191cfa9c92966138bc767fd7096737711b3c70db3c27afc8e"
+    },
+    {
+      "D": "definition.draft.md",
+      "W": "records/definition.md",
+      "note": "配置後の動的観察はW記録へ追記し、Dにdeployed-definition.record.mdを保管"
+    }
+  ],
+  "connection_plan": {
+    "path": ".agents/skills/work-002",
+    "type": "symlink",
+    "target": "../../.claude/skills/work-002"
+  },
+  "change_rule": "導出元変更時は依存本文・子要素・出力対応・参照・対象hashと許可範囲を再評価する。単なる相対パス変換で再質問しない。"
+}

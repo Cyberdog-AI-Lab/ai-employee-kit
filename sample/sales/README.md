@@ -1,4 +1,18 @@
-# 売上レポート担当の試験
+# 売上レポート担当の試験記録（説明用）
+
+**ここは過去の試験を読むための説明用資料です。** このフォルダをCodexで開いても、社員用のAGENTS.mdとSKILL.mdは自動認識されません。`definition/*.sample.md` は記録を読むための複製です。
+
+**実際に動かす場合は [正式な売上workspace](../workspaces/sales/) と [準備・実行手順](../workspaces/README.md) を使ってください。** 新しい例は複数店舗の売上と返品を照合する売上担当で、このページの小規模な試験とは入力・Skill・実行結果が別です。[新しい試験の結果](../workspace-validation/README.md)も確認できます。
+
+キットrootで次を実行し、作成したキット外のフォルダを開いた新しいCodex会話から依頼します。Python 3.10以上と `scripts/requirements-validation.txt` の依存が必要です。保存先は未作成のフォルダを指定してください。
+
+```sh
+python3 scripts/prepare_sample_workspace.py sales /path/outside-kit/sales-employee
+```
+
+修正後の設定から生成した [最新HTML](../results/sales/report.html) と [入力・定義・実行の対応](../results/sales/README.md) を直接確認できます。
+
+以下は以前の試験記録です。原本・定義の参照複製・期待値・成果物を保持しています。
 
 [インタビュー](interview.md)から生成した社員を、キット外の仕事フォルダで新しいCodex会話に読み込ませました。架空CSVだけを対象にした試験で、人による候補レビュー・成果検収は未実施です。
 

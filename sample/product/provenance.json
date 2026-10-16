@@ -78,7 +78,7 @@
     }
   },
   "public_files_sha256": {
-    "README.md": "088b1004755623dc728682c2ef8b19f7c4f9ec31e466e7b88120c6717bbabb17",
+    "README.md": "fbb3ad261665f529ab250470f5424067162e1bbee2a87858935889700df68e44",
     "definition/employee-agents.sample.md": "e3b0285f739a30843d5c383faaa1a6ca03174a8022894a00a31d3c117896c7cb",
     "definition/employee-claude.sample.md": "c8411c29743a39c6b5002260807731b1ea5ee0a0483e2df7d60d9f682f9aff53",
     "definition/work-0001.skill.sample.md": "96f1a746db93ee78736ce5c8901138c9b7c9f6819d96a76f762ee9efeddc056c",
@@ -94,9 +94,28 @@
     "validation/result-before-clarification.json": "d5096797896a3afd3ac5499f3ded8d6ab55b973688154f863284927e1799bdd7",
     "validation/result.json": "0d0574f3bceb2e15ba8b8df540bdcb883421938471f744a08beddd8e488a71f1",
     "validation/resume-record.json": "fecedf5249b491c30e4c227aa4d6e95593be643988b759146b072e34769dc500",
-    "validation/stop-record.json": "bea627df9a2eb1da863b9dad6d7c7eed0c071d034c04812e7f1530baa1b22362"
+    "validation/stop-record.json": "bea627df9a2eb1da863b9dad6d7c7eed0c071d034c04812e7f1530baa1b22362",
+    "definition/README.md": "02797281ad13432229326af15f794611af4e339207074dd682fe41c565726b91"
   },
   "original_procedure_sha256": "f3824f00d42f3d4361eee16ba3b9415fbd50d7dd9f7c9968c88b1677b1ae5507",
   "original_run_id": "run-20261015T104236-52241244",
-  "heldout_combined_source_sha256": "dd1c2100db11ec8831e559881c107b3dfad1ca6c4aa109061843fcd227ce303c"
+  "heldout_combined_source_sha256": "dd1c2100db11ec8831e559881c107b3dfad1ca6c4aa109061843fcd227ce303c",
+  "documentation_revisions": [
+    {
+      "date": "2026-10-16",
+      "purpose": "Clarify historical reference materials and direct users to native runnable workspace examples.",
+      "previous_source_commit": "f1ae6767974c41cb157e7d42408bdb1e9532e26f",
+      "previous_provenance_sha256": "92dd42e3c1a33b273cd94ebfbc8ed7a9cc2d5e4115fb8b15ce18692bf1ec6f7a",
+      "previous_readme_sha256": "088b1004755623dc728682c2ef8b19f7c4f9ec31e466e7b88120c6717bbabb17",
+      "changed": [
+        "README.md"
+      ],
+      "added": [
+        "definition/README.md"
+      ],
+      "unchanged": "Original trial definitions, inputs, expected values, outputs and validation records; original_files and original run identity retained.",
+      "business_rerun": false,
+      "human_acceptance": false
+    }
+  ]
 }

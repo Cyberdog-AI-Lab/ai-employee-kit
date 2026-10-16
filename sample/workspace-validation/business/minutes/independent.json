@@ -1,0 +1,6427 @@
+{
+  "case": "minutes",
+  "run": "20261016T045543Z-5d90c766d31a",
+  "employee_job": "runtime-business-minutes-v002",
+  "verified_after_exit0": true,
+  "started_at": "2026-10-16T05:12:43.665353+00:00",
+  "checked_at": "2026-10-16T05:12:43.708977+00:00",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "employee_exit_code",
+      "passed": true
+    },
+    {
+      "name": "oracle_hash.minutes",
+      "passed": true
+    },
+    {
+      "name": "bundle_manifest_unchanged",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle..claude/skills/work-002/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle..claude/skills/work-002/references/input-contract.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.CLAUDE.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/README.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-09-01-meeting-01.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-09-08-meeting-02.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-09-15-meeting-03.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-09-22-meeting-04.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-09-29-meeting-05.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-10-03-meeting-06.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-10-08-meeting-07.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.inputs/meetings/2026-10-12-meeting-08.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/definition-history/runtime-v001/definition-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/definition-history/runtime-v001/employee-agents.draft.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/definition-history/runtime-v001/employee-claude.draft.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/definition-history/runtime-v001/input-contract.draft.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/definition-history/runtime-v001/work-002.draft.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/definition.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/answers.before-link-fix.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/answers.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/answers.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/artifact-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/current-request.record.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/definition-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/deployment-receipt.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/generation-values.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/input-hashes.after.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/input-hashes.before.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/migration.record.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/output-map.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/parameter-definitions.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/placement-receipt.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/postdeployment-checks.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/predeployment-static-v002.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/predeployment-static.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/preflight.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/handoff--answers-v002.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/handoff--answers.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/handoff--interview-v002.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/handoff--interview.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--.claude--skills--ai-employee-generate--SKILL.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--AGENTS.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--CLAUDE.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--docs--interview-qa.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--formats--employee-agents.template.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--formats--employee-skill.template.md.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/sources/kit--scripts--verify_employee_workspace.py.txt",
+      "passed": true
+    },
+    {
+      "name": "immutable_bundle.records/runtime-v001/workspace-verification.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/README.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-10-03-meeting-06.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-09-08-meeting-02.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-09-29-meeting-05.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-09-15-meeting-03.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-09-01-meeting-01.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-10-12-meeting-08.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-10-08-meeting-07.md",
+      "passed": true
+    },
+    {
+      "name": "immutable_input.inputs/meetings/2026-09-22-meeting-04.md",
+      "passed": true
+    },
+    {
+      "name": "definition_discovery.AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "definition_discovery.CLAUDE.md",
+      "passed": true
+    },
+    {
+      "name": "definition_discovery..agents/skills/work-002/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "definition_discovery..claude/skills/work-002/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "manifest.fictional",
+      "passed": true
+    },
+    {
+      "name": "manifest.README.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.README.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.README.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.README.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-01-meeting-01.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-01-meeting-01.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-01-meeting-01.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-01-meeting-01.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-08-meeting-02.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-08-meeting-02.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-08-meeting-02.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-08-meeting-02.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-15-meeting-03.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-15-meeting-03.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-15-meeting-03.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-15-meeting-03.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-22-meeting-04.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-22-meeting-04.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-22-meeting-04.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-22-meeting-04.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-29-meeting-05.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-29-meeting-05.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-29-meeting-05.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-09-29-meeting-05.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-03-meeting-06.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-03-meeting-06.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-03-meeting-06.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-03-meeting-06.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-08-meeting-07.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-08-meeting-07.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-08-meeting-07.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-08-meeting-07.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-12-meeting-08.md.sha256",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-12-meeting-08.md.bytes",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-12-meeting-08.md.lines",
+      "passed": true
+    },
+    {
+      "name": "manifest.meetings/2026-10-12-meeting-08.md.characters",
+      "passed": true
+    },
+    {
+      "name": "manifest_file_coverage",
+      "passed": true
+    },
+    {
+      "name": "human_acceptance_false",
+      "passed": true
+    },
+    {
+      "name": "run_identity",
+      "passed": true
+    },
+    {
+      "name": "explicit_parameters",
+      "passed": true
+    },
+    {
+      "name": "reported_input_metadata",
+      "passed": true
+    },
+    {
+      "name": "reported_input_metadata_no_duplicates",
+      "passed": true
+    },
+    {
+      "name": "all_source_quotes_and_present_hashes",
+      "passed": true,
+      "detail": {
+        "source_count": 140,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "all_140_source_IDs",
+      "passed": true
+    },
+    {
+      "name": "source_count",
+      "passed": true
+    },
+    {
+      "name": "source.M01-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-010.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-010.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-010.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-010",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-011.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-011.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-011.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-011",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-011",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-012.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-012.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-012.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-012",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M01-012",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-013.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-013.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-013.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-013",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A03"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-013",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-015.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-015.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-015.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-015",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-015",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-018.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-018.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-018.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-018",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A04"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-018",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A05"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D03"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M01-027.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M01-027.file",
+      "passed": true
+    },
+    {
+      "name": "source.M01-027.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M01-027",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A06"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M01-027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A07",
+          "U04"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D04"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A08"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-010.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-010.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-010.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-010",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-011.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-011.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-011.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-011",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-011",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-012.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-012.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-012.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-012",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M02-012",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-013.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-013.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-013.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-013",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A09",
+          "U06"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-013",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-015.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-015.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-015.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-015",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D05"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-015",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-018.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-018.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-018.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-018",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A10"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-018",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A11"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D06"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M02-027.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M02-027.file",
+      "passed": true
+    },
+    {
+      "name": "source.M02-027.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M02-027",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A12"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M02-027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_reference"
+        ],
+        "targets": [
+          "U10"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A13"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D07"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A14"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-010.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-010.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-010.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-010",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-011.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-011.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-011.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-011",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-011",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-012.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-012.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-012.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-012",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M03-012",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-013.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-013.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-013.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-013",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A15"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-013",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-015.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-015.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-015.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-015",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D08"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-015",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-018.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-018.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-018.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-018",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A16"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-018",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A17",
+          "U07"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D09"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M03-027.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M03-027.file",
+      "passed": true
+    },
+    {
+      "name": "source.M03-027.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M03-027",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A18"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M03-027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M04-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M04-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M04-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A19"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_reference"
+        ],
+        "targets": [
+          "U11"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M04-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D10"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M04-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A20",
+          "U05"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-010.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-010.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-010.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-010",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "progress_without_completion"
+        ],
+        "targets": [
+          "A20"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-011.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-011.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-011.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-011",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M04-011",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-012.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-012.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-012.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-012",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M04-012",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-013.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-013.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-013.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-013",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A21"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-013",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-015.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-015.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-015.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-015",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D11"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-015",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-018.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-018.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-018.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-018",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A22",
+          "U08"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-018",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A23"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_decision"
+        ],
+        "targets": [
+          "D12"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M04-027.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M04-027.file",
+      "passed": true
+    },
+    {
+      "name": "source.M04-027.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M04-027",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_created"
+        ],
+        "targets": [
+          "A24"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M04-027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M05-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M05-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "stale_material",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "D01",
+          "U01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M05-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M05-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M05-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M05-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M05-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "proposal"
+        ],
+        "targets": [
+          "P02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M05-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M05-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-020.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-020.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-020.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-020",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_change",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "D01",
+          "U01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M05-020",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-021.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-021.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-021.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-021",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_change"
+        ],
+        "targets": [
+          "D04"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M05-021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "proposal"
+        ],
+        "targets": [
+          "P02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M05-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-023.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-023.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-023.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-023",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_completed"
+        ],
+        "targets": [
+          "A01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M05-023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M05-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M05-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M05-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M05-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_completed"
+        ],
+        "targets": [
+          "A14"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M05-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M06-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M06-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "progress_without_completion",
+          "stale_material",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A02",
+          "D01",
+          "U01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M06-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M06-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "progress_without_completion"
+        ],
+        "targets": [
+          "A06"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_reference"
+        ],
+        "targets": [
+          "U12"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M06-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M06-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-020.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-020.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-020.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-020",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_change",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "D03",
+          "U02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-020",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-021.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-021.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-021.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-021",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_change"
+        ],
+        "targets": [
+          "D09"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_completed"
+        ],
+        "targets": [
+          "A03"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-023.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-023.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-023.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-023",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_completed"
+        ],
+        "targets": [
+          "A18"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_owner_formal_change"
+        ],
+        "targets": [
+          "A02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-025.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-025.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-025.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-025",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_owner_formal_change"
+        ],
+        "targets": [
+          "A05"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-025",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-026.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-026.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-026.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-026",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_owner_formal_change"
+        ],
+        "targets": [
+          "A16"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M06-027.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M06-027.file",
+      "passed": true
+    },
+    {
+      "name": "source.M06-027.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M06-027",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_owner_formal_change"
+        ],
+        "targets": [
+          "A23"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M06-027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M07-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_reference"
+        ],
+        "targets": [
+          "U10"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M07-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_reference"
+        ],
+        "targets": [
+          "U11"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M07-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "progress_without_completion"
+        ],
+        "targets": [
+          "A20"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M07-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M07-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M07-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-020.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-020.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-020.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-020",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_change",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "D07",
+          "U10"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-020",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-021.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-021.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-021.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-021",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "formal_change",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "D11",
+          "U10"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_completed"
+        ],
+        "targets": [
+          "A08"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-023.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-023.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-023.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-023",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_due_formal_change"
+        ],
+        "targets": [
+          "A02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_due_formal_change"
+        ],
+        "targets": [
+          "A06"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M07-025.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M07-025.file",
+      "passed": true
+    },
+    {
+      "name": "source.M07-025.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M07-025",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_due_formal_change"
+        ],
+        "targets": [
+          "A19"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M07-025",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-001.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-001.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-001.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-001",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "meeting_context"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M08-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-002.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-002.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-002.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-002",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "stale_material",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "D01",
+          "U01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-003.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-003.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-003.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-003",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "proposal",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "P01",
+          "U02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-004.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-004.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-004.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-004",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "proposal",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "P03",
+          "U03"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-005.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-005.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-005.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-005",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M08-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-006.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-006.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-006.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-006",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M08-006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-007.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-007.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-007.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-007",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M08-007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-008.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-008.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-008.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-008",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_reference"
+        ],
+        "targets": [
+          "U11"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-009.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-009.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-009.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-009",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "background_discussion"
+        ],
+        "targets": []
+      }
+    },
+    {
+      "name": "source_date.M08-009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-020.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-020.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-020.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-020",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "stale_material",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "D01",
+          "U01"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-020",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-021.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-021.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-021.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-021",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "proposal",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "P01",
+          "U02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-022.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-022.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-022.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-022",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "proposal_withdrawn"
+        ],
+        "targets": [
+          "P02"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-023.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-023.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-023.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-023",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "proposal",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "P03",
+          "U03"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-024.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-024.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-024.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-024",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_completed"
+        ],
+        "targets": [
+          "A10"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-025.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-025.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-025.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-025",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_cancelled"
+        ],
+        "targets": [
+          "A13"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-025",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-026.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-026.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-026.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-026",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "task_cancelled"
+        ],
+        "targets": [
+          "A21"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-027.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-027.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-027.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-027",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_due_conflict",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A07",
+          "U04"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-028.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-028.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-028.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-028",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "same_value_note"
+        ],
+        "targets": [
+          "A11"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-028",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-029.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-029.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-029.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-029",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_due_conflict",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A20",
+          "U05"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-029",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-030.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-030.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-030.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-030",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "same_value_hearsay"
+        ],
+        "targets": [
+          "A24"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-030",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-031.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-031.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-031.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-031",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "ambiguous_target",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "U09"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-031",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source.M08-032.raw",
+      "passed": true
+    },
+    {
+      "name": "source.M08-032.file",
+      "passed": true
+    },
+    {
+      "name": "source.M08-032.line",
+      "passed": true
+    },
+    {
+      "name": "statement_coverage.M08-032",
+      "passed": true,
+      "detail": {
+        "classifications": [
+          "unresolved_owner_conflict",
+          "unresolved_reference"
+        ],
+        "targets": [
+          "A09",
+          "U06"
+        ]
+      }
+    },
+    {
+      "name": "source_date.M08-032",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_referenced_source_IDs_exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "decisions.IDs",
+      "passed": true
+    },
+    {
+      "name": "decisions.count_no_duplicates",
+      "passed": true
+    },
+    {
+      "name": "tasks.IDs",
+      "passed": true
+    },
+    {
+      "name": "tasks.count_no_duplicates",
+      "passed": true
+    },
+    {
+      "name": "proposals.IDs",
+      "passed": true
+    },
+    {
+      "name": "proposals.count_no_duplicates",
+      "passed": true
+    },
+    {
+      "name": "D01.topic",
+      "passed": true
+    },
+    {
+      "name": "D01.current",
+      "passed": true
+    },
+    {
+      "name": "D01.status",
+      "passed": true
+    },
+    {
+      "name": "D01.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D01.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D01.history[1].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D01.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D01.current_source",
+      "passed": true
+    },
+    {
+      "name": "D01.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D01.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D01.history[1].prior",
+      "passed": true
+    },
+    {
+      "name": "D01.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D02.topic",
+      "passed": true
+    },
+    {
+      "name": "D02.current",
+      "passed": true
+    },
+    {
+      "name": "D02.status",
+      "passed": true
+    },
+    {
+      "name": "D02.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D02.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D02.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D02.current_source",
+      "passed": true
+    },
+    {
+      "name": "D02.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D02.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D03.topic",
+      "passed": true
+    },
+    {
+      "name": "D03.current",
+      "passed": true
+    },
+    {
+      "name": "D03.status",
+      "passed": true
+    },
+    {
+      "name": "D03.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D03.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D03.history[1].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D03.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D03.current_source",
+      "passed": true
+    },
+    {
+      "name": "D03.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D03.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D03.history[1].prior",
+      "passed": true
+    },
+    {
+      "name": "D03.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D04.topic",
+      "passed": true
+    },
+    {
+      "name": "D04.current",
+      "passed": true
+    },
+    {
+      "name": "D04.status",
+      "passed": true
+    },
+    {
+      "name": "D04.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D04.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D04.history[1].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D04.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D04.current_source",
+      "passed": true
+    },
+    {
+      "name": "D04.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D04.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D04.history[1].prior",
+      "passed": true
+    },
+    {
+      "name": "D04.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D05.topic",
+      "passed": true
+    },
+    {
+      "name": "D05.current",
+      "passed": true
+    },
+    {
+      "name": "D05.status",
+      "passed": true
+    },
+    {
+      "name": "D05.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D05.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D05.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D05.current_source",
+      "passed": true
+    },
+    {
+      "name": "D05.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D05.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D06.topic",
+      "passed": true
+    },
+    {
+      "name": "D06.current",
+      "passed": true
+    },
+    {
+      "name": "D06.status",
+      "passed": true
+    },
+    {
+      "name": "D06.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D06.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D06.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D06.current_source",
+      "passed": true
+    },
+    {
+      "name": "D06.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D06.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D07.topic",
+      "passed": true
+    },
+    {
+      "name": "D07.current",
+      "passed": true
+    },
+    {
+      "name": "D07.status",
+      "passed": true
+    },
+    {
+      "name": "D07.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D07.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D07.history[1].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D07.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D07.current_source",
+      "passed": true
+    },
+    {
+      "name": "D07.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D07.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D07.history[1].prior",
+      "passed": true
+    },
+    {
+      "name": "D07.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D08.topic",
+      "passed": true
+    },
+    {
+      "name": "D08.current",
+      "passed": true
+    },
+    {
+      "name": "D08.status",
+      "passed": true
+    },
+    {
+      "name": "D08.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D08.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D08.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D08.current_source",
+      "passed": true
+    },
+    {
+      "name": "D08.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D08.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D09.topic",
+      "passed": true
+    },
+    {
+      "name": "D09.current",
+      "passed": true
+    },
+    {
+      "name": "D09.status",
+      "passed": true
+    },
+    {
+      "name": "D09.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D09.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D09.history[1].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D09.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D09.current_source",
+      "passed": true
+    },
+    {
+      "name": "D09.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D09.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D09.history[1].prior",
+      "passed": true
+    },
+    {
+      "name": "D09.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D10.topic",
+      "passed": true
+    },
+    {
+      "name": "D10.current",
+      "passed": true
+    },
+    {
+      "name": "D10.status",
+      "passed": true
+    },
+    {
+      "name": "D10.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D10.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D10.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D10.current_source",
+      "passed": true
+    },
+    {
+      "name": "D10.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D10.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D11.topic",
+      "passed": true
+    },
+    {
+      "name": "D11.current",
+      "passed": true
+    },
+    {
+      "name": "D11.status",
+      "passed": true
+    },
+    {
+      "name": "D11.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D11.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D11.history[1].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D11.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D11.current_source",
+      "passed": true
+    },
+    {
+      "name": "D11.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D11.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D11.history[1].prior",
+      "passed": true
+    },
+    {
+      "name": "D11.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D12.topic",
+      "passed": true
+    },
+    {
+      "name": "D12.current",
+      "passed": true
+    },
+    {
+      "name": "D12.status",
+      "passed": true
+    },
+    {
+      "name": "D12.formal_history_values",
+      "passed": true
+    },
+    {
+      "name": "D12.history[0].source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D12.all_expected_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D12.current_source",
+      "passed": true
+    },
+    {
+      "name": "D12.history[0].prior",
+      "passed": true
+    },
+    {
+      "name": "D12.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D01_stale_reference_not_authority",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A01.title",
+      "passed": true
+    },
+    {
+      "name": "A01.owner",
+      "passed": true
+    },
+    {
+      "name": "A01.due_date",
+      "passed": true
+    },
+    {
+      "name": "A01.status",
+      "passed": true
+    },
+    {
+      "name": "A01.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A01.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A01.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A01.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A01.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A01.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A02.title",
+      "passed": true
+    },
+    {
+      "name": "A02.owner",
+      "passed": true
+    },
+    {
+      "name": "A02.due_date",
+      "passed": true
+    },
+    {
+      "name": "A02.status",
+      "passed": true
+    },
+    {
+      "name": "A02.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A02.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A02.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A02.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A02.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A02.history[2].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A02.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A03.title",
+      "passed": true
+    },
+    {
+      "name": "A03.owner",
+      "passed": true
+    },
+    {
+      "name": "A03.due_date",
+      "passed": true
+    },
+    {
+      "name": "A03.status",
+      "passed": true
+    },
+    {
+      "name": "A03.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A03.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A03.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A03.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A03.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A03.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A04.title",
+      "passed": true
+    },
+    {
+      "name": "A04.owner",
+      "passed": true
+    },
+    {
+      "name": "A04.due_date",
+      "passed": true
+    },
+    {
+      "name": "A04.status",
+      "passed": true
+    },
+    {
+      "name": "A04.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A04.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A04.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A04.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A04.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A05.title",
+      "passed": true
+    },
+    {
+      "name": "A05.owner",
+      "passed": true
+    },
+    {
+      "name": "A05.due_date",
+      "passed": true
+    },
+    {
+      "name": "A05.status",
+      "passed": true
+    },
+    {
+      "name": "A05.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A05.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A05.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A05.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A05.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A05.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A06.title",
+      "passed": true
+    },
+    {
+      "name": "A06.owner",
+      "passed": true
+    },
+    {
+      "name": "A06.due_date",
+      "passed": true
+    },
+    {
+      "name": "A06.status",
+      "passed": true
+    },
+    {
+      "name": "A06.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A06.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A06.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A06.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A06.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A06.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A07.title",
+      "passed": true
+    },
+    {
+      "name": "A07.owner",
+      "passed": true
+    },
+    {
+      "name": "A07.due_date",
+      "passed": true
+    },
+    {
+      "name": "A07.status",
+      "passed": true
+    },
+    {
+      "name": "A07.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A07.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A07.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A07.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A07.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A07.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A08.title",
+      "passed": true
+    },
+    {
+      "name": "A08.owner",
+      "passed": true
+    },
+    {
+      "name": "A08.due_date",
+      "passed": true
+    },
+    {
+      "name": "A08.status",
+      "passed": true
+    },
+    {
+      "name": "A08.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A08.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A08.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A08.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A08.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A08.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A09.title",
+      "passed": true
+    },
+    {
+      "name": "A09.owner",
+      "passed": true
+    },
+    {
+      "name": "A09.due_date",
+      "passed": true
+    },
+    {
+      "name": "A09.status",
+      "passed": true
+    },
+    {
+      "name": "A09.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A09.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A09.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A09.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A09.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A09.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A10.title",
+      "passed": true
+    },
+    {
+      "name": "A10.owner",
+      "passed": true
+    },
+    {
+      "name": "A10.due_date",
+      "passed": true
+    },
+    {
+      "name": "A10.status",
+      "passed": true
+    },
+    {
+      "name": "A10.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A10.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A10.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A10.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A10.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A10.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A11.title",
+      "passed": true
+    },
+    {
+      "name": "A11.owner",
+      "passed": true
+    },
+    {
+      "name": "A11.due_date",
+      "passed": true
+    },
+    {
+      "name": "A11.status",
+      "passed": true
+    },
+    {
+      "name": "A11.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A11.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A11.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A11.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A11.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A11.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A12.title",
+      "passed": true
+    },
+    {
+      "name": "A12.owner",
+      "passed": true
+    },
+    {
+      "name": "A12.due_date",
+      "passed": true
+    },
+    {
+      "name": "A12.status",
+      "passed": true
+    },
+    {
+      "name": "A12.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A12.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A12.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A12.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A12.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A13.title",
+      "passed": true
+    },
+    {
+      "name": "A13.owner",
+      "passed": true
+    },
+    {
+      "name": "A13.due_date",
+      "passed": true
+    },
+    {
+      "name": "A13.status",
+      "passed": true
+    },
+    {
+      "name": "A13.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A13.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A13.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A13.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A13.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A13.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A14.title",
+      "passed": true
+    },
+    {
+      "name": "A14.owner",
+      "passed": true
+    },
+    {
+      "name": "A14.due_date",
+      "passed": true
+    },
+    {
+      "name": "A14.status",
+      "passed": true
+    },
+    {
+      "name": "A14.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A14.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A14.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A14.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A14.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A14.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A15.title",
+      "passed": true
+    },
+    {
+      "name": "A15.owner",
+      "passed": true
+    },
+    {
+      "name": "A15.due_date",
+      "passed": true
+    },
+    {
+      "name": "A15.status",
+      "passed": true
+    },
+    {
+      "name": "A15.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A15.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A15.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A15.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A15.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A16.title",
+      "passed": true
+    },
+    {
+      "name": "A16.owner",
+      "passed": true
+    },
+    {
+      "name": "A16.due_date",
+      "passed": true
+    },
+    {
+      "name": "A16.status",
+      "passed": true
+    },
+    {
+      "name": "A16.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A16.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A16.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A16.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A16.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A16.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A17.title",
+      "passed": true
+    },
+    {
+      "name": "A17.owner",
+      "passed": true
+    },
+    {
+      "name": "A17.due_date",
+      "passed": true
+    },
+    {
+      "name": "A17.status",
+      "passed": true
+    },
+    {
+      "name": "A17.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A17.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A17.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A17.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A17.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A18.title",
+      "passed": true
+    },
+    {
+      "name": "A18.owner",
+      "passed": true
+    },
+    {
+      "name": "A18.due_date",
+      "passed": true
+    },
+    {
+      "name": "A18.status",
+      "passed": true
+    },
+    {
+      "name": "A18.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A18.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A18.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A18.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A18.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A18.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A19.title",
+      "passed": true
+    },
+    {
+      "name": "A19.owner",
+      "passed": true
+    },
+    {
+      "name": "A19.due_date",
+      "passed": true
+    },
+    {
+      "name": "A19.status",
+      "passed": true
+    },
+    {
+      "name": "A19.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A19.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A19.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A19.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A19.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A19.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A20.title",
+      "passed": true
+    },
+    {
+      "name": "A20.owner",
+      "passed": true
+    },
+    {
+      "name": "A20.due_date",
+      "passed": true
+    },
+    {
+      "name": "A20.status",
+      "passed": true
+    },
+    {
+      "name": "A20.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A20.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A20.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A20.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A20.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A20.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A21.title",
+      "passed": true
+    },
+    {
+      "name": "A21.owner",
+      "passed": true
+    },
+    {
+      "name": "A21.due_date",
+      "passed": true
+    },
+    {
+      "name": "A21.status",
+      "passed": true
+    },
+    {
+      "name": "A21.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A21.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A21.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A21.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A21.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A21.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A22.title",
+      "passed": true
+    },
+    {
+      "name": "A22.owner",
+      "passed": true
+    },
+    {
+      "name": "A22.due_date",
+      "passed": true
+    },
+    {
+      "name": "A22.status",
+      "passed": true
+    },
+    {
+      "name": "A22.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A22.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A22.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A22.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A22.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A23.title",
+      "passed": true
+    },
+    {
+      "name": "A23.owner",
+      "passed": true
+    },
+    {
+      "name": "A23.due_date",
+      "passed": true
+    },
+    {
+      "name": "A23.status",
+      "passed": true
+    },
+    {
+      "name": "A23.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A23.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A23.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A23.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A23.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A23.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A24.title",
+      "passed": true
+    },
+    {
+      "name": "A24.owner",
+      "passed": true
+    },
+    {
+      "name": "A24.due_date",
+      "passed": true
+    },
+    {
+      "name": "A24.status",
+      "passed": true
+    },
+    {
+      "name": "A24.owner_candidates",
+      "passed": true
+    },
+    {
+      "name": "A24.due_candidates",
+      "passed": true
+    },
+    {
+      "name": "A24.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A24.history[0].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A24.history[1].dated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A24.candidate_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "P01.status",
+      "passed": true
+    },
+    {
+      "name": "P01.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "P02.status",
+      "passed": true
+    },
+    {
+      "name": "P02.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "P03.status",
+      "passed": true
+    },
+    {
+      "name": "P03.expected_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "proposal_content_semantics",
+      "passed": true,
+      "detail": {
+        "basis": "Oracle proposal meanings; 17h extension, SNS 30000 yen, uniform 10% discount remain proposals; P02 withdrawn."
+      }
+    },
+    {
+      "name": "M08_031_not_assigned_to_any_business_entity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M08_031_preserved_as_unresolved_fragment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unresolved_no_invented_owner_or_date",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "summary_task_counts",
+      "passed": true
+    },
+    {
+      "name": "summary_count.meetings",
+      "passed": true
+    },
+    {
+      "name": "summary_count.statements",
+      "passed": true
+    },
+    {
+      "name": "summary_count.included_meetings",
+      "passed": true
+    },
+    {
+      "name": "summary_count.excluded_meetings",
+      "passed": true
+    },
+    {
+      "name": "summary_count.decisions",
+      "passed": true
+    },
+    {
+      "name": "summary_count.decision_changes",
+      "passed": true
+    },
+    {
+      "name": "summary_count.tasks",
+      "passed": true
+    },
+    {
+      "name": "summary_count.open_tasks",
+      "passed": true
+    },
+    {
+      "name": "summary_count.completed_tasks",
+      "passed": true
+    },
+    {
+      "name": "summary_count.cancelled_tasks",
+      "passed": true
+    },
+    {
+      "name": "summary_count.proposals_pending",
+      "passed": true
+    },
+    {
+      "name": "summary_count.proposals_withdrawn",
+      "passed": true
+    },
+    {
+      "name": "summary_count.task_owner_changes",
+      "passed": true
+    },
+    {
+      "name": "summary_count.task_due_changes",
+      "passed": true
+    },
+    {
+      "name": "active_presentation_IDs",
+      "passed": true
+    },
+    {
+      "name": "closed_presentation_IDs",
+      "passed": true
+    },
+    {
+      "name": "aging_current_explicit_date",
+      "passed": true,
+      "detail": {
+        "computed_as_of": "2026-10-15",
+        "by_task": {
+          "A01": "closed",
+          "A02": "not_due",
+          "A03": "closed",
+          "A04": "not_due",
+          "A05": "not_due",
+          "A06": "not_due",
+          "A07": "unknown",
+          "A08": "closed",
+          "A09": "not_due",
+          "A10": "closed",
+          "A11": "not_due",
+          "A12": "not_due",
+          "A13": "closed",
+          "A14": "closed",
+          "A15": "not_due",
+          "A16": "not_due",
+          "A17": "not_due",
+          "A18": "closed",
+          "A19": "not_due",
+          "A20": "unknown",
+          "A21": "closed",
+          "A22": "unknown",
+          "A23": "not_due",
+          "A24": "not_due"
+        },
+        "note": "Report shows dates and open/closed categories, not numerical age; no overdue tasks as of current date."
+      }
+    },
+    {
+      "name": "all_140_statement_target_coverage",
+      "passed": true,
+      "detail": {
+        "checked": 140
+      }
+    },
+    {
+      "name": "reported_definition.AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "reported_definition.CLAUDE.md",
+      "passed": true
+    },
+    {
+      "name": "reported_definition..claude/skills/work-002/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "reported_definition..claude/skills/work-002/references/input-contract.md",
+      "passed": true
+    },
+    {
+      "name": "HTML_no_external_resources",
+      "passed": true,
+      "detail": {
+        "remote_attributes": [],
+        "frames": []
+      }
+    },
+    {
+      "name": "HTML_embedded_JSON_identical",
+      "passed": true,
+      "detail": {
+        "JSON_scripts": 1
+      }
+    },
+    {
+      "name": "HTML_business_IDs_in_static_text",
+      "passed": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "name": "HTML_amounts_in_static_text",
+      "passed": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "name": "HTML_current_as_of_visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "grounded_summary_manual_review",
+      "passed": true,
+      "detail": {
+        "reviewer": "independent verifier AI, no external model/network",
+        "highlights_reviewed": 5,
+        "all_source_statements_read": 140,
+        "basis": {
+          "highlight_1": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05"
+          ],
+          "highlight_2": [
+            "D06",
+            "D07",
+            "D09",
+            "D11"
+          ],
+          "highlight_3": "24 tasks: 16 open, 6 completed, 2 cancelled; closed excluded from active list",
+          "highlight_4": "A09/A17 unknown owner; A07/A20/A22 unknown date, candidates retained",
+          "highlight_5": "P01/P03 pending, P02 withdrawn"
+        },
+        "additional_questions": "U10 old announcement text (M03-003,M07-002); U11 incomplete materials (M04-005,M07-004,M08-008); U12 vehicle waiting area (M06-007). No invented assignments."
+      }
+    }
+  ],
+  "mismatches": [],
+  "source_hashes": {
+    "TRIAL_RECORDS/agent-logs/runtime-business-minutes-v002/finished.json": "a53a3735718b337aaa4deffcd940c9c06bd6ccca2fd17a489ee61d31a28cf463",
+    "EXECUTED_WORKSPACES/minutes/outputs/20261016T045543Z-5d90c766d31a/report.json": "d4802fd5960da7306fdc3abd6a5fe9868a4680640732cd375f171cd873dc9a17",
+    "TRIAL_RECORDS/independent/run_verification_v003.py": "94ba16661f7cfba2cba35749bffcb7bd7c15144a5ee913410d64c83cbf6429f7",
+    "TRIAL_RECORDS/independent/oracle-baseline.json": "83963ae2a814ba41717b802f04b631dc31d4057b3fae6e463c664c9140b5384b",
+    "PRIOR_SALES_MINUTES_TRIAL/independent/minutes-oracle.json": "df2aa515111361971abc695d0fcd18a3c8c0199af7e551dce58a9a9bed32e0d3",
+    "EXECUTED_WORKSPACES/minutes/bundle-manifest.json": "cf954d0e15eb8a31c68708a3f084b6c18cd4280cb2020206e76f0f82cccce5d9",
+    "EXECUTED_WORKSPACES/minutes/.claude/skills/work-002/SKILL.md": "8271d5db5f2f327bc9473ccfccec25f194d09c38cb4cee35705f568b2adda31c",
+    "EXECUTED_WORKSPACES/minutes/.claude/skills/work-002/references/input-contract.md": "63015cb9ff1ee37191cfa9c92966138bc767fd7096737711b3c70db3c27afc8e",
+    "EXECUTED_WORKSPACES/minutes/AGENTS.md": "5c8e921f54e4d3738badc8458fc2cdaa0725575c6cbe3440cc9c54a606277568",
+    "EXECUTED_WORKSPACES/minutes/CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "EXECUTED_WORKSPACES/minutes/inputs/README.md": "dcaccefe3c0f0871ae2dcf35cb659b17e215e2bd63f33696de6ff8e6236f3959",
+    "EXECUTED_WORKSPACES/minutes/inputs/manifest.json": "5b446c63bbbc851b1df522276445c6d4aa8d2d966af2dfa094d237e5c8d86999",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-09-01-meeting-01.md": "d919171fe4397a3477899e4c37950250ee57a6fac968344ec99ae3d4f239266a",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-09-08-meeting-02.md": "009f2be84cdb0981a1eef52befba689c1089e7220457eff7bb0b9c7261c27d7c",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-09-15-meeting-03.md": "dedb42a882ea7bb5eada9e276966b4478b839db54132d5bea1309a961c3654f0",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-09-22-meeting-04.md": "13aede444dae4995414622a230c74e7c7693ffcd93b51d3a3c25eea897fcd119",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-09-29-meeting-05.md": "bc431f476be2f4a79ebd1ae5b0a1cb63f0909dd72f1600e240efc2d84f4af675",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-10-03-meeting-06.md": "0f49a2a7ed544c26ff2bd4ff7b08a2456d6dfe35ce4c9affbbb36294476b9713",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-10-08-meeting-07.md": "e29783d701589b56a3535254e8e355c2b1965533f1bdc7c086566965a6d93aeb",
+    "EXECUTED_WORKSPACES/minutes/inputs/meetings/2026-10-12-meeting-08.md": "507d3b7cb5d2e1d619b3ae10722a2ebedcf31c416e208f50460a421e29c73bd5",
+    "EXECUTED_WORKSPACES/minutes/records/definition-history/runtime-v001/definition-manifest.json": "6ac88687c0d3e00517fbf52dcaa56ad8f3f0230121f2e75bead510685a985249",
+    "EXECUTED_WORKSPACES/minutes/records/definition-history/runtime-v001/employee-agents.draft.md": "5c8e921f54e4d3738badc8458fc2cdaa0725575c6cbe3440cc9c54a606277568",
+    "EXECUTED_WORKSPACES/minutes/records/definition-history/runtime-v001/employee-claude.draft.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "EXECUTED_WORKSPACES/minutes/records/definition-history/runtime-v001/input-contract.draft.md": "63015cb9ff1ee37191cfa9c92966138bc767fd7096737711b3c70db3c27afc8e",
+    "EXECUTED_WORKSPACES/minutes/records/definition-history/runtime-v001/work-002.draft.md": "8271d5db5f2f327bc9473ccfccec25f194d09c38cb4cee35705f568b2adda31c",
+    "EXECUTED_WORKSPACES/minutes/records/definition.md": "ebe497c2995938bf2dd462ba4e85c2d7ee2266dbcc14898c4df701e3efbadbc3",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/answers.before-link-fix.txt": "8fee64ea12f77e4fd26eb3365d2e26f1ac55977ad904d2acb49847d670cbbf2b",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/answers.json": "305e653439c0f5aab24357c0223390fbcd593938fc68c0f05fcd943136b9de16",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/answers.md": "6dc4a2440e13e0aa4a5b542216111251262fb6f1a6c142dd618885ea7b62d491",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/artifact-manifest.json": "fc147aa89340ce0f314cff51e5f551a7536c7198b89862990f5efd6a37e976de",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/current-request.record.md": "138b3950e4b6565509355a9c70982b241b917bcec4d362454aa12b8f1badf449",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/definition-manifest.json": "6ac88687c0d3e00517fbf52dcaa56ad8f3f0230121f2e75bead510685a985249",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/deployment-receipt.json": "4237af9617a4710ae8a5ff626cecb400e22d4bf3c3c267e0e51ccf5259c26482",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/generation-values.json": "fe4417313ed8cfed8c5ac41987d05977d4c8daaa2ba6f261aaa6ee783fed6ad3",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/input-hashes.after.json": "3b2e0b337d09bd602c7b1ae4d5db362ee989aa58ee48d913cdf0b616f3046e94",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/input-hashes.before.json": "701ed919c15ce69faed9a5ee239fcd5b6c75f3e07b46252653b9493309f76c03",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/migration.record.md": "d2ac4723e9400f227245d6eee669ddb9c8f9049bed7200535f1593e504aa69ac",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/output-map.json": "be093e9b7a73bc763f56f8d8e86d22e293b1599f91710a4bb08a390d6dc44de2",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/parameter-definitions.json": "5962982a07fab9606f74111b00d56459dd2fbba11d73ddc3ab708deb0c5336c1",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/placement-receipt.json": "3a3c23eb48ce096583d6e063dd95a748e52e36c7c309061db76a124281da914e",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/postdeployment-checks.json": "7c23e262f444e200a53481f2a1dfa88b21eefcbe3c305805f0ac6f2bb8159a08",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/predeployment-static-v002.json": "479f4dbf80e30b1e1e6a8fd4e6d6d47c8fee695c7492a4defa50547e7f36697e",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/predeployment-static.json": "9fbfe11ee3501fbbcb07372144bce0cc65f70a4475e95fc37796f03a4862e69e",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/preflight.json": "9fb233c74253f6a75c489c3a628da11922b32b012b13cdc3f1fff497c60174f3",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/source-manifest.json": "a455cedc895b61347cc1e21ddd707584e084d0096dddd219ceed76b366b5912a",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/handoff--answers-v002.md.txt": "98bb7b3a86261560ef756c2cecd0ea943f85b3330123335cf7302ea2316be5d9",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/handoff--answers.md.txt": "df3735327c84bc180af76c658a42f106fa8f629b2ed1ef21f21b23fc1690862c",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/handoff--interview-v002.md.txt": "2075a2c1ac6bde072e977fac8c98d85a740f3c7f4c640a3078f145dc7764d543",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/handoff--interview.md.txt": "6e217483f1ffdc44cbee393122ddb7fd11824329bd48ab19d8419cc1a0d7da06",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--.claude--skills--ai-employee-generate--SKILL.md.txt": "9bcca321976e140a5f0992b0cfaeeeaf39ed177bbd9b7026cd4c9d4f3bec7ece",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--AGENTS.md.txt": "d424ec6ec652eca4e3131ca328ece0763a0c12d690f94f196d80aae07829bf76",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--CLAUDE.md.txt": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--docs--interview-qa.md.txt": "83ab61746284ab2db6f5ceb605124d39ca708050448a880e4fe7901e14e91518",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--formats--employee-agents.template.md.txt": "bd02331bc3c58f9b53ef599018a8ce28728753c70d407919fda317b86f89dc19",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--formats--employee-format-spec.md.txt": "092ddbc30d104737a8e4318936fd13e48e57761d7d0c9403236346fb9da6a4ea",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--formats--employee-skill.template.md.txt": "a733e85ee81f5071a0d2b2accc5c2b74b5f72e07e505e9d256534c18d61b9db3",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/sources/kit--scripts--verify_employee_workspace.py.txt": "252c40bfec159ba1a3c4dbb63bdad231f5c5e4adb9b87a95c39929f636423f7d",
+    "EXECUTED_WORKSPACES/minutes/records/runtime-v001/workspace-verification.json": "a58486a7a329cc8fc0ebf9fef86ef16437a3886b88acc49822bfa82ca28ea36d",
+    "EXECUTED_WORKSPACES/minutes/.agents/skills/work-002/SKILL.md": "8271d5db5f2f327bc9473ccfccec25f194d09c38cb4cee35705f568b2adda31c",
+    "EXECUTED_WORKSPACES/minutes/outputs/20261016T045543Z-5d90c766d31a/report.md": "f133161c1781222a6e38d616f6fc0afac35c7f393b9d22a9ca17108dd76ea14d",
+    "EXECUTED_WORKSPACES/minutes/outputs/20261016T045543Z-5d90c766d31a/.write-check.json": "68135564cade095f027152eda79e6db3b565b2aa251ddc7737f4872813b3b0ac",
+    "EXECUTED_WORKSPACES/minutes/outputs/20261016T045543Z-5d90c766d31a/report.html": "f1281e3df8c4bb01fd003c7fe9cd26863ef8e54362d347955bc1e4add81f4ce8",
+    "TRIAL_RECORDS/independent/verify_v003.py": "a0231a7c037fb6d98f82c117251af1d2f56c9c48c29cf95edb9bf9bb518ba896"
+  },
+  "normalization_decisions": [
+    "Mixed-date history evidence includes original and later clarification; event date must equal latest referenced meeting, not every supporting date. Original event dates remain in earlier history entries.",
+    "completed = oracle done; pending proposal = oracle proposed. Decision history to = oracle value. Additional related source notes are retained separately from authoritative decision history.",
+    "Current as_of is 2026-10-15, overriding only oracle 2026-10-12 date parameter; no entity expectation changed. All 8 meetings end on 2026-10-12.",
+    "140 statement classifications and five highlights were read against all raw statements. Background discussions are retained as context, not promoted to formal decisions. Additional unresolved questions U10-U12 are grounded and permitted.",
+    "Source quotes compare exact physical line content, ignoring only terminal CR/LF. Per-file inventory supplies hash linkage where per-source hashes are absent."
+  ],
+  "method": "Independent stdlib validator reads saved outputs, frozen held-out oracles, input raw rows and bundle manifests. Employee processing code is neither run, imported nor copied. Final hashes taken after exit0.",
+  "limits": [
+    "Fictional fixed fixture only",
+    "Static HTML content and resources; no browser rendering, visibility via CSS, interaction or runtime behavior tested",
+    "No human acceptance or real business validation",
+    "No external semantic service or network used"
+  ],
+  "human_acceptance": false,
+  "employee_exit_record": {
+    "agent": "codex",
+    "label": "runtime-business-minutes-v002",
+    "cwd": "EXECUTED_WORKSPACES/minutes",
+    "started_at": "2026-10-16T04:53:51.776721+00:00",
+    "prompt_sha256": "5e36e859a55ef29aa217e952702d8a767462696a6a7035e13b6422889aa7174f",
+    "command": [
+      "LOCAL_HOME/.local/bin/codex",
+      "exec",
+      "--cd",
+      "EXECUTED_WORKSPACES/minutes",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "workspace-write",
+      "--json",
+      "--output-last-message",
+      "TRIAL_RECORDS/agent-logs/runtime-business-minutes-v002/final.md",
+      "-"
+    ],
+    "scope": "fictional local sample trial; not human acceptance",
+    "ended_at": "2026-10-16T05:05:36.670440+00:00",
+    "wall_seconds": 704.891558,
+    "exit_code": 0
+  }
+}

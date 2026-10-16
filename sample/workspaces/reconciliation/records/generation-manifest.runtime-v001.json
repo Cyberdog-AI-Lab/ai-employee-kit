@@ -1,0 +1,123 @@
+{
+  "generation_version": "runtime-v001",
+  "generated_at": "2026-10-16T13:36:24+09:00",
+  "recorded_at": "2026-10-16T13:44:08+09:00",
+  "permission_ref": "TEST-PERMIT-RUNTIME-001",
+  "permission_scope": "current user request: new generation and formal trial deployment, no business execution",
+  "W_realpath": "GENERATED_WORKSPACES/reconciliation",
+  "D_bundle_realpath": "GENERATION_DRAFTS/reconciliation/runtime-v001",
+  "definition_files": [
+    {
+      "path": "AGENTS.md",
+      "D_path": "employee-agents.draft.md",
+      "sha256": "099652675817b938a8861cbc70783c6cf339dd20fa08c16df0b321c9ac43a5dd"
+    },
+    {
+      "path": "CLAUDE.md",
+      "D_path": "employee-claude.draft.md",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+    },
+    {
+      "path": ".claude/skills/work-001/SKILL.md",
+      "D_path": "work-001.draft.md",
+      "sha256": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "inputs/README.md",
+      "sha256": "00f813cc92ac2a5c92cc1f31d4363e24db9fd7fdf23ebd81b9ea9e43c3b94a78",
+      "operation": "existing dependency; read only"
+    },
+    {
+      "path": "inputs/bank-credits.csv",
+      "sha256": "8ab3e44f92e4f3b3449aa5013e6c0ecd58736b59b40ae908d7d5b5e960bb6004",
+      "operation": "existing dependency; read only"
+    },
+    {
+      "path": "inputs/customers.csv",
+      "sha256": "a6fe4916259bfc81947fd8060dd07de1c37482cc84405aa531902aec94e2fef6",
+      "operation": "existing dependency; read only"
+    },
+    {
+      "path": "inputs/invoices.csv",
+      "sha256": "63dca5233515d2132f482188799ee5d7a713b6e1e020e96eca477cbd8ca707af",
+      "operation": "existing dependency; read only"
+    },
+    {
+      "path": "inputs/manifest.json",
+      "sha256": "11d2cebcc03c73b2d4f9401a6656c6dfc5b999003d96bf9026c5a17102624106",
+      "operation": "existing dependency; read only"
+    },
+    {
+      "path": "inputs/matching-rules.md",
+      "sha256": "105ef9b70a54a3fed5d490d8ebfba62ff6d7e7f234366c5bbdfc57779a400987",
+      "operation": "existing dependency; read only"
+    }
+  ],
+  "connection": {
+    "path": ".agents/skills/work-001",
+    "target": "../../.claude/skills/work-001",
+    "operation": "create relative symlink",
+    "link_text_sha256": "2b05f9a5d87a17fc5334085d3993a9d13fb56177f2c1998d32c1636ce8eb4c7e"
+  },
+  "definition_content_identity": {
+    "generation": "runtime-v001",
+    "definition_files": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "099652675817b938a8861cbc70783c6cf339dd20fa08c16df0b321c9ac43a5dd"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+      },
+      {
+        "path": ".claude/skills/work-001/SKILL.md",
+        "sha256": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7"
+      }
+    ],
+    "dependencies": [
+      {
+        "path": "inputs/README.md",
+        "sha256": "00f813cc92ac2a5c92cc1f31d4363e24db9fd7fdf23ebd81b9ea9e43c3b94a78",
+        "operation": "existing dependency; read only"
+      },
+      {
+        "path": "inputs/bank-credits.csv",
+        "sha256": "8ab3e44f92e4f3b3449aa5013e6c0ecd58736b59b40ae908d7d5b5e960bb6004",
+        "operation": "existing dependency; read only"
+      },
+      {
+        "path": "inputs/customers.csv",
+        "sha256": "a6fe4916259bfc81947fd8060dd07de1c37482cc84405aa531902aec94e2fef6",
+        "operation": "existing dependency; read only"
+      },
+      {
+        "path": "inputs/invoices.csv",
+        "sha256": "63dca5233515d2132f482188799ee5d7a713b6e1e020e96eca477cbd8ca707af",
+        "operation": "existing dependency; read only"
+      },
+      {
+        "path": "inputs/manifest.json",
+        "sha256": "11d2cebcc03c73b2d4f9401a6656c6dfc5b999003d96bf9026c5a17102624106",
+        "operation": "existing dependency; read only"
+      },
+      {
+        "path": "inputs/matching-rules.md",
+        "sha256": "105ef9b70a54a3fed5d490d8ebfba62ff6d7e7f234366c5bbdfc57779a400987",
+        "operation": "existing dependency; read only"
+      }
+    ],
+    "connection": {
+      "path": ".agents/skills/work-001",
+      "target": "../../.claude/skills/work-001",
+      "operation": "create relative symlink",
+      "link_text_sha256": "2b05f9a5d87a17fc5334085d3993a9d13fb56177f2c1998d32c1636ce8eb4c7e"
+    }
+  },
+  "definition_content_sha256": "c4f02d7563317be806b52e7b50aad58f691f45194162304dd8d953f6c3e7af24",
+  "hash_algorithm": "SHA256 of UTF-8 JSON definition_content_identity with sort_keys=true, ensure_ascii=false, compact separators",
+  "record_plan": "records/definition.draft.md -> records/definition.md; remaining D records -> same W records relative path; final inventory excludes its own hash",
+  "excluded_from_definition_identity": "dynamic approval/observation histories, ledgers, checks and manifests; no circular approval-history hash"
+}

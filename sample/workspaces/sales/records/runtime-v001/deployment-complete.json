@@ -1,0 +1,45 @@
+{
+  "version": "runtime-v001",
+  "completed_at": "2026-10-16T04:46:11.529347+00:00",
+  "stage": "fictional trial placed; static checks passed",
+  "authorization": "CURRENT-REQ-001",
+  "spec": "0.1.4-draft",
+  "qa": "0.1.2-draft",
+  "skill_key": "showcase-sales-001",
+  "skill_name": "work-001",
+  "definition_manifest_sha256": "0221ee52b9377a677b2ec721b75ed4c2804998439018ee715ce3b125273e1f91",
+  "validator": {
+    "command": [
+      "/opt/homebrew/bin/python3",
+      "KIT_ROOT/scripts/verify_employee_workspace.py",
+      "GENERATED_WORKSPACES/sales",
+      "--kit-root",
+      "KIT_ROOT"
+    ],
+    "exit_code": 0,
+    "result": "structure-check.json",
+    "sha256": "f2a2be335c7bad06f089a025c6b4785efb9574a20cb2d2dbb39737afa98e1cb1",
+    "all_passed": true
+  },
+  "extended_checks": {
+    "result": "extended-check.json",
+    "sha256": "0fff88c02fa04f658125c5eae2d60d2eba4354088e7cd9422ac75e73bcd6e81c",
+    "all_passed": true,
+    "id_count": 42,
+    "parameter_count": 3,
+    "input_files_unchanged": 21
+  },
+  "normal_confirmed_count": 0,
+  "human_definition_approval": false,
+  "human_acceptance": false,
+  "recognition_verified": false,
+  "skill_selection_verified": false,
+  "business_execution": false,
+  "old_W_or_outputs_replaced": false,
+  "pending": [
+    "New W conversation: AGENTS automatic loading and skill discovery/selection",
+    "Separate business request with input_dir/start_date/end_date and runtime permissions",
+    "Business execution/HTML verification, independent review, human acceptance"
+  ],
+  "business_semantic_blockers_detected": []
+}

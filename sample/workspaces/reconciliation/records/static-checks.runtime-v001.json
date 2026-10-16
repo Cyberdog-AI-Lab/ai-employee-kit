@@ -1,0 +1,779 @@
+{
+  "checked_at": "2026-10-16T13:47:31+09:00",
+  "observer": "Codex generation agent",
+  "scope": "local static generation/deployment checks only",
+  "python_executable": "/opt/homebrew/bin/python3",
+  "verifier_command": "/opt/homebrew/bin/python3 KIT_ROOT/scripts/verify_employee_workspace.py GENERATED_WORKSPACES/reconciliation --kit-root KIT_ROOT",
+  "counts": {
+    "EMP": 13,
+    "SKL": 13,
+    "FIX": 9,
+    "GEN": 7,
+    "parameter_children": 10,
+    "inputs": 6
+  },
+  "checks": {
+    "required_workspace_verifier_passed": true,
+    "input_set_unchanged": true,
+    "all_6_input_hashes_preserved": true,
+    "42_ids_unique_complete": true,
+    "all_42_question_ids_match": true,
+    "42_output_locations_resolve": true,
+    "10_parameters_complete": true,
+    "all_parameter_anchors_resolve": true,
+    "only_skl001_and_FIX_are_fixed": true,
+    "proposed_maintained": true,
+    "normal_confirmed_zero": true,
+    "SKL012_optional_unanswered": true,
+    "FIX9_exact_spec": true,
+    "no_unexpanded_symbols_in_active_definitions": true,
+    "all_current_markdown_no_template_symbols": true,
+    "active_body_relative_paths": true,
+    "claude_import": true,
+    "same_W_relative_symlink": true,
+    "canonical_discovery_bytes_match": true,
+    "definition_manifest_matches": true,
+    "definition_bundle_identity_matches": true,
+    "kit_reference_files_unchanged": true,
+    "handoff_files_unchanged": true,
+    "archive_preserves_original_bytes": true,
+    "D_non_runtime_names": true,
+    "no_business_outputs_or_scripts": true,
+    "D_W_drafts_match": true,
+    "all_current_markdown_links_and_anchors_resolve": true,
+    "input_hashes_still_preserved_after_record_fix": true
+  },
+  "all_passed": true,
+  "details": {
+    "id_locations": [
+      {
+        "id": "EMP-001",
+        "output": "AGENTS.md#emp-001",
+        "exists": true
+      },
+      {
+        "id": "EMP-002",
+        "output": "AGENTS.md#emp-002",
+        "exists": true
+      },
+      {
+        "id": "EMP-003",
+        "output": "AGENTS.md#emp-003",
+        "exists": true
+      },
+      {
+        "id": "EMP-004",
+        "output": "AGENTS.md#emp-004",
+        "exists": true
+      },
+      {
+        "id": "EMP-005",
+        "output": "AGENTS.md#emp-005",
+        "exists": true
+      },
+      {
+        "id": "EMP-006",
+        "output": "AGENTS.md#emp-006",
+        "exists": true
+      },
+      {
+        "id": "EMP-007",
+        "output": "AGENTS.md#emp-007",
+        "exists": true
+      },
+      {
+        "id": "EMP-008",
+        "output": "AGENTS.md#emp-008",
+        "exists": true
+      },
+      {
+        "id": "EMP-009",
+        "output": "AGENTS.md#emp-009",
+        "exists": true
+      },
+      {
+        "id": "EMP-010",
+        "output": "AGENTS.md#emp-010",
+        "exists": true
+      },
+      {
+        "id": "EMP-011",
+        "output": "AGENTS.md#emp-011",
+        "exists": true
+      },
+      {
+        "id": "EMP-012",
+        "output": "AGENTS.md#emp-012",
+        "exists": true
+      },
+      {
+        "id": "EMP-013",
+        "output": "AGENTS.md#emp-013",
+        "exists": true
+      },
+      {
+        "id": "SKL-001",
+        "output": ".claude/skills/work-001/SKILL.md:frontmatter.name",
+        "exists": true
+      },
+      {
+        "id": "SKL-002",
+        "output": ".claude/skills/work-001/SKILL.md:frontmatter.description",
+        "exists": true
+      },
+      {
+        "id": "SKL-003",
+        "output": ".claude/skills/work-001/SKILL.md#skl-003",
+        "exists": true
+      },
+      {
+        "id": "SKL-004",
+        "output": ".claude/skills/work-001/SKILL.md#skl-004",
+        "exists": true
+      },
+      {
+        "id": "SKL-005",
+        "output": ".claude/skills/work-001/SKILL.md#skl-005",
+        "exists": true
+      },
+      {
+        "id": "SKL-006",
+        "output": ".claude/skills/work-001/SKILL.md#skl-006",
+        "exists": true
+      },
+      {
+        "id": "SKL-007",
+        "output": ".claude/skills/work-001/SKILL.md#skl-007",
+        "exists": true
+      },
+      {
+        "id": "SKL-008",
+        "output": ".claude/skills/work-001/SKILL.md#skl-008",
+        "exists": true
+      },
+      {
+        "id": "SKL-009",
+        "output": ".claude/skills/work-001/SKILL.md#skl-009",
+        "exists": true
+      },
+      {
+        "id": "SKL-010",
+        "output": ".claude/skills/work-001/SKILL.md#skl-010",
+        "exists": true
+      },
+      {
+        "id": "SKL-011",
+        "output": ".claude/skills/work-001/SKILL.md#skl-011",
+        "exists": true
+      },
+      {
+        "id": "SKL-012",
+        "output": ".claude/skills/work-001/SKILL.md#skl-012",
+        "exists": true
+      },
+      {
+        "id": "SKL-013",
+        "output": ".claude/skills/work-001/SKILL.md#skl-013",
+        "exists": true
+      },
+      {
+        "id": "FIX-001",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-002",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-003",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-004",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-005",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-006",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-007",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-008",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "FIX-009",
+        "output": "AGENTS.md#fixed-rules",
+        "exists": true
+      },
+      {
+        "id": "GEN-001",
+        "output": "records/definition.md#gen-001",
+        "exists": true
+      },
+      {
+        "id": "GEN-002",
+        "output": "records/definition.md#gen-002",
+        "exists": true
+      },
+      {
+        "id": "GEN-003",
+        "output": "records/definition.md#gen-003",
+        "exists": true
+      },
+      {
+        "id": "GEN-004",
+        "output": "records/definition.md#gen-004",
+        "exists": true
+      },
+      {
+        "id": "GEN-005",
+        "output": "records/definition.md#gen-005",
+        "exists": true
+      },
+      {
+        "id": "GEN-006",
+        "output": "records/definition.md#gen-006",
+        "exists": true
+      },
+      {
+        "id": "GEN-007",
+        "output": "records/definition.md#gen-007",
+        "exists": true
+      }
+    ],
+    "markdown_links": [
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../records/definition.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../AGENTS.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/README.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/manifest.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/matching-rules.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/matching-rules.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/invoices.csv",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/bank-credits.csv",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/customers.csv",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/manifest.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../inputs/README.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": ".claude/skills/work-001/SKILL.md",
+        "reference": "../../../records/definition.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "AGENTS.md",
+        "reference": "records/definition.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "AGENTS.md",
+        "reference": ".claude/skills/work-001/SKILL.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "AGENTS.md",
+        "reference": "records/definition.md#gen-005",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "provenance.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "source-identifiers.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "unresolved.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "answers.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../.claude/skills/work-001/SKILL.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "definition.md#gen-005",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/README.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/manifest.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/matching-rules.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/matching-rules.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/invoices.csv",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/bank-credits.csv",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/customers.csv",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/manifest.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "../inputs/README.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "definition.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "mapping.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "connection-plan.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "diff.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/answers.runtime-v001.md",
+        "reference": "format-correction.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "provenance.runtime-v001.md#u-runtime-001",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "environment-observation.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "source-identifiers.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "answers.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "answers.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "mapping.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "parameters.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "definition-values.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "interview-history.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "generation-manifest.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "provenance.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "environment-observation.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "diff.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "input-hashes.before.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "connection-plan.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "unresolved.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "deployment.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "workspace-verification.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "static-checks.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "input-hashes.after.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/definition.md",
+        "reference": "artifact-manifest.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/format-correction.runtime-v001.md",
+        "reference": "definition-history/runtime-v001/format-corrections/answers.runtime-v001.md.before-link-fix.txt",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/format-correction.runtime-v001.md",
+        "reference": "definition-history/runtime-v001/format-corrections/static-checks.runtime-v001.json.before-link-fix.txt",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/interview-history.runtime-v001.md",
+        "reference": "provenance.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/interview-history.runtime-v001.md",
+        "reference": "unresolved.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/interview-history.runtime-v001.md",
+        "reference": "answers.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/interview-history.runtime-v001.md",
+        "reference": "diff.runtime-v001.md",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/mapping.runtime-v001.md",
+        "reference": "generation-manifest.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/mapping.runtime-v001.md",
+        "reference": "answers.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "definition-history/runtime-v001/source-archive/current-user-request.txt",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "generation-manifest.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "environment-observation.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "definition-history/runtime-v001/source-archive/interview-history.v001.md.txt",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "definition-history/runtime-v001/source-archive/interview-history.v002.md.txt",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "definition-history/runtime-v001/source-archive/answers.v001.md.txt",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "definition-history/runtime-v001/source-archive/answers.v002.md.txt",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      },
+      {
+        "source": "records/provenance.runtime-v001.md",
+        "reference": "source-identifiers.runtime-v001.json",
+        "within_W": true,
+        "exists": true,
+        "anchor_exists": true
+      }
+    ]
+  },
+  "definition_content_sha256": "c4f02d7563317be806b52e7b50aad58f691f45194162304dd8d953f6c3e7af24",
+  "recognition_verified": false,
+  "skill_selection_verified": false,
+  "business_verified": false,
+  "human_acceptance": false,
+  "limits": [
+    "Original-byte archive .txt files retain historical text and links; excluded from current-definition placeholder/link checks",
+    "Static file discovery paths are not evidence of automatic skill discovery/selection",
+    "No external judgment service used; no external transmission authorized"
+  ],
+  "previous_attempt": "definition-history/runtime-v001/format-corrections/static-checks.runtime-v001.json.before-link-fix.txt",
+  "format_correction": "format-correction.runtime-v001.md"
+}

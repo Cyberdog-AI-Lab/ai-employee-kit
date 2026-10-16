@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "case": "sales",
+      "run_id": "20261016T045506Z-85ee61fa4f",
+      "configuration_unchanged": true,
+      "input_files": 21,
+      "exit_code": 0,
+      "independent_checks": 6285,
+      "independent_passed": true,
+      "output": "../results/sales/README.md",
+      "human_acceptance": false
+    },
+    {
+      "case": "minutes",
+      "run_id": "20261016T045543Z-5d90c766d31a",
+      "configuration_unchanged": true,
+      "input_files": 10,
+      "exit_code": 0,
+      "independent_checks": 1224,
+      "independent_passed": true,
+      "output": "../results/minutes/README.md",
+      "human_acceptance": false
+    },
+    {
+      "case": "reconciliation",
+      "run_id": "recon-20261016T135525-c1aaefa7",
+      "configuration_unchanged": true,
+      "input_files": 6,
+      "exit_code": 0,
+      "independent_checks": 5004,
+      "independent_passed": true,
+      "output": "../results/reconciliation/README.md",
+      "human_acceptance": false
+    }
+  ],
+  "human_acceptance": false,
+  "native_recognition_scope": "Codex CLI 0.159.2 app-server skills/list and independent fresh initial-context probes with no file-tool reads; explicit Skill selection/body read in each business session.",
+  "browser_scope": "Actual user Mac Orca browser: initial rendering, legible Japanese/major values and no horizontal overflow. Full interactions/mobile/print untested for these fresh outputs.",
+  "generation": "Independent fresh ai-employee-generate run for each case; simulated answers remain proposed."
+}

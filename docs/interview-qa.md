@@ -1,8 +1,8 @@
 # AI社員を仕立てるヒアリングQ&A・回答台帳契約
 
 **文書ID：** `ai-employee-interview-map`  
-**版：** `0.1.1-draft`  
-**基準仕様：** [ai-employee-format / 0.1.3-draft](../formats/employee-format-spec.md)  
+**版：** `0.1.2-draft`  
+**基準仕様：** [ai-employee-format / 0.1.4-draft](../formats/employee-format-spec.md)  
 **状態：** 実験段階の契約。空の台帳は雛形であり、個別社員の回答や本人承認を含まない。実測範囲は[検証記録](validation.md)を参照。
 
 > [補足] 質問と最終フォーマットの対応、および回答台帳・引継ぎの契約は本書を唯一の正本とする。項目の意味・固定規則・配置条件の正本は基準仕様であり、ここでは全文を繰り返さない。本書の空欄は雛形で、回答済みの社員インスタンスではない。

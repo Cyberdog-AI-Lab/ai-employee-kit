@@ -1,0 +1,46 @@
+{
+  "observed_at": "2026-10-16T04:45:57.568246+00:00",
+  "files": {
+    "inputs/README.md": {
+      "sha256": "dcaccefe3c0f0871ae2dcf35cb659b17e215e2bd63f33696de6ff8e6236f3959",
+      "bytes": 510
+    },
+    "inputs/manifest.json": {
+      "sha256": "5b446c63bbbc851b1df522276445c6d4aa8d2d966af2dfa094d237e5c8d86999",
+      "bytes": 2093
+    },
+    "inputs/meetings/2026-09-01-meeting-01.md": {
+      "sha256": "d919171fe4397a3477899e4c37950250ee57a6fac968344ec99ae3d4f239266a",
+      "bytes": 3742
+    },
+    "inputs/meetings/2026-09-08-meeting-02.md": {
+      "sha256": "009f2be84cdb0981a1eef52befba689c1089e7220457eff7bb0b9c7261c27d7c",
+      "bytes": 3688
+    },
+    "inputs/meetings/2026-09-15-meeting-03.md": {
+      "sha256": "dedb42a882ea7bb5eada9e276966b4478b839db54132d5bea1309a961c3654f0",
+      "bytes": 3651
+    },
+    "inputs/meetings/2026-09-22-meeting-04.md": {
+      "sha256": "13aede444dae4995414622a230c74e7c7693ffcd93b51d3a3c25eea897fcd119",
+      "bytes": 3638
+    },
+    "inputs/meetings/2026-09-29-meeting-05.md": {
+      "sha256": "bc431f476be2f4a79ebd1ae5b0a1cb63f0909dd72f1600e240efc2d84f4af675",
+      "bytes": 3114
+    },
+    "inputs/meetings/2026-10-03-meeting-06.md": {
+      "sha256": "0f49a2a7ed544c26ff2bd4ff7b08a2456d6dfe35ce4c9affbbb36294476b9713",
+      "bytes": 3628
+    },
+    "inputs/meetings/2026-10-08-meeting-07.md": {
+      "sha256": "e29783d701589b56a3535254e8e355c2b1965533f1bdc7c086566965a6d93aeb",
+      "bytes": 3130
+    },
+    "inputs/meetings/2026-10-12-meeting-08.md": {
+      "sha256": "507d3b7cb5d2e1d619b3ae10722a2ebedcf31c416e208f50460a421e29c73bd5",
+      "bytes": 4512
+    }
+  },
+  "unchanged": true
+}

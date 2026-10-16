@@ -1,0 +1,152 @@
+{
+  "dataset_id": "SALES-QUARTER-001",
+  "sales_rows": 5770,
+  "return_rows": 72,
+  "stores": 4,
+  "products": 24,
+  "months": 3,
+  "fictional": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1349,
+      "sha256": "013ebc1cb37518a002756d76e5a30db5692bc5f9413fd69ed51d6d10bdb3d92d",
+      "characters": 506,
+      "lines": 10
+    },
+    {
+      "path": "master/price_history.csv",
+      "bytes": 592,
+      "sha256": "694b47eb902183ba5076351880da8922b22a68fddd2b1222ee90ca149917712e",
+      "characters": 592,
+      "lines": 27
+    },
+    {
+      "path": "master/product_aliases.csv",
+      "bytes": 2059,
+      "sha256": "3c93d8cc33609f5be366c2a8f1794d84f840ed3b460c24650ff8723d3e413d20",
+      "characters": 1051,
+      "lines": 73
+    },
+    {
+      "path": "master/products.csv",
+      "bytes": 869,
+      "sha256": "c1076b6ecb98a607853cd9ab756df97945e81d47ed5c61b23deef6808d1eed4c",
+      "characters": 453,
+      "lines": 25
+    },
+    {
+      "path": "master/store_aliases.csv",
+      "bytes": 211,
+      "sha256": "091fdb7ce26cfaff40188b3065f43eaf565b9c3b7ab8e6404738aa9a0b4dd9d2",
+      "characters": 135,
+      "lines": 13
+    },
+    {
+      "path": "master/stores.csv",
+      "bytes": 94,
+      "sha256": "ff8ca3e8f909a95e05dadc0e3755a963e9c4e9d3b13ad925ab27553c925ec918",
+      "characters": 64,
+      "lines": 5
+    },
+    {
+      "path": "notes/2026-09-store-notes.md",
+      "bytes": 918,
+      "sha256": "7adabaefc22cbbf500970596a733d2851ff71873e60f4a105bfae0c10717cbe3",
+      "characters": 384,
+      "lines": 6
+    },
+    {
+      "path": "returns/returns.csv",
+      "bytes": 3343,
+      "sha256": "0f392a87554dd6365ee681b17d1297f167f1b9c037a25157400f2081c2028c44",
+      "characters": 2721,
+      "lines": 73
+    },
+    {
+      "path": "sales/2026-07-S01.csv",
+      "bytes": 33309,
+      "sha256": "93df17aac77d6482738672d6ba6ed7be639d04c76155240848165cde268b2ee0",
+      "characters": 21469,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-07-S02.csv",
+      "bytes": 33642,
+      "sha256": "2af0f9656c45074bf445c0cc1bc21761a2fa8cf46bab60bf97a728caa2f49e77",
+      "characters": 21474,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-07-S03.csv",
+      "bytes": 32191,
+      "sha256": "4b65e7624b95535d5964ba4298e53f041d180dcea6a8ba97e9a31906ea46be22",
+      "characters": 20991,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-07-S04.csv",
+      "bytes": 31070,
+      "sha256": "9ab86f2c9387e86c5aa5c742c75689e02a9115bc9d31969553e9ad9c7c7c5413",
+      "characters": 21470,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-08-S01.csv",
+      "bytes": 33723,
+      "sha256": "8c9b5b7c9b80232885ae376933582a95f0235dfb98278a41334ca763377318ea",
+      "characters": 21737,
+      "lines": 487
+    },
+    {
+      "path": "sales/2026-08-S02.csv",
+      "bytes": 33630,
+      "sha256": "9a872ca390e4bf861f292e7a0a807db2a50a1c11a62ba53a29257a20a3ed4ad5",
+      "characters": 21470,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-08-S03.csv",
+      "bytes": 32189,
+      "sha256": "813aaa2152fb9d647643eb2f63646029cd27d405e43c4684345c657a6deb72e1",
+      "characters": 20989,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-08-S04.csv",
+      "bytes": 31076,
+      "sha256": "78920fb48a48acd8e59a98fd202b0404dbfac30b7fc4a6bfbc934f4dfd6f4e34",
+      "characters": 21472,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-09-S01.csv",
+      "bytes": 33310,
+      "sha256": "e8611926e700c21b3f8b1f84829e539742fcd4ae88529fad8b2d979d52399fed",
+      "characters": 21470,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-09-S02.csv",
+      "bytes": 33630,
+      "sha256": "ce7c837eca5908a688bc8c10d26921ed45d1a2036e41dd5a9ca3d26622d8cb8a",
+      "characters": 21470,
+      "lines": 481
+    },
+    {
+      "path": "sales/2026-09-S03.csv",
+      "bytes": 32446,
+      "sha256": "2308d030f27b557f5d41d9e93c222fe7a43d869fa29e608746f64e30c7ac086a",
+      "characters": 21160,
+      "lines": 485
+    },
+    {
+      "path": "sales/2026-09-S04.csv",
+      "bytes": 31141,
+      "sha256": "f79e7836855e05281e63b154431988657833f60503dd99e69fd2e3347ff56265",
+      "characters": 21541,
+      "lines": 481
+    }
+  ],
+  "fixture_revision": "v3"
+}

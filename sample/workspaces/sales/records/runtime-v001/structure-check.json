@@ -1,0 +1,25 @@
+{
+  "workspace": "GENERATED_WORKSPACES/sales",
+  "all_passed": true,
+  "errors": [],
+  "warnings": [
+    "Static layout only: account/ancestor instructions, skill selector, tool permissions, task outcomes and human acceptance are not verified."
+  ],
+  "skills": [
+    {
+      "name": "work-001",
+      "discovery_path": ".agents/skills/work-001/SKILL.md",
+      "canonical_path": ".claude/skills/work-001/SKILL.md",
+      "connection": "symlink"
+    }
+  ],
+  "configuration_sha256": {
+    "AGENTS.md": "4f409c37e045fb786f682e52ad5bc75a78cf4d8e8815e1333a539bc5179e8451",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    ".agents/skills/work-001/SKILL.md": "32972c619b2bcb1161827aace2954e72d33af76acecfc87e79fdc7d81d7a7802",
+    ".claude/skills/work-001/SKILL.md": "32972c619b2bcb1161827aace2954e72d33af76acecfc87e79fdc7d81d7a7802"
+  },
+  "recognition_verified": false,
+  "business_verified": false,
+  "human_acceptance": false
+}

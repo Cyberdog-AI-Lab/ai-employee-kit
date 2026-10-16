@@ -1,11 +1,13 @@
 # 生成社員の業務Skill — 非実行テンプレート
 
-**参照仕様：** [employee-format-spec.md](employee-format-spec.md) `0.1.3-draft`  
+**参照仕様：** [employee-format-spec.md](employee-format-spec.md) `0.1.4-draft`  
 **用途：** 生成社員が行う個別業務の最終形式。キットのヒアリング/生成Skillではない。
 
 > [補足] このファイルを実際のSKILL.mdとして配置しない。コードフェンス内は見本であり、業務手順やユーザー回答はまだ埋まっていない。固定規則と必須項目の正本は仕様書にある。descriptionは適用判断の要約で、自動呼出しや実行成功を保証しない。
 
 後の生成では `name` とフォルダslugを一致させ、descriptionを含めfrontmatterが有効なYAMLになるように値を扱う。未回答の必須値は草稿に残し、Skillを有効化しない。SKL-011は依存なしと確認された場合に理由を記し、SKL-012は任意未回答なら省略できる。
+
+配置時はこの見本の外側コードフェンス・説明見出しを除く。実際のSKILL.mdの1行目は `---`、続くYAMLにname/descriptionを置く。説明用ファイル名のまま渡さず、Codexの `.agents/skills/<slug>/SKILL.md` から到達させる。配置後の構造検査は仕様2.3を参照。
 
 ```markdown
 ---

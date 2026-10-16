@@ -1,0 +1,27 @@
+{
+  "generation_version": "runtime-v001",
+  "finalized_at": "2026-10-16T13:47:31+09:00",
+  "stage": "trial_deployed_static_verified",
+  "permission_ref": "TEST-PERMIT-RUNTIME-001",
+  "definition_content_sha256": "c4f02d7563317be806b52e7b50aad58f691f45194162304dd8d953f6c3e7af24",
+  "specified_verifier_all_passed": true,
+  "specified_verifier_errors": [],
+  "supplemental_checks_all_passed": true,
+  "normal_confirmed_count": 0,
+  "input_files_preserved": 6,
+  "items": {
+    "EMP": 13,
+    "SKL": 13,
+    "FIX": 9,
+    "GEN": 7,
+    "total": 42
+  },
+  "parameter_children": 10,
+  "record_link_correction": "format-correction.runtime-v001.md",
+  "recognition_verified": false,
+  "skill_selection_verified": false,
+  "business_executed": false,
+  "business_success_verified": false,
+  "human_acceptance": false,
+  "remaining": "unresolved.runtime-v001.md"
+}

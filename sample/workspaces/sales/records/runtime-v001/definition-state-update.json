@@ -1,0 +1,9 @@
+{
+  "version": "runtime-v001",
+  "updated_at": "2026-10-16T04:46:11.529347+00:00",
+  "path": "records/definition.md",
+  "before_sha256": "22658e2ae444052e56b4e1e08918e91eae50c8fb0888bb58018729e83ecd5e41",
+  "after_sha256": "835e486e62d83adb870c7670c93675a6dd41ed0cb9ea85273cb361de46b7a8d1",
+  "scope": "dynamic placement/check status only; generation timestamp and immutable definitions unchanged",
+  "definition_manifest_unchanged": true
+}

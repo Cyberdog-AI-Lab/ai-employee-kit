@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+"""Read-only KIT layout checks; discovery and business results require separate tests."""
+from pathlib import Path
+from urllib.parse import unquote
+import argparse, hashlib, json, re, sys
+try:
+    import yaml
+except ImportError:
+    raise SystemExit('PyYAML is required; use scripts/requirements-validation.txt in your validation environment.')
+
+class UniqueLoader(yaml.SafeLoader):
+    pass
+def mapping(loader,node,deep=False):
+    result={}
+    for key,value in node.value:
+        k=loader.construct_object(key,deep=deep)
+        if k in result:raise ValueError('duplicate YAML key: '+str(k))
+        result[k]=loader.construct_object(value,deep=deep)
+    return result
+UniqueLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,mapping)
+
+def check_workspace(root,kit=None):
+    root=Path(root).resolve();errors=[];warnings=[];skills=[];hashes={}
+    def fail(message):errors.append(message)
+    def within(path):
+        try:path.resolve().relative_to(root);return True
+        except (ValueError,RuntimeError):return False
+    def read(path):
+        if not path.is_file():fail('missing file: '+str(path));return ''
+        if not within(path):fail('reference outside workspace: '+str(path));return ''
+        try:s=path.read_text(encoding='utf-8')
+        except (OSError,UnicodeError) as e:fail(str(e));return ''
+        hashes[str(path.relative_to(root))]=hashlib.sha256(path.read_bytes()).hexdigest()
+        if re.search(r'\{\{[^}]+\}\}',s):fail('unexpanded template: '+str(path))
+        return s
+    if kit:
+        kit=Path(kit).resolve()
+        if root==kit or root in kit.parents or kit in root.parents:fail('K and W must not contain each other')
+    agents=read(root/'AGENTS.md')
+    if not agents.strip():fail('AGENTS.md is empty')
+    if (root/'AGENTS.override.md').exists():fail('AGENTS.override.md shadows AGENTS.md; inspect active instruction chain')
+    if len(agents.encode())>32768:fail('AGENTS.md alone exceeds default 32 KiB instruction budget')
+    # A large outer quoted document with only a short explanatory wrapper is not a deployed body.
+    stripped=re.sub(r'(?ms)^(`{3,})[^\n]*\n.*?^\1\s*$','',agents)
+    if agents.lstrip().startswith('```') or (len(agents)>500 and len(stripped.strip())<150):
+        fail('AGENTS.md is a fenced reference wrapper, not the deployed body')
+    claude=read(root/'CLAUDE.md')
+    if '@AGENTS.md' not in claude.splitlines():fail('CLAUDE.md must import @AGENTS.md as a line')
+    discovered=root/'.agents/skills';canonical=root/'.claude/skills'
+    folders=list(discovered.iterdir()) if discovered.is_dir() else []
+    if not folders:fail('no discoverable .agents/skills/<name>/SKILL.md')
+    names=set();instruction_files=[root/'AGENTS.md']
+    for folder in sorted(folders):
+        if not folder.is_dir():fail('skill entry is not a directory: '+str(folder));continue
+        if not within(folder):fail('skill target outside workspace: '+str(folder));continue
+        f=folder/'SKILL.md';s=read(f)
+        match=re.match(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|\Z)(.*)\Z',s,re.S)
+        if not match:fail('SKILL.md needs frontmatter at byte zero: '+str(f));continue
+        try:meta=yaml.load(match[1],Loader=UniqueLoader)
+        except Exception as e:fail('invalid YAML '+str(f)+': '+str(e));continue
+        if not isinstance(meta,dict):fail('frontmatter must be a mapping: '+str(f));continue
+        name=meta.get('name');desc=meta.get('description')
+        if not isinstance(name,str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',name) or len(name)>64:
+            fail('invalid KIT skill name: '+str(f));continue
+        if name!=folder.name:fail('name/folder mismatch: '+str(f))
+        if name in names:fail('duplicate skill name: '+name)
+        names.add(name)
+        if not isinstance(desc,str) or not desc.strip():fail('description must be a nonempty string: '+str(f))
+        if not match[2].strip():fail('empty skill body: '+str(f))
+        source=canonical/folder.name
+        if not source.is_dir() or not within(source):fail('missing same-W canonical skill: '+str(source));continue
+        def tree(path):
+            data={}
+            for x in path.rglob('*'):
+                if not within(x):fail('skill resource outside workspace: '+str(x));continue
+                if x.is_file():data[str(x.relative_to(path))]=hashlib.sha256(x.read_bytes()).hexdigest()
+            return data
+        if tree(source)!=tree(folder):fail('canonical/connection contents differ: '+folder.name)
+        read(source/'SKILL.md');instruction_files.append(source/'SKILL.md')
+        skills.append({'name':name,'discovery_path':str(f.relative_to(root)),'canonical_path':str((source/'SKILL.md').relative_to(root)),'connection':'symlink' if folder.is_symlink() else 'copy'})
+    if canonical.is_dir():
+        for folder in canonical.iterdir():
+            if folder.is_dir() and not (discovered/folder.name/'SKILL.md').is_file():fail('canonical skill not discoverable: '+folder.name)
+    for f in instruction_files:
+        if not f.is_file():continue
+        for ref in re.findall(r'\[[^\]]*\]\(([^\s)]+)\)',f.read_text()):
+            if re.match(r'^(https?://|mailto:)',ref):continue
+            rel=unquote(ref.split('#',1)[0]);dst=f.parent/rel if rel else f
+            if not within(dst):fail('local link escapes workspace: '+str(f)+' -> '+ref)
+            elif not dst.exists():fail('broken local link: '+str(f)+' -> '+ref)
+    warnings.append('Static layout only: account/ancestor instructions, skill selector, tool permissions, task outcomes and human acceptance are not verified.')
+    return {'workspace':str(root),'all_passed':not errors,'errors':errors,'warnings':warnings,'skills':skills,'configuration_sha256':hashes,'recognition_verified':False,'business_verified':False,'human_acceptance':False}
+
+if __name__=='__main__':
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('workspace',type=Path);ap.add_argument('--kit-root',type=Path)
+    a=ap.parse_args();result=check_workspace(a.workspace,a.kit_root)
+    print(json.dumps(result,ensure_ascii=False,indent=2));raise SystemExit(not result['all_passed'])

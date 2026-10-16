@@ -59,7 +59,7 @@
     }
   },
   "public_files_sha256": {
-    "README.md": "2eae3221ef019858d212829dbef96c1cfd64c5b504443620a39c1655b173aa76",
+    "README.md": "706b694bc527f4a7da09122fdf48dd3c2b5d25738916dfc78c88242c626a5cbe",
     "definition/employee-agents.sample.md": "b83b2ef5428df0bb86b8a226c9070bbbfe9c266623f9eee678a3c351e99484fb",
     "definition/employee-claude.sample.md": "c8411c29743a39c6b5002260807731b1ea5ee0a0483e2df7d60d9f682f9aff53",
     "definition/work-0001.skill.sample.md": "9887200adc98c434aaa952d8e1b1e83a0cd5e3eaadd1e1e16e632e41e174253e",
@@ -72,8 +72,27 @@
     "validation/heldout-comparison.json": "3b386702a36d1cee4e040696bd1a701f38e5141bd9b9a6460c95e36e53549e52",
     "validation/result.json": "66c61e8570e2d327081dee3d410e6d9f7a21147e169d74524136866d8a1c109b",
     "validation/resume-record.json": "4a8fd362eaa3fed14fd1062131a915668fab1c2007bb30e92b136a3ade3e6d26",
-    "validation/stop-record.json": "a5ecdad1ae501a93770187748a25bb5480ab89e93cdab5c6d692d1629480efbb"
+    "validation/stop-record.json": "a5ecdad1ae501a93770187748a25bb5480ab89e93cdab5c6d692d1629480efbb",
+    "definition/README.md": "5907e94fc34a402859d488179606bd3ee72f7a0490951376bd4e3d23836ad870"
   },
   "original_procedure_sha256": "1484ef4f909d69bc5cc301756acce1884638a72d86cedbf91063a16ca60a6128",
-  "original_run_id": "20261015T012658993557Z-6353e1766f33"
+  "original_run_id": "20261015T012658993557Z-6353e1766f33",
+  "documentation_revisions": [
+    {
+      "date": "2026-10-16",
+      "purpose": "Clarify historical reference materials and direct users to native runnable workspace examples.",
+      "previous_source_commit": "f1ae6767974c41cb157e7d42408bdb1e9532e26f",
+      "previous_provenance_sha256": "f846d8efc610307497e2d47cf38685dbfe10efa8b6777b10cd0d31088f87f63d",
+      "previous_readme_sha256": "2eae3221ef019858d212829dbef96c1cfd64c5b504443620a39c1655b173aa76",
+      "changed": [
+        "README.md"
+      ],
+      "added": [
+        "definition/README.md"
+      ],
+      "unchanged": "Original trial definitions, inputs, expected values, outputs and validation records; original_files and original run identity retained.",
+      "business_rerun": false,
+      "human_acceptance": false
+    }
+  ]
 }

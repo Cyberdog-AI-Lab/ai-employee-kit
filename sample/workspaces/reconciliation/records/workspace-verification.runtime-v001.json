@@ -1,0 +1,25 @@
+{
+  "workspace": "GENERATED_WORKSPACES/reconciliation",
+  "all_passed": true,
+  "errors": [],
+  "warnings": [
+    "Static layout only: account/ancestor instructions, skill selector, tool permissions, task outcomes and human acceptance are not verified."
+  ],
+  "skills": [
+    {
+      "name": "work-001",
+      "discovery_path": ".agents/skills/work-001/SKILL.md",
+      "canonical_path": ".claude/skills/work-001/SKILL.md",
+      "connection": "symlink"
+    }
+  ],
+  "configuration_sha256": {
+    "AGENTS.md": "099652675817b938a8861cbc70783c6cf339dd20fa08c16df0b321c9ac43a5dd",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    ".agents/skills/work-001/SKILL.md": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7",
+    ".claude/skills/work-001/SKILL.md": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7"
+  },
+  "recognition_verified": false,
+  "business_verified": false,
+  "human_acceptance": false
+}

@@ -1,0 +1,88 @@
+{
+  "case": "minutes",
+  "run_id": "20261016T045543Z-5d90c766d31a",
+  "definition_version": "runtime-v001",
+  "generation_spec_version": "0.1.4-draft",
+  "qa_version": "0.1.2-draft",
+  "workspace_in_repository": "../../workspaces/minutes/",
+  "configuration": {
+    "AGENTS.md": {
+      "executed_sha256": "5c8e921f54e4d3738badc8458fc2cdaa0725575c6cbe3440cc9c54a606277568",
+      "public_sha256": "5c8e921f54e4d3738badc8458fc2cdaa0725575c6cbe3440cc9c54a606277568",
+      "identical": true
+    },
+    "CLAUDE.md": {
+      "executed_sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "public_sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "identical": true
+    },
+    ".claude/skills/work-002/SKILL.md": {
+      "executed_sha256": "8271d5db5f2f327bc9473ccfccec25f194d09c38cb4cee35705f568b2adda31c",
+      "public_sha256": "8271d5db5f2f327bc9473ccfccec25f194d09c38cb4cee35705f568b2adda31c",
+      "identical": true
+    },
+    "records/definition.md": {
+      "executed_sha256": "ebe497c2995938bf2dd462ba4e85c2d7ee2266dbcc14898c4df701e3efbadbc3",
+      "public_sha256": "ebe497c2995938bf2dd462ba4e85c2d7ee2266dbcc14898c4df701e3efbadbc3",
+      "identical": true
+    }
+  },
+  "input_sha256": {
+    "inputs/README.md": "dcaccefe3c0f0871ae2dcf35cb659b17e215e2bd63f33696de6ff8e6236f3959",
+    "inputs/manifest.json": "5b446c63bbbc851b1df522276445c6d4aa8d2d966af2dfa094d237e5c8d86999",
+    "inputs/meetings/2026-10-03-meeting-06.md": "0f49a2a7ed544c26ff2bd4ff7b08a2456d6dfe35ce4c9affbbb36294476b9713",
+    "inputs/meetings/2026-09-08-meeting-02.md": "009f2be84cdb0981a1eef52befba689c1089e7220457eff7bb0b9c7261c27d7c",
+    "inputs/meetings/2026-09-29-meeting-05.md": "bc431f476be2f4a79ebd1ae5b0a1cb63f0909dd72f1600e240efc2d84f4af675",
+    "inputs/meetings/2026-09-15-meeting-03.md": "dedb42a882ea7bb5eada9e276966b4478b839db54132d5bea1309a961c3654f0",
+    "inputs/meetings/2026-09-01-meeting-01.md": "d919171fe4397a3477899e4c37950250ee57a6fac968344ec99ae3d4f239266a",
+    "inputs/meetings/2026-10-12-meeting-08.md": "507d3b7cb5d2e1d619b3ae10722a2ebedcf31c416e208f50460a421e29c73bd5",
+    "inputs/meetings/2026-10-08-meeting-07.md": "e29783d701589b56a3535254e8e355c2b1965533f1bdc7c086566965a6d93aeb",
+    "inputs/meetings/2026-09-22-meeting-04.md": "13aede444dae4995414622a230c74e7c7693ffcd93b51d3a3c25eea897fcd119"
+  },
+  "outputs": [
+    {
+      "path": "report.html",
+      "executed_sha256": "f1281e3df8c4bb01fd003c7fe9cd26863ef8e54362d347955bc1e4add81f4ce8",
+      "public_sha256": "56704bed48a329691ebee5b493bf5cbb261fd5191a95098ab47b042e0cad236f",
+      "transformation": "Only deterministic local-path substitutions; no values, claims, source quotations or layout changed."
+    },
+    {
+      "path": "report.json",
+      "executed_sha256": "d4802fd5960da7306fdc3abd6a5fe9868a4680640732cd375f171cd873dc9a17",
+      "public_sha256": "c55190e8b2b2c57551d5ef1c29dbdfc1f81c2678e46503e3145f0c83210ff0a0",
+      "transformation": "Only deterministic local-path substitutions; no values, claims, source quotations or layout changed."
+    },
+    {
+      "path": "report.md",
+      "executed_sha256": "f133161c1781222a6e38d616f6fc0afac35c7f393b9d22a9ca17108dd76ea14d",
+      "public_sha256": "f133161c1781222a6e38d616f6fc0afac35c7f393b9d22a9ca17108dd76ea14d",
+      "transformation": "Only deterministic local-path substitutions; no values, claims, source quotations or layout changed."
+    }
+  ],
+  "execution_record": {
+    "path": "execution.json",
+    "original_sha256": "939cbe3a898214a702bc2f0d6554501913ef5e32f8cabb537b48c7d658fd4cf6",
+    "public_sha256": "0a5a27984063223a11abb7d1b9f8568b6b9ca8e1bcf6619d60181d4e4c2a6893"
+  },
+  "actual_business_session": {
+    "started_at": "2026-10-16T04:53:51.776721+00:00",
+    "ended_at": "2026-10-16T05:05:36.670440+00:00",
+    "exit_code": 0
+  },
+  "codex_version": "0.159.2",
+  "new_initial_context_probe": true,
+  "native_skill_discovery_and_explicit_selection": true,
+  "independent_verification": {
+    "passed": true,
+    "checks": 1224,
+    "path": "../../workspace-validation/business/minutes/independent.json",
+    "scope": "Fixed fictional fixture only; output values and sources checked independently before public path redaction."
+  },
+  "public_export": {
+    "new_business_run_performed_during_export": false,
+    "reason": "Already regenerated using the corrected native definitions; publish these same verified results.",
+    "changes": "Local paths replaced by symbolic labels in report metadata and embedded JSON only. Original and public hashes kept separately.",
+    "historical_record_hashes": "The execution record retains original-trial hashes; run-manifest.json records exported file hashes."
+  },
+  "human_acceptance": false
+}

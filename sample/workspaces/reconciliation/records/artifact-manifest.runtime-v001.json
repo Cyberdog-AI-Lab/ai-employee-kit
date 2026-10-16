@@ -1,0 +1,303 @@
+{
+  "generation_version": "runtime-v001",
+  "finalized_at": "2026-10-16T13:47:31+09:00",
+  "scope": "all W files and symlinks except this inventory itself; no business outputs",
+  "self_excluded": "records/artifact-manifest.runtime-v001.json",
+  "definition_content_sha256": "c4f02d7563317be806b52e7b50aad58f691f45194162304dd8d953f6c3e7af24",
+  "authorization_identity_note": "Use generation-manifest for definition content identity. This full artifact inventory includes dynamic evidence and is not an approval identity.",
+  "entries": [
+    {
+      "path": ".agents/skills/work-001",
+      "kind": "symlink",
+      "target": "../../.claude/skills/work-001",
+      "link_text_sha256": "2b05f9a5d87a17fc5334085d3993a9d13fb56177f2c1998d32c1636ce8eb4c7e"
+    },
+    {
+      "path": ".claude/skills/work-001/SKILL.md",
+      "kind": "file",
+      "role": "definition",
+      "sha256": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7",
+      "bytes": 20682
+    },
+    {
+      "path": "AGENTS.md",
+      "kind": "file",
+      "role": "definition",
+      "sha256": "099652675817b938a8861cbc70783c6cf339dd20fa08c16df0b321c9ac43a5dd",
+      "bytes": 12498
+    },
+    {
+      "path": "CLAUDE.md",
+      "kind": "file",
+      "role": "definition",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "bytes": 11
+    },
+    {
+      "path": "inputs/README.md",
+      "kind": "file",
+      "role": "existing_input_read_only",
+      "sha256": "00f813cc92ac2a5c92cc1f31d4363e24db9fd7fdf23ebd81b9ea9e43c3b94a78",
+      "bytes": 1126
+    },
+    {
+      "path": "inputs/bank-credits.csv",
+      "kind": "file",
+      "role": "existing_input_read_only",
+      "sha256": "8ab3e44f92e4f3b3449aa5013e6c0ecd58736b59b40ae908d7d5b5e960bb6004",
+      "bytes": 7961
+    },
+    {
+      "path": "inputs/customers.csv",
+      "kind": "file",
+      "role": "existing_input_read_only",
+      "sha256": "a6fe4916259bfc81947fd8060dd07de1c37482cc84405aa531902aec94e2fef6",
+      "bytes": 2816
+    },
+    {
+      "path": "inputs/invoices.csv",
+      "kind": "file",
+      "role": "existing_input_read_only",
+      "sha256": "63dca5233515d2132f482188799ee5d7a713b6e1e020e96eca477cbd8ca707af",
+      "bytes": 8597
+    },
+    {
+      "path": "inputs/manifest.json",
+      "kind": "file",
+      "role": "existing_input_read_only",
+      "sha256": "11d2cebcc03c73b2d4f9401a6656c6dfc5b999003d96bf9026c5a17102624106",
+      "bytes": 1011
+    },
+    {
+      "path": "inputs/matching-rules.md",
+      "kind": "file",
+      "role": "existing_input_read_only",
+      "sha256": "105ef9b70a54a3fed5d490d8ebfba62ff6d7e7f234366c5bbdfc57779a400987",
+      "bytes": 6630
+    },
+    {
+      "path": "records/answers.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "400b51ce62b55127159f05e6b596a3dd2807167b9f8f1647f908256d2a13d8a8",
+      "bytes": 75366
+    },
+    {
+      "path": "records/answers.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "7bd89bb952a30bcc44b250c1ab1a2984ce8725a1390f723c22d0ea0d1a069440",
+      "bytes": 54976
+    },
+    {
+      "path": "records/connection-plan.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "42a55b788228de9dbbdc525a67f05047921c260f373311d050da4ac2f06f385a",
+      "bytes": 1489
+    },
+    {
+      "path": "records/definition-history/runtime-v001/employee-agents.draft.md.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "099652675817b938a8861cbc70783c6cf339dd20fa08c16df0b321c9ac43a5dd",
+      "bytes": 12498
+    },
+    {
+      "path": "records/definition-history/runtime-v001/employee-claude.draft.md.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "bytes": 11
+    },
+    {
+      "path": "records/definition-history/runtime-v001/format-corrections/answers.runtime-v001.md.before-link-fix.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "c6e81ac89288e01a3a0d57f2e9593c300e491182e4ceb188f504da00bc40ad12",
+      "bytes": 54778
+    },
+    {
+      "path": "records/definition-history/runtime-v001/format-corrections/static-checks.runtime-v001.json.before-link-fix.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "fb6bc62124f11c7b88168adf2cb78359549fce16179c8808338dd9c0c0687408",
+      "bytes": 23084
+    },
+    {
+      "path": "records/definition-history/runtime-v001/source-archive/answers.v001.md.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "830c66a71ed27cbfa9f428c37a85b89bf5d8b8a82f384b33bbaa3e4a0fd22439",
+      "bytes": 30660
+    },
+    {
+      "path": "records/definition-history/runtime-v001/source-archive/answers.v002.md.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "96743ff87857db3b5d20aaeec7c34c1e034f61e7293ed6eec037f6e64ab617fd",
+      "bytes": 41480
+    },
+    {
+      "path": "records/definition-history/runtime-v001/source-archive/current-user-request.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "5ad8f355adc8eda75c2846b0064a2a9b1c9c7b8b1d52870f19b163892b603f09",
+      "bytes": 4242
+    },
+    {
+      "path": "records/definition-history/runtime-v001/source-archive/interview-history.v001.md.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "4e0fd4b01d461edd0766a00169bd84a460a15bbf4b09eea2062d1f2757b6b7dd",
+      "bytes": 11779
+    },
+    {
+      "path": "records/definition-history/runtime-v001/source-archive/interview-history.v002.md.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "6e7594f3840592561e55690ad4d3bf5e81cc43ad618592aefcc64ccb69da6641",
+      "bytes": 14801
+    },
+    {
+      "path": "records/definition-history/runtime-v001/work-001.draft.md.txt",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7",
+      "bytes": 20682
+    },
+    {
+      "path": "records/definition-values.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "18ff7ca52c523dc1994c2e3a2f73cc934009018336efb7976a42cc7bf41137ba",
+      "bytes": 24900
+    },
+    {
+      "path": "records/definition.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "fb009ccaf6345ac8a5d9d36df4d60e3d77fc47577d7d92fc211b92cfed931a69",
+      "bytes": 7065
+    },
+    {
+      "path": "records/deployment.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "911c4ec36bd8a7c95fa22b07829d06e7b95ea37a9e17344e2806a6e35533bbbe",
+      "bytes": 8147
+    },
+    {
+      "path": "records/diff.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "5a5c8064b18188be39032cea8416c66d7a512677469b27d818291e1000020383",
+      "bytes": 2213
+    },
+    {
+      "path": "records/environment-observation.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "1ebdc7712f073be9837022e63d77b28cb4784cf1e1c2d3b06174f09445f00071",
+      "bytes": 3445
+    },
+    {
+      "path": "records/finalization.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "3650b7bcef0f7d97b204f6b3d616a886775602a2541ef950cacf562a124ad5e3",
+      "bytes": 857
+    },
+    {
+      "path": "records/format-correction.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "c04a34e92aff97d16783e6a7a844b3ee5a7edec683145d67bbc9300c1de39226",
+      "bytes": 1095
+    },
+    {
+      "path": "records/generation-manifest.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "6f1fcd887615672ebd77aeed48da9e506cfef88f8f11947e9f099aa6fc826695",
+      "bytes": 4999
+    },
+    {
+      "path": "records/input-hashes.after.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "8ec9779a7b48ee5954a55acbae6e8f48b4e81f9b697642ee3bdff502286a24da",
+      "bytes": 1023
+    },
+    {
+      "path": "records/input-hashes.before.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "737174602136798a84e5333afdaf00da8fc81fdd4a57992689f16dbdd7f86e30",
+      "bytes": 1835
+    },
+    {
+      "path": "records/interview-history.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "311c429e0b6d1e78c37ed909a24bbfb7b41deca4fac124ca85020ca97aad8652",
+      "bytes": 918
+    },
+    {
+      "path": "records/mapping.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "4f4364a1647fbf6cbe4395d9a0253afb9e3f2909502535af06faed7b5b9beba0",
+      "bytes": 11310
+    },
+    {
+      "path": "records/parameters.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "bb861ae1ae62787b8b2a24ccc9b02283502ff7e38d782350c6264a55e8d1133c",
+      "bytes": 8435
+    },
+    {
+      "path": "records/predeployment-checks.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "cdcae069c101db3860ce4d7cad9ea9ca96113dd60bb2b8bbfeeff401e4c727d3",
+      "bytes": 771
+    },
+    {
+      "path": "records/provenance.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "c8bc5734d69ba256d04b5f43485bb42292a37d1663764aa2259cf248e61c008f",
+      "bytes": 5125
+    },
+    {
+      "path": "records/source-identifiers.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "0eb7c2b7424c01c5feb35f193330700351bae655a106302659098e83c70aece2",
+      "bytes": 3913
+    },
+    {
+      "path": "records/static-checks.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "72e6d0ef310b1e7931afb3dcc19129cf60e2e2b5a0607f877ae3c3fbce29facb",
+      "bytes": 22336
+    },
+    {
+      "path": "records/unresolved.runtime-v001.md",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "0904ea1d48e6f3138f68514530af781665d2bcf177f47c7b08042c0d7fb2f66f",
+      "bytes": 1558
+    },
+    {
+      "path": "records/workspace-verification.runtime-v001.json",
+      "kind": "file",
+      "role": "generation_record",
+      "sha256": "a3a44bac6e159d28572f51d8ba0c7f58ad4bcf2e94c04c543c594e7c9f5df1f9",
+      "bytes": 1031
+    }
+  ]
+}

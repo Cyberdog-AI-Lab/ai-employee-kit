@@ -1,0 +1,108 @@
+{
+  "all_passed": true,
+  "summary": {
+    "total": 23,
+    "passed": 23,
+    "failed": 0
+  },
+  "recorded_at_utc": "2026-10-16T05:13:07.008217+00:00",
+  "python_version": "3.11.5",
+  "isolated_mode": true,
+  "scope": "Synthetic copy-helper fixtures only; no employee business execution.",
+  "human_acceptance": false,
+  "cases": [
+    {
+      "case": "copy_preserves_hidden_config_relative_link_and_inputs",
+      "passed": true
+    },
+    {
+      "case": "existing_destination",
+      "passed": true
+    },
+    {
+      "case": "nested_in_kit",
+      "passed": true
+    },
+    {
+      "case": "destination_is_kit",
+      "passed": true
+    },
+    {
+      "case": "destination_ancestor_of_kit",
+      "passed": true
+    },
+    {
+      "case": "symlinked_parent_resolves_into_kit",
+      "passed": true
+    },
+    {
+      "case": "aliased_destination_is_kit",
+      "passed": true
+    },
+    {
+      "case": "dangling_destination_link",
+      "passed": true
+    },
+    {
+      "case": "tampered_bundle",
+      "passed": true
+    },
+    {
+      "case": "absolute_skill_link",
+      "passed": true
+    },
+    {
+      "case": "regular_DS_Store_after_manifest_is_copied_not_hashed",
+      "passed": true
+    },
+    {
+      "case": "relative_DS_Store_symlink_is_recorded_and_copied",
+      "passed": true
+    },
+    {
+      "case": "DS_Store_symlink_absolute",
+      "passed": true
+    },
+    {
+      "case": "DS_Store_symlink_broken",
+      "passed": true
+    },
+    {
+      "case": "DS_Store_symlink_unmanifested",
+      "passed": true
+    },
+    {
+      "case": "DS_Store_directory_content_is_not_ignored",
+      "passed": true
+    },
+    {
+      "case": "other_hidden_file_is_not_ignored",
+      "passed": true
+    },
+    {
+      "case": "relative_container_symlink_rejected_before_copy",
+      "passed": true
+    },
+    {
+      "case": "whole_bundle_absolute_unreferenced_link",
+      "passed": true
+    },
+    {
+      "case": "external_manifest_symlink_not_read",
+      "passed": true
+    },
+    {
+      "case": "destination_symlink_loop_is_clean_error",
+      "passed": true
+    },
+    {
+      "case": "destination_symlink_loop_CLI_no_traceback",
+      "passed": true
+    },
+    {
+      "case": "bundle_symlink_loop_is_clean_error",
+      "passed": true
+    }
+  ],
+  "original_result_sha256": "9359a502def71f98af71379aeba2f7bbf0853c95cffcf16441653d796c020dcc"
+}
