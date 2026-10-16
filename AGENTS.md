@@ -48,8 +48,8 @@ Skill内のMarkdownリンクは `.claude/skills/<name>/` の実体ディレク�
 
 ## 公開サンプル
 
-sample/の既存参照記録（sales/minutes/product）は当時の証拠として保持する。これらの `.sample.md` とコードフェンス付き定義は、自動認識される設定ではない。
+`sample/<社員名>/` 自体を、KITで作った1人分のAI社員の正本として扱う。現在はsales/minutes/reconciliation。各社員の直下に正式なAGENTS.md/CLAUDE.md、探索可能な `.agents/skills/<slug>/SKILL.md`、同じ社員内の `.claude` 正本、入力、ヒアリングの索引と原記録、生成記録を置く。業務を実際に行った場合の成果物と実行・検証記録も同じ社員に置く。説明用 `.sample.md` や別のworkspaces/results階層を実体の代わりにしない。
 
-`sample/workspaces/` には、K外で新規生成・検査した架空社員の配布用workspaceを、正式なAGENTS.md/CLAUDE.mdと探索可能なSKILL.mdを保った形で収録できる。本文を説明用コードフェンスで包まず、依存資料・入力を同梱し、過去の承認・実行記録と今回の版を区別する。キットrootでこれらの社員を稼働させず、READMEの手順でK外へコピーし、その社員workspaceを作業ディレクトリにした新しい会話から利用する。実業務向けには本人の条件で生成する。
+生成はGEN-001に従いK外のWへ行い、検査済みWを配布用にsampleへ同梱する。生成だけで出力・実行証拠を作らない。過去の模擬回答・許可・生成時の検査と、今回の版・業務依頼・後続検証を分ける。旧例はGit履歴で回復できる形で整理し、未コミット資料は検証済み退避を残す。現行の設定・成果物・ヒアリングへの入口を各社員READMEとsample.jsonに揃える。
 
-生成・配布の構造検査は `scripts/verify_employee_workspace.py` を使う。静的合格、CodexのAGENTS読込み、スキル発見・選択、業務遂行、人の検収を別々に記録する。参照用に改名・引用化した束を「そのまま使えるサンプル」として渡さない。
+`scripts/verify_samples.py` で配布構成・ハッシュ・依存資料・出力との対応を検査する。`scripts/prepare_sample_workspace.py` で社員フォルダ全体をK外へコピーし、コピー先を作業場所にした新しい会話から使う。静的合格、CodexのAGENTS読込み、Skill発見・選択、業務遂行、人の検収を別々に記録する。キットrootで社員業務を稼働させない。

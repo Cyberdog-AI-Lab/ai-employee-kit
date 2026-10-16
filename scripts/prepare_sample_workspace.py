@@ -63,7 +63,7 @@ def prepare(case, destination, kit=None):
     kit = Path(kit or Path(__file__).resolve().parents[1]).resolve()
     if case not in ('sales', 'minutes', 'reconciliation'):
         raise ValueError('Unknown sample')
-    source = kit / 'sample/workspaces' / case
+    source = kit / 'sample' / case
     lexical = Path(destination).expanduser().absolute()
     try:
         target = lexical.resolve()

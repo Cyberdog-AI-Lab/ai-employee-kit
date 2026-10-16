@@ -60,17 +60,21 @@ python3 scripts/verify_employee_workspace.py /path/to/employee --kit-root /path/
 
 ## 検査スクリプトの回帰テスト
 
-PyYAMLを用意したPython 3.10以上で、次の両方をキットroot（修正パッチを確認する場合はパッチroot）から実行します。このタスクで使用した環境は `/opt/homebrew/bin/python3` です。出力先は承認済みの場所を指定してください。
+PyYAMLを用意したPython 3.10以上で、キットrootから実行します。
 
 ```sh
-/opt/homebrew/bin/python3 -I -B scripts/test_employee_workspace.py --output /approved/results/validator-result.json
-/opt/homebrew/bin/python3 -I -B scripts/test_prepare_sample_workspace.py --output /approved/results/copy-helper-result.json
+python3 -I -B scripts/verify_samples.py
+python3 -I -B scripts/test_employee_workspace.py
+python3 -I -B scripts/test_prepare_sample_workspace.py
+python3 -I -B scripts/test_samples.py
 ```
 
-テストは同じディレクトリの検査器・補助スクリプトを明示して読み込むため、`-I` でも動きます。架空の一時workspaceは既定でOSの一時ディレクトリ（`tempfile.gettempdir()`）配下に作り、終了時に削除します。環境変数等で既定の一時保存先がスクリプトのroot＝K内になっていれば、作成前にエラーにします。通常の社員workspace・生成済み定義・業務成果物を変更しません。両コマンドとも `--temp-root /approved/temp-outside-kit` で承認済みの一時保存先を指定でき、相対指定も処理します。今回のパッチ試験では書込み範囲を守るため、K外のパッチroot内 `tests/tmp` を明示指定します。
+各コマンドは `--output <保存先.json>` で結果を保存できます。3つのtestスクリプトはOSの一時ディレクトリに架空の検査用コピーを作成し、終了時に削除します。必要なら `--temp-root <KIT外の一時保存先>` を指定します。通常の社員workspaceや生成済みの成果物は変更しません。
 
-検査器テストは大小文字、4コンテナ、全Wの絶対リンク、リンク文字列・切断・外部参照、説明用フェンスと有効なコード例、リスト字下げ・参照間空白、YAML・サイズ、K/W確認の有無、コピー差分、再帰依存とハッシュを確認します。不合格ケースは合否だけでなく、`error_details` の理由コードと必要な診断文も照合し、W外の本文読込み・ディレクトリ列挙もテスト中に検出します。コピー補助テストは原本保持、通常の `.DS_Store` と同名symlink、既存/祖先/別名経由のK内コピー先、改変した束、symlink循環の理由とCLIのトレースバック不在を確認します。両テストは `assert` 文に依存せず、`-O` でも検査を省略しません。JSONには実際のケース別結果、Python版、対象スクリプト・テストのハッシュを保存し、検査器テストにはPyYAML版も記録します。この結果は静的検査器とコピー補助の回帰試験であり、社員の実認識・業務検証・人の検収ではありません。
+配置検査は正規名・YAML・大小文字・相対リンク・外部参照・依存文書を、コピー検査は原本保持・保存先分離・改変・リンク循環・旧階層へのフォールバック拒否を確認します。配布検査は各社員内に設定・入力・ヒアリング・出力が完結すること、Skill配下の参照資料を含む定義と、独立照合記録のhashが実行に結び付くことを確認します。回帰は `assert` に依存せず、Pythonの最適化モードでも検査します。
+
+これらは保存済み構成とファイルの検査です。Codex本体の認識、業務再実行、人の検収とは分けます。実施した範囲は [検証記録](validation.md) にあります。
 
 ## 収録サンプル
 
-`sample/sales/`・`sample/minutes/`・`sample/product/`の過去の定義は参照用の記録です。実行用は[workspaceサンプル](../sample/workspaces/README.md)をK外へコピーして使います。設定と必要資料を一緒に渡し、`.agents` / `.claude` の隠しディレクトリも欠かさないでください。生成時の確認記録と、コピー先の認識・実行証拠を混同しません。
+`sample/sales/`・`sample/minutes/`・`sample/reconciliation/` が、それぞれ社員workspaceそのものです。[社員一覧](../sample/README.md)からヒアリング、設定、入力、成果物、記録を確認できます。社員フォルダ全体をK外へコピーして使います。`.agents` / `.claude` の隠しディレクトリと相対リンクも含めてください。生成時の確認と、コピー先での認識・実行は別に記録します。

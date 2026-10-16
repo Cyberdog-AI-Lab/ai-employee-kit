@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "layout_version": "sample-layout-v002",
+  "case": "reconciliation",
+  "definition_version": "runtime-v001",
+  "generation_spec_version": "0.1.4-draft",
+  "qa_version": "0.1.2-draft",
+  "hearing_index": "interview.md",
+  "definition_record": "records/definition.md",
+  "latest_run": {
+    "id": "ar-20261016T081205Z-6b4f3448",
+    "outputs": [
+      "outputs/ar-20261016T081205Z-6b4f3448/report.html",
+      "outputs/ar-20261016T081205Z-6b4f3448/report.json"
+    ],
+    "manifest": "records/runs/ar-20261016T081205Z-6b4f3448/run-manifest.json",
+    "independent_verification": "records/verification/ar-20261016T081205Z-6b4f3448/independent.json",
+    "recognition": "records/verification/ar-20261016T081205Z-6b4f3448/recognition.json"
+  },
+  "human_acceptance": false
+}

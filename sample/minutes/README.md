@@ -1,37 +1,46 @@
-# 議事録担当の試験記録（説明用）
+# 会議引継ぎ担当
 
-**ここは過去の試験を読むための説明用資料です。** このフォルダをCodexで開いても、社員用のAGENTS.mdとSKILL.mdは自動認識されません。`definition/*.sample.md` は記録を読むための複製です。
+会議メモから現行の決定、正式な変更、担当別の宿題、未解決事項を根拠付きで整理する社員です。
 
-**実際に動かす場合は [正式な会議workspace](../workspaces/minutes/) と [準備・実行手順](../workspaces/README.md) を使ってください。** 新しい例は8会議・140発言を扱う会議担当で、このページの小規模な試験とは入力・Skill・実行結果が別です。[新しい試験の結果](../workspace-validation/README.md)も確認できます。
+**このフォルダ自体が、KITで作成したAI社員です。** 設定・スキル・入力・成果物・ヒアリング記録がここで完結します。
 
-キットrootで次を実行し、作成したキット外のフォルダを開いた新しいCodex会話から依頼します。Python 3.10以上と `scripts/requirements-validation.txt` の依存が必要です。保存先は未作成のフォルダを指定してください。
+**実際に作成したレポート：[HTML](outputs/20261016T081240Z-b20b49b029d5/report.html)・[JSON](outputs/20261016T081240Z-b20b49b029d5/report.json)・[MD](outputs/20261016T081240Z-b20b49b029d5/report.md)**
 
-```sh
-python3 scripts/prepare_sample_workspace.py minutes /path/outside-kit/minutes-employee
+| 内容 | このフォルダ内の正本 |
+| --- | --- |
+| 担当・共通ルール | [AGENTS.md](AGENTS.md) |
+| Codexが発見する業務スキル | [work-002](.claude/skills/work-002/SKILL.md) |
+| Claude Code向けの取り込み | [CLAUDE.md](CLAUDE.md) |
+| ヒアリングと回答台帳 | [interview.md](interview.md) |
+| 架空の入力原本 | [inputs/](inputs/) |
+| 生成・定義の記録 | [records/definition.md](records/definition.md) |
+| 成果物と設定・入力の対応 | [run-manifest.json](records/runs/20261016T081240Z-b20b49b029d5/run-manifest.json) |
+| この成果物の独立照合 | [independent.json](records/verification/20261016T081240Z-b20b49b029d5/independent.json) |
+
+入力は10ファイル。8回の会議、140件の発言と入力説明。 定義版は `runtime-v001`（生成時の仕様0.1.4-draft／Q&A0.1.2-draft）。サンプルの配置形式は `sample-layout-v002` です。移動・同梱と社員定義の改訂を区別しています。
+
+## コピーして使う
+
+このフォルダ全体を、KITの外の新しいフォルダへコピーします。隠しフォルダと相対リンクも含めてください。KIT側の `scripts/prepare_sample_workspace.py minutes <新しい保存先>` で、配置と全ファイルのハッシュを点検してコピーできます。コピー先をCodexの作業場所にした**新しい会話**で、次の仕事を依頼します。
+
+```text
+$work-002
+このworkspaceの架空資料で、担当する仕事を試験してください。
+input_dir=inputs、project_id=KOMOREBI-EVENT-2026、as_of=2026-10-15。
+inputsと定義は保持し、新しいoutputs/<run-id>/とrecords/runs/<run-id>/へ保存してください。
+既存の成果物は読まず、入力から計算・整理し、根拠と確認待ち事項を報告してください。
 ```
 
-修正後の設定から生成した [最新HTML](../results/minutes/report.html) と [入力・定義・実行の対応](../results/minutes/README.md) を直接確認できます。
+`outputs/` はすでに実行した成果物、`records/runs/` は対応する実行記録です。新しい依頼では別のrunを作り、既存成果を置換しません。生成だけで成果物を作成済みにしたり、過去の許可を新しい仕事の許可にしたりしません。
 
-以下は以前の試験記録です。原本・定義の参照複製・期待値・成果物を保持しています。
+`.agents/skills/work-002` は同じフォルダ内の `.claude/skills/work-002` への相対リンクです。`SKILL.md` の正本は1つで、両ツールから参照できます。KIT配下で仕事を始めるとKIT自身の指示も継承されるため、独立したコピー先から使います。
 
-[インタビュー](interview.md)で不明値や矛盾の扱いを聞き取り、キット外へ試験配置した社員を、新しいCodex会話で実行しました。架空の役割と資料を使う試験であり、人の候補レビュー・成果検収は未実施です。
+## 記録の読み方
 
-## 読む順序
+この社員はAIが架空の担当者を演じた模擬回答から生成した試験例です。本人の回答確認・定義承認・人の検収は完了していません。入力原本とAGENTS/Skillは生成・試験時の内容を保持しています。公開した履歴と出力の一部では、個人のローカルパスだけを記号へ置き換えています。生成時のmanifestは当時の原本の記録、`bundle-manifest.json` は現在の配布ファイルの記録です。
 
-1. [インタビュー](interview.md)
-2. [社員定義](definition/employee-agents.sample.md)・[業務手順](definition/work-0001.skill.sample.md)
-3. [期待値](expected.json)とinput/の架空資料
-4. [成果物Markdown](output/report.md)・[JSON](output/report.json)
-5. [独立検証](validation/result.json)・[開始前の停止記録](validation/stop-record.json)
+静的配置の検査、Codexの認識、業務実行、独立照合、人の検収は別々の段階です。既存レポートの認識・実行証拠は上記run-manifestで追えます。Claude Codeでの業務遂行、実業務データでの精度、人による検収まで実証したものではありません。
 
-## 実行結果
+今回の独立コピーでの [Codex認識・Skill選択の証拠](records/verification/20261016T081240Z-b20b49b029d5/recognition.json) を同梱しています。業務は入力から新規実行し、旧成果物を参照していません。配布用記録では個人のローカルパスだけを記号化し、原実行時と配布時のhashを分けています。
 
-資料IDが未指定の依頼では、入力からIDを補完せず、停止理由と再開条件を保存しました。その時点ではoutputsはありませんでした。ID回答後は停止記録を参照した新しいrunで処理し、旧記録と入力を保持しました。
-
-会議IDと日付、決定と提案を区別しました。A01は担当を企画担当Aとし、競合する期限をnullに保ち、2026-10-20と2026-10-22の両候補をM03/M06へ結びました。A02の担当はnull、期限は2026-10-18です。次回会議日もnullのままです。
-
-期待値との独立照合、根拠との対応、入力の前後ハッシュ、停止・再開の記録を確認しました。AIの自己検査済みと人の検収待ちは別の状態です。
-
-## 参照資料としての制約
-
-[provenance.json](provenance.json)で試験原本と公開用複製を区別しています。定義は非実行名で、ローカルパスは匿名化しました。このフォルダをそのまま稼働させず、インタビューと入力例をもとに自分の作業場所へ再生成してください。
+[Macブラウザでの表示確認](records/verification/20261016T081240Z-b20b49b029d5/browser.json)・[画面](records/verification/20261016T081240Z-b20b49b029d5/top.png) はCodexが操作・確認した証拠で、人の検収ではありません。

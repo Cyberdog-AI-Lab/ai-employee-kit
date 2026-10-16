@@ -1,0 +1,152 @@
+{
+  "scope": "Local consolidation checks; not a publication or human acceptance",
+  "tests": {
+    "workspace_regressions": {
+      "all_passed": true,
+      "summary": {
+        "total": 126,
+        "passed": 126,
+        "failed": 0
+      },
+      "original_record_sha256": "e3fa4b0c3cd80a702fd4ff3c794fa6b8d12af7df8ddcf33cb2a3a248347651a5"
+    },
+    "copy_regressions": {
+      "all_passed": true,
+      "summary": {
+        "total": 24,
+        "passed": 24,
+        "failed": 0
+      },
+      "original_record_sha256": "a82cdaca932c8186ea3c6026c15387fd04108f96fbfe0a2b4f11a275aea33a7f"
+    },
+    "copy_optimized": {
+      "all_passed": true,
+      "summary": {
+        "total": 24,
+        "passed": 24,
+        "failed": 0
+      },
+      "original_record_sha256": "f863351d1d72b1e5f41ad52e35e6151c2949ad9c60b8d5270fa6df178193d900"
+    },
+    "sample_regressions": {
+      "all_passed": true,
+      "summary": {
+        "total": 15,
+        "passed": 15
+      },
+      "original_record_sha256": "cf5ae2116edf14287c2598503bc41d2de9d9ba6f06c94228b90fb22d3224fbc2"
+    },
+    "sample_optimized": {
+      "all_passed": true,
+      "summary": {
+        "total": 15,
+        "passed": 15
+      },
+      "original_record_sha256": "cf5ae2116edf14287c2598503bc41d2de9d9ba6f06c94228b90fb22d3224fbc2"
+    },
+    "sample_integrity": {
+      "all_passed": true,
+      "summary": {
+        "total": 131
+      },
+      "original_record_sha256": "f3f8f72db1e5930314d94f42f02f7841ac2f72598a84d75c3ab3845e4e4a49d9"
+    }
+  },
+  "final_standalone_copies": [
+    {
+      "case": "sales",
+      "copy_content_matches": true,
+      "static_passed": true,
+      "bundle_sha256": "33957e15b7323c0af2c0b3f8eee7b52b6dfde75eb200298099f1545f027498eb"
+    },
+    {
+      "case": "minutes",
+      "copy_content_matches": true,
+      "static_passed": true,
+      "bundle_sha256": "2bcaf5f712921b539ce0e1151e656df4b9a9064200c7e5f8b13c1de5eda7a7e3"
+    },
+    {
+      "case": "reconciliation",
+      "copy_content_matches": true,
+      "static_passed": true,
+      "bundle_sha256": "6673923e396aad1c840e5cd2ed9671d05be37fa1b9229d368591e2d2bf66217e"
+    }
+  ],
+  "kit_local_Markdown_links": {
+    "checked": 57,
+    "errors": [],
+    "scope": "File destinations only; sample internal links are checked separately by verify_samples"
+  },
+  "format_IDs": 42,
+  "employee_business_runs": [
+    {
+      "case": "sales",
+      "run": "20261016T081312Z-f54bb40cbcc1",
+      "independent_checks": 35984,
+      "all_passed": true,
+      "config_support_files": 6,
+      "input_files": 21
+    },
+    {
+      "case": "minutes",
+      "run": "20261016T081240Z-b20b49b029d5",
+      "independent_checks": 927,
+      "all_passed": true,
+      "config_support_files": 5,
+      "input_files": 10
+    },
+    {
+      "case": "reconciliation",
+      "run": "ar-20261016T081205Z-6b4f3448",
+      "independent_checks": 4540,
+      "all_passed": true,
+      "config_support_files": 4,
+      "input_files": 6
+    }
+  ],
+  "browser": {
+    "cases": [
+      {
+        "case": "sales",
+        "run": "20261016T081312Z-f54bb40cbcc1",
+        "page": "c0e02b63-91fe-44cb-83c8-33765c2d5bb9",
+        "initial_rendering": true,
+        "horizontal_overflow": false,
+        "visible_SVGs": 1,
+        "visible_CSS_bar_segments": 0,
+        "screenshot": "top.png",
+        "operator": "Codex operating the user’s Mac Orca browser",
+        "human_acceptance": false,
+        "scope": "Initial rendering and visible graph elements only; full interaction/mobile/print not verified"
+      },
+      {
+        "case": "minutes",
+        "run": "20261016T081240Z-b20b49b029d5",
+        "page": "32522eeb-22c5-4a5b-83af-d788b87be543",
+        "initial_rendering": true,
+        "horizontal_overflow": false,
+        "visible_SVGs": 2,
+        "visible_CSS_bar_segments": 0,
+        "screenshot": "top.png",
+        "operator": "Codex operating the user’s Mac Orca browser",
+        "human_acceptance": false,
+        "scope": "Initial rendering and visible graph elements only; full interaction/mobile/print not verified"
+      },
+      {
+        "case": "reconciliation",
+        "run": "ar-20261016T081205Z-6b4f3448",
+        "page": "b15dcea1-1cfc-4d2c-8cce-df25107d8f48",
+        "initial_rendering": true,
+        "horizontal_overflow": false,
+        "visible_SVGs": 0,
+        "visible_CSS_bar_segments": 8,
+        "screenshot": "top.png",
+        "operator": "Codex operating the user’s Mac Orca browser",
+        "human_acceptance": false,
+        "scope": "Initial rendering and visible graph elements only; full interaction/mobile/print not verified"
+      }
+    ],
+    "human_acceptance": false
+  },
+  "human_acceptance": false
+}

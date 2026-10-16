@@ -1,39 +1,46 @@
-# 売上レポート担当の試験記録（説明用）
+# 店舗売上の見渡し担当
 
-**ここは過去の試験を読むための説明用資料です。** このフォルダをCodexで開いても、社員用のAGENTS.mdとSKILL.mdは自動認識されません。`definition/*.sample.md` は記録を読むための複製です。
+4店舗・3か月の売上・返品を照合し、集計と確認事項を根拠付きで整理する社員です。
 
-**実際に動かす場合は [正式な売上workspace](../workspaces/sales/) と [準備・実行手順](../workspaces/README.md) を使ってください。** 新しい例は複数店舗の売上と返品を照合する売上担当で、このページの小規模な試験とは入力・Skill・実行結果が別です。[新しい試験の結果](../workspace-validation/README.md)も確認できます。
+**このフォルダ自体が、KITで作成したAI社員です。** 設定・スキル・入力・成果物・ヒアリング記録がここで完結します。
 
-キットrootで次を実行し、作成したキット外のフォルダを開いた新しいCodex会話から依頼します。Python 3.10以上と `scripts/requirements-validation.txt` の依存が必要です。保存先は未作成のフォルダを指定してください。
+**実際に作成したレポート：[HTML](outputs/20261016T081312Z-f54bb40cbcc1/report.html)・[JSON](outputs/20261016T081312Z-f54bb40cbcc1/report.json)**
 
-```sh
-python3 scripts/prepare_sample_workspace.py sales /path/outside-kit/sales-employee
+| 内容 | このフォルダ内の正本 |
+| --- | --- |
+| 担当・共通ルール | [AGENTS.md](AGENTS.md) |
+| Codexが発見する業務スキル | [work-001](.claude/skills/work-001/SKILL.md) |
+| Claude Code向けの取り込み | [CLAUDE.md](CLAUDE.md) |
+| ヒアリングと回答台帳 | [interview.md](interview.md) |
+| 架空の入力原本 | [inputs/](inputs/) |
+| 生成・定義の記録 | [records/definition.md](records/definition.md) |
+| 成果物と設定・入力の対応 | [run-manifest.json](records/runs/20261016T081312Z-f54bb40cbcc1/run-manifest.json) |
+| この成果物の独立照合 | [independent.json](records/verification/20261016T081312Z-f54bb40cbcc1/independent.json) |
+
+入力は21ファイル。売上5,770行、返品72行とマスタ・注記。 定義版は `runtime-v001`（生成時の仕様0.1.4-draft／Q&A0.1.2-draft）。サンプルの配置形式は `sample-layout-v002` です。移動・同梱と社員定義の改訂を区別しています。
+
+## コピーして使う
+
+このフォルダ全体を、KITの外の新しいフォルダへコピーします。隠しフォルダと相対リンクも含めてください。KIT側の `scripts/prepare_sample_workspace.py sales <新しい保存先>` で、配置と全ファイルのハッシュを点検してコピーできます。コピー先をCodexの作業場所にした**新しい会話**で、次の仕事を依頼します。
+
+```text
+$work-001
+このworkspaceの架空資料で、担当する仕事を試験してください。
+input_dir=inputs、start_date=2026-07-01、end_date=2026-09-30。
+inputsと定義は保持し、新しいoutputs/<run-id>/とrecords/runs/<run-id>/へ保存してください。
+既存の成果物は読まず、入力から計算・整理し、根拠と確認待ち事項を報告してください。
 ```
 
-修正後の設定から生成した [最新HTML](../results/sales/report.html) と [入力・定義・実行の対応](../results/sales/README.md) を直接確認できます。
+`outputs/` はすでに実行した成果物、`records/runs/` は対応する実行記録です。新しい依頼では別のrunを作り、既存成果を置換しません。生成だけで成果物を作成済みにしたり、過去の許可を新しい仕事の許可にしたりしません。
 
-以下は以前の試験記録です。原本・定義の参照複製・期待値・成果物を保持しています。
+`.agents/skills/work-001` は同じフォルダ内の `.claude/skills/work-001` への相対リンクです。`SKILL.md` の正本は1つで、両ツールから参照できます。KIT配下で仕事を始めるとKIT自身の指示も継承されるため、独立したコピー先から使います。
 
-[インタビュー](interview.md)から生成した社員を、キット外の仕事フォルダで新しいCodex会話に読み込ませました。架空CSVだけを対象にした試験で、人による候補レビュー・成果検収は未実施です。
+## 記録の読み方
 
-## 読む順序
+この社員はAIが架空の担当者を演じた模擬回答から生成した試験例です。本人の回答確認・定義承認・人の検収は完了していません。入力原本とAGENTS/Skillは生成・試験時の内容を保持しています。公開した履歴と出力の一部では、個人のローカルパスだけを記号へ置き換えています。生成時のmanifestは当時の原本の記録、`bundle-manifest.json` は現在の配布ファイルの記録です。
 
-1. [インタビュー記録](interview.md)：数量空欄の扱い、販売経路の矛盾と解消、模擬回答の出所。
-2. [社員定義](definition/employee-agents.sample.md)と[業務手順](definition/work-0001.skill.sample.md)：実行に使ったv003の匿名化複製。
-3. [架空CSV](input/sales-fictional.csv)と[事前期待値](expected.json)。期待値は実装前に別管理し、実行担当へ渡していません。
-4. [HTMLレポート](output/report.html)と[JSON・行別根拠](output/report.json)。HTMLはファイルを取得してブラウザで開けます。
-5. [独立照合](validation/heldout-comparison.json)、[追加検査](validation/result.json)、[開始前の停止記録](validation/stop-record.json)。
+静的配置の検査、Codexの認識、業務実行、独立照合、人の検収は別々の段階です。既存レポートの認識・実行証拠は上記run-manifestで追えます。Claude Codeでの業務遂行、実業務データでの精度、人による検収まで実証したものではありません。
 
-## 観察したこと
+今回の独立コピーでの [Codex認識・Skill選択の証拠](records/verification/20261016T081312Z-f54bb40cbcc1/recognition.json) を同梱しています。業務は入力から新規実行し、旧成果物を参照していません。配布用記録では個人のローカルパスだけを記号化し、原実行時と配布時のhashを分けています。
 
-- 最初の手順v002では、期間未指定で質問して停止しましたが、その時点の停止記録ファイルを残しませんでした。再開後は欠落を明記して集計しました。
-- 手順と生成テンプレートを改訂し、v003で新しい会話を開始。期間不足を記録して質問を返し、この停止時にはoutputsを作りませんでした。
-- 2026-10-01〜2026-10-03（両端含む）を与えると、停止記録を参照した別runへHTML/JSONを保存しました。以前の停止記録・成果物を保持しています。
-- 全8行のうち採用6、数量未定1、期間外1。既知分は9,150円・17点で、商品・日・経路別の内訳も事前期待値と一致しました。S006の空欄はnullのままです。
-- 原本・コピーのハッシュ、全行の原値と物理行番号、HTMLの3つのSVGグラフと外部資源不使用を独立に点検しました。ブラウザでの目視と人の検収は未実施です。
-
-再試験の補助スクリプト準備時には、末尾の余分なトークンでコマンドが一度失敗しました。実行担当はエラーを記録し、生成済みスクリプトの構文を確認してから業務処理を実行しました。試験全体が無失敗だったという記録にはしていません。
-
-## 公開複製について
-
-[provenance.json](provenance.json)は試験原本と公開複製のハッシュを区別します。ローカルパスを置き換え、定義は非実行名・コードブロックにしました。元の定義は当時の外部原本をハッシュ照合する指定を含むため、この一式をそのまま実行することはできません。再利用はキットを使って自分の作業場所へ再生成してください。AIサービスへのデータ送信がないことを保証した試験ではありません。
+[Macブラウザでの表示確認](records/verification/20261016T081312Z-f54bb40cbcc1/browser.json)・[画面](records/verification/20261016T081312Z-f54bb40cbcc1/top.png) はCodexが操作・確認した証拠で、人の検収ではありません。

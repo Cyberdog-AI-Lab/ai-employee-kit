@@ -1,0 +1,637 @@
+{
+  "run_id": "ar-20261016T081205Z-6b4f3448",
+  "finished_at": "2026-10-16T08:25:15.614662+00:00",
+  "parameters": {
+    "input_dir": "inputs",
+    "dataset_id": "AR-DEMO-2026",
+    "as_of": "2026-10-15"
+  },
+  "definition": {
+    "procedure_version": "runtime-v001",
+    "rules_version": "v1",
+    "fixture_revision": "v3",
+    "business_meaning_status": "proposed",
+    "confirmed_business_answers": 0,
+    "original_generation_root": "履歴としてのみ参照。今回のrootへ相対参照を解決。"
+  },
+  "artifacts": {
+    "outputs/ar-20261016T081205Z-6b4f3448/report.html": {
+      "sha256": "2d1b42df60ae8e769b2565b40b1cc6ae499b728e4e15263b5d1ed7b5f0a66c21",
+      "bytes": 1510157
+    },
+    "outputs/ar-20261016T081205Z-6b4f3448/report.json": {
+      "sha256": "336ee9595edb9494a383a66d5f959a970f38b087b1c336c506551713402bb600",
+      "bytes": 590878
+    },
+    "scripts/reconcile_ar-20261016T081205Z-6b4f3448_v1.py": {
+      "sha256": "85fc9c0e8200404f10b5e261c290a7a2d386602cd56e9921c3f84e93185f31b2",
+      "bytes": 37590
+    },
+    "scripts/render_ar-20261016T081205Z-6b4f3448_v1.py": {
+      "sha256": "21c4757b074cc2c32dbdd38a9019eb198550794a6e23015457a902cb4d8b1bee",
+      "bytes": 36712
+    }
+  },
+  "inputs": {
+    "inputs/invoices.csv": {
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/invoices.csv",
+      "sha256": "63dca5233515d2132f482188799ee5d7a713b6e1e020e96eca477cbd8ca707af",
+      "bytes": 8597,
+      "physical_lines": 101
+    },
+    "inputs/bank-credits.csv": {
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/bank-credits.csv",
+      "sha256": "8ab3e44f92e4f3b3449aa5013e6c0ecd58736b59b40ae908d7d5b5e960bb6004",
+      "bytes": 7961,
+      "physical_lines": 91
+    },
+    "inputs/customers.csv": {
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/customers.csv",
+      "sha256": "a6fe4916259bfc81947fd8060dd07de1c37482cc84405aa531902aec94e2fef6",
+      "bytes": 2816,
+      "physical_lines": 21
+    },
+    "inputs/matching-rules.md": {
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/matching-rules.md",
+      "sha256": "105ef9b70a54a3fed5d490d8ebfba62ff6d7e7f234366c5bbdfc57779a400987",
+      "bytes": 6630,
+      "physical_lines": 36
+    },
+    "inputs/README.md": {
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/README.md",
+      "sha256": "00f813cc92ac2a5c92cc1f31d4363e24db9fd7fdf23ebd81b9ea9e43c3b94a78",
+      "bytes": 1126,
+      "physical_lines": 10
+    },
+    "inputs/manifest.json": {
+      "realpath": "EXECUTED_WORKSPACES/reconciliation/inputs/manifest.json",
+      "sha256": "11d2cebcc03c73b2d4f9401a6656c6dfc5b999003d96bf9026c5a17102624106",
+      "bytes": 1011,
+      "physical_lines": 40
+    }
+  },
+  "counts": {
+    "invoices_all": 100,
+    "invoices_in_scope": 100,
+    "banks_all": 90,
+    "banks_in_scope": 89,
+    "customers": 20,
+    "invoice_status": {
+      "ルール照合済み（人の検収前）": 74,
+      "要確認": 19,
+      "未入金": 7
+    },
+    "bank_status": {
+      "割当済み（人の検収前）": 79,
+      "保留・参考候補あり": 9,
+      "不明入金（候補なし）": 1,
+      "基準日後（対象外）": 1
+    },
+    "allocations": 84,
+    "candidates": 95,
+    "future_banks": 1,
+    "invalid_rows": 0
+  },
+  "totals": {
+    "invoice_total_jpy": 7462450,
+    "bank_total_jpy": 6927684,
+    "allocated_cash_jpy": 6217020,
+    "allowed_fee_jpy": 1320,
+    "remaining_jpy": 1244110,
+    "unallocated_bank_jpy": 710664,
+    "bank_all_rows_known_jpy": 6955184,
+    "bank_future_excluded_jpy": 27500,
+    "bank_invalid_known_jpy": 0,
+    "due_balances_jpy": {
+      "延滞": 1013110,
+      "本日期日": 38500,
+      "期日未到来": 192500
+    },
+    "overdue_components_jpy": {
+      "候補入金の照合保留": 710450,
+      "一部入金の残額": 176160,
+      "入金候補なし": 126500
+    }
+  },
+  "equations": [
+    {
+      "name": "R10 請求",
+      "left_jpy": 7462450,
+      "right_terms_jpy": {
+        "allocated_cash_jpy": 6217020,
+        "allowed_fee_jpy": 1320,
+        "remaining_jpy": 1244110
+      },
+      "right_jpy": 7462450,
+      "difference_jpy": 0
+    },
+    {
+      "name": "R10 入金",
+      "left_jpy": 6927684,
+      "right_terms_jpy": {
+        "allocated_cash_jpy": 6217020,
+        "unallocated_bank_jpy": 710664
+      },
+      "right_jpy": 6927684,
+      "difference_jpy": 0
+    },
+    {
+      "name": "R10 期日",
+      "left_jpy": 1244110,
+      "right_terms_jpy": {
+        "延滞": 1013110,
+        "本日期日": 38500,
+        "期日未到来": 192500
+      },
+      "right_jpy": 1244110,
+      "difference_jpy": 0
+    }
+  ],
+  "completed": [
+    "開始時確認",
+    "全入力行の検証と根拠保持",
+    "全明示参照・候補競合評価",
+    "ルール割当・分類",
+    "R07/R10/R11自己検査",
+    "自己完結HTML/JSON新規保存"
+  ],
+  "not_performed": [
+    "UI実画面検査",
+    "独立検証",
+    "人の検収",
+    "会計更新",
+    "送信・公開"
+  ],
+  "self_checks_path": "records/runs/ar-20261016T081205Z-6b4f3448/self-checks.json",
+  "unresolved": [
+    {
+      "priority": 1,
+      "invoice_ids": [
+        "INV-0092"
+      ],
+      "bank_ids": [
+        "BNK-0086"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 137500,
+      "question": "候補入金と請求の金額差・対応根拠を確認してください。参考候補は未割当です。",
+      "reasons": [
+        "R08: 完全同額なし。同顧客・差額絶対値1,000円以下の参考候補のみ。割当不可。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 2,
+      "invoice_ids": [
+        "INV-0091"
+      ],
+      "bank_ids": [
+        "BNK-0085"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 123450,
+      "question": "未登録名義の入金者と請求の対応を確認してください。名簿の追加・名義推測は未実施です。",
+      "reasons": [
+        "R08: 名義未登録。金額だけの参考候補で顧客一致とは扱わず割当不可。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 3,
+      "invoice_ids": [
+        "INV-0082"
+      ],
+      "bank_ids": [
+        "BNK-0078"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 110000,
+      "question": "未登録名義の入金者と請求の対応を確認してください。名簿の追加・名義推測は未実施です。",
+      "reasons": [
+        "R02/R04/R05/R06: 承認済み名義が一意の顧客に対応しない"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 4,
+      "invoice_ids": [
+        "INV-0083"
+      ],
+      "bank_ids": [
+        "BNK-0079"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 99000,
+      "question": "明示請求IDと名義顧客の矛盾を原資料で確認してください。別請求への振替は未実施です。",
+      "reasons": [
+        "R02/R04/R05/R06: 明示IDの顧客と名義の顧客が矛盾。他請求へ振替不可。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 5,
+      "invoice_ids": [
+        "INV-0084"
+      ],
+      "bank_ids": [
+        "BNK-0080"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 99000,
+      "question": "参照入金の重複・過入金と正しい対象請求を確認してください。全件保留中です。",
+      "reasons": [
+        "単独参照入金総額が請求額を超過（全参照入金保留）"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 6,
+      "invoice_ids": [
+        "INV-0096"
+      ],
+      "bank_ids": [],
+      "due_category": "延滞",
+      "remaining_jpy": 99000,
+      "question": "基準日時点の入金資料の有無と請求状況を確認してください。当日の割当・候補はありません。",
+      "reasons": [
+        "R09: 当日時点の割当・候補なし。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 7,
+      "invoice_ids": [
+        "INV-0075"
+      ],
+      "bank_ids": [
+        "BNK-0071"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 52800,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: our_burden_agreement, agreement_id_present, authorized_fee_is_330, within_valid_period, difference_is_330"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 8,
+      "invoice_ids": [
+        "INV-0071"
+      ],
+      "bank_ids": [
+        "BNK-0066",
+        "BNK-0067"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 49000,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: our_burden_agreement, agreement_id_present, authorized_fee_is_330, within_valid_period, difference_is_330, no_other_reference"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 9,
+      "invoice_ids": [
+        "INV-0073"
+      ],
+      "bank_ids": [
+        "BNK-0069"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 39600,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: our_burden_agreement, agreement_id_present, authorized_fee_is_330, within_valid_period, difference_is_330"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 10,
+      "invoice_ids": [
+        "INV-0090"
+      ],
+      "bank_ids": [
+        "BNK-0084"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 38500,
+      "question": "明示合算の金額差と請求ごとの内訳を確認してください。差額配賦は未実施です。",
+      "reasons": [
+        "合算配賦不可: 明示合計 49500円と入金 49170円が不一致"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 11,
+      "invoice_ids": [
+        "INV-0085"
+      ],
+      "bank_ids": [
+        "BNK-0081"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 35000,
+      "question": "複数の完全同額候補から、入金対象の請求を原資料で特定してください。",
+      "reasons": [
+        "R03/R08: 完全同額請求の複数候補、または明示ID競合保留により一意に選べない。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 12,
+      "invoice_ids": [
+        "INV-0086"
+      ],
+      "bank_ids": [
+        "BNK-0081"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 35000,
+      "question": "複数の完全同額候補から、入金対象の請求を原資料で特定してください。",
+      "reasons": [
+        "R03/R08: 完全同額請求の複数候補、または明示ID競合保留により一意に選べない。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 13,
+      "invoice_ids": [
+        "INV-0095"
+      ],
+      "bank_ids": [],
+      "due_category": "延滞",
+      "remaining_jpy": 27500,
+      "question": "基準日時点の入金資料の有無と請求状況を確認してください。当日の割当・候補はありません。",
+      "reasons": [
+        "R09: 当日時点の割当・候補なし。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 14,
+      "invoice_ids": [
+        "INV-0072"
+      ],
+      "bank_ids": [
+        "BNK-0068"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 26950,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: our_burden_agreement, agreement_id_present, authorized_fee_is_330, within_valid_period, difference_is_330"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 15,
+      "invoice_ids": [
+        "INV-0087"
+      ],
+      "bank_ids": [
+        "BNK-0082",
+        "BNK-0083"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 22000,
+      "question": "参照入金の重複・過入金と正しい対象請求を確認してください。全件保留中です。",
+      "reasons": [
+        "単独参照入金総額が請求額を超過（全参照入金保留）"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 16,
+      "invoice_ids": [
+        "INV-0089"
+      ],
+      "bank_ids": [
+        "BNK-0084"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 11000,
+      "question": "明示合算の金額差と請求ごとの内訳を確認してください。差額配賦は未実施です。",
+      "reasons": [
+        "合算配賦不可: 明示合計 49500円と入金 49170円が不一致"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 17,
+      "invoice_ids": [
+        "INV-0074"
+      ],
+      "bank_ids": [
+        "BNK-0070"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 6600,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: our_burden_agreement, agreement_id_present, authorized_fee_is_330, within_valid_period, difference_is_330"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 18,
+      "invoice_ids": [
+        "INV-0093"
+      ],
+      "bank_ids": [
+        "BNK-0087"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 550,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: difference_is_330"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 19,
+      "invoice_ids": [
+        "INV-0081"
+      ],
+      "bank_ids": [
+        "BNK-0077"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 330,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: our_burden_agreement, agreement_id_present, authorized_fee_is_330, within_valid_period"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 20,
+      "invoice_ids": [
+        "INV-0094"
+      ],
+      "bank_ids": [
+        "BNK-0088"
+      ],
+      "due_category": "延滞",
+      "remaining_jpy": 330,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: within_valid_period"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 21,
+      "invoice_ids": [
+        "INV-0097"
+      ],
+      "bank_ids": [],
+      "due_category": "本日期日",
+      "remaining_jpy": 33000,
+      "question": "基準日時点の入金資料の有無と請求状況を確認してください。当日の割当・候補はありません。",
+      "reasons": [
+        "R09: 当日時点の割当・候補なし。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 22,
+      "invoice_ids": [
+        "INV-0076"
+      ],
+      "bank_ids": [
+        "BNK-0072"
+      ],
+      "due_category": "本日期日",
+      "remaining_jpy": 5500,
+      "question": "一部入金後の残額と差額理由を確認してください。契約根拠のない手数料は計上していません。",
+      "reasons": [
+        "全参照入金総額が請求額未満。実入金だけを割当。差額理由は未確認。R06不適用: our_burden_agreement, agreement_id_present, authorized_fee_is_330, within_valid_period, difference_is_330"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 23,
+      "invoice_ids": [
+        "INV-0098"
+      ],
+      "bank_ids": [],
+      "due_category": "期日未到来",
+      "remaining_jpy": 77000,
+      "question": "基準日時点の入金資料の有無と請求状況を確認してください。当日の割当・候補はありません。",
+      "reasons": [
+        "R09: 当日時点の割当・候補なし。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 24,
+      "invoice_ids": [
+        "INV-0100"
+      ],
+      "bank_ids": [],
+      "due_category": "期日未到来",
+      "remaining_jpy": 66000,
+      "question": "基準日時点の入金資料の有無と請求状況を確認してください。当日の割当・候補はありません。",
+      "reasons": [
+        "R09: 当日時点の割当・候補なし。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 25,
+      "invoice_ids": [
+        "INV-0099"
+      ],
+      "bank_ids": [],
+      "due_category": "期日未到来",
+      "remaining_jpy": 27500,
+      "question": "基準日時点の入金資料の有無と請求状況を確認してください。当日の割当・候補はありません。",
+      "reasons": [
+        "R09: 当日時点の割当・候補なし。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 26,
+      "invoice_ids": [
+        "INV-0088"
+      ],
+      "bank_ids": [],
+      "due_category": "期日未到来",
+      "remaining_jpy": 22000,
+      "question": "基準日時点の入金資料の有無と請求状況を確認してください。当日の割当・候補はありません。",
+      "reasons": [
+        "R09: 当日時点の割当・候補なし。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    },
+    {
+      "priority": 27,
+      "invoice_ids": [],
+      "bank_ids": [
+        "BNK-0089"
+      ],
+      "due_category": null,
+      "remaining_jpy": null,
+      "unallocated_jpy": 12345,
+      "question": "請求候補のない入金について、入金者・対象請求・対象外取引の別を確認してください。",
+      "reasons": [
+        "R08: 条件に合う未割当請求候補なし。不明入金として全額未割当。"
+      ],
+      "answer_status": "unconfirmed",
+      "recipient": "試験依頼担当者"
+    }
+  ],
+  "environment": {
+    "python": "3.11.5 (main, Aug 24 2023, 15:09:45) [Clang 14.0.3 (clang-1403.0.22.14.1)]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "tool": "local exec_command / Python standard library",
+    "reported_sandbox": "workspace-write",
+    "reported_approval_policy": "never",
+    "reported_network": "restricted",
+    "os_access_write_outputs": true,
+    "os_access_write_records_runs": true,
+    "records_write_exclusive": "このstart.jsonの新規保存により確認",
+    "output_write_exclusive": "新規report.html/report.jsonの保存・読戻しに成功",
+    "source_protection": "入力・定義は読取りのみ。OS上は書込み可能なため、OS読取専用隔離とは主張しない。hashを保存前後に再検査。",
+    "unverified": [
+      "OS通信隔離の実証",
+      "ブラウザ/GUI検査",
+      "独立レビュー"
+    ],
+    "network_browser_gui_mcp_external_send_used": false,
+    "other_agents_started": false
+  },
+  "handoff_to": "試験依頼担当者（取りまとめAIは人の検収者ではない）",
+  "human_acceptance": false,
+  "all_self_checks_passed": true
+}

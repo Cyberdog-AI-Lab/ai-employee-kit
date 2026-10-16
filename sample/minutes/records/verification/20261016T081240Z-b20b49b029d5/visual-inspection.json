@@ -1,0 +1,10 @@
+{
+  "operator": "Codex image inspection of screenshots captured from the user’s Mac Orca browser",
+  "screenshot": "top.png",
+  "screenshot_sha256": "4f2a0f4a0b41696e65594727ac8050613118db9f66aa57d2cbbec5bdf565a82b",
+  "Japanese_text_legible": true,
+  "top_layout_not_clipped": true,
+  "status_and_human_acceptance_boundary_visible": true,
+  "human_acceptance": false,
+  "limits": "Initial screenshot only; not full interaction/mobile/print or human acceptance"
+}

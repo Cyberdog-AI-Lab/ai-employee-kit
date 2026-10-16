@@ -1,161 +1,170 @@
-"""Verify saved reference samples; this does not run an AI or accept its work."""
+#!/usr/bin/env python3
+"""Validate complete sample employees and their saved evidence; never run their work.
+
+Python 3.10+ and PyYAML. Includes all bundle files/relative links, native layout,
+local Markdown file destinations, and saved run/config/input/output hash bindings.
+Does not independently recompute business outcomes, fetch remote links, verify all
+Markdown anchor syntax, discover skills in Codex, or claim human acceptance.
+"""
 from pathlib import Path
-import csv
+import argparse
 import hashlib
+import importlib.util
 import json
 import re
-from html.parser import HTMLParser
-from html import unescape
+import sys
+from urllib.parse import unquote
+
+sys.dont_write_bytecode = True
+HERE = Path(__file__).resolve().parent
+CASES = ('sales', 'minutes', 'reconciliation')
+
+
+def load_module(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+copy = load_module('sample_copy', HERE / 'prepare_sample_workspace.py')
+layout = load_module('employee_layout', HERE / 'verify_employee_workspace.py')
+
+
+def read(path):
+    return json.loads(path.read_text(encoding='utf-8'))
 
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def pointer(document, location):
-    value = document
-    for key in location.lstrip('/').split('/'):
-        key = key.replace('~1', '/').replace('~0', '~')
-        value = value[int(key)] if isinstance(value, list) else value[key]
-    return value
+def local(root, base, name):
+    if not isinstance(name, str) or not name or Path(name).is_absolute() or '\\' in name:
+        raise ValueError('Expected a nonempty relative path: ' + repr(name))
+    target = (base / name).resolve()
+    if not target.is_relative_to(root.resolve()) or not target.exists():
+        raise ValueError('Missing or outside employee: ' + name)
+    return target
 
 
-def minutes_checks(d, e, source, markdown):
-    tasks = {x['id']: x for x in d['tasks']}
-    expected_ids = {f'M{i:02}' for i in range(1, 8)}
-    lines = source.read_text().splitlines()
-    checks = {
-        'meeting_id': d['meeting_id'] == e['meeting_id'],
-        'meeting_date': d['summary']['meeting_date'] == e['date'],
-        'decision_only_M02': len(d['decisions']) == 1 and d['decisions'][0]['source_ids'] == ['M02'],
-        'decision_facts': all(x in d['decisions'][0]['text'] for x in e['decisions']),
-        'proposal_only_M04': len(d['proposals']) == 1 and d['proposals'][0]['source_ids'] == e['proposal_source_ids'],
-        'proposal_not_decision': '決定はしていない' in d['proposals'][0]['text'],
-        'task_ids': len(tasks) == len(d['tasks']) == 2 and set(tasks) == set(e['actions']),
-        'all_source_ids': set(d['source_index']) == expected_ids,
-        'original_lines': all(x['raw_text'] == lines[x['line_number'] - 1] and x['raw_text'].startswith('[' + key + ']') for key, x in d['source_index'].items()),
-        'source_targets': all(item['id'] == pointer(d, item['json_pointer'])['id'] and key in pointer(d, item['json_pointer'])['source_ids'] for key, x in d['source_index'].items() for item in x['output_items']),
-        'next_meeting_unknown': [x['value'] for x in d['undecided'] if x['kind'] == 'next_meeting_date'] == [e['next_meeting_date']],
-        'human_acceptance_false': d['human_acceptance'] is False,
-        'input_hash': sha(source) == d['input']['sha256'] == d['input']['sha256_after'],
-    }
-    for key, expected in e['actions'].items():
-        actual = tasks[key]
-        checks[key + '_facts'] = all(actual[field] == expected[field] for field in ['owner', 'deadline', 'source_ids'])
-        if 'deadline_candidates' in expected:
-            checks[key + '_candidates'] = [x['value'] for x in actual['deadline_candidates']] == expected['deadline_candidates']
-    checks['candidate_sources'] = tasks['A01']['deadline_candidates'] == [
-        {'value': '2026-10-20', 'source_ids': ['M03']},
-        {'value': '2026-10-22', 'source_ids': ['M06']},
-    ]
-    rows = {line.split('|')[1].strip(): [x.strip() for x in line.split('|')[1:-1]] for line in markdown.splitlines() if re.match(r'\| A0[12] \|', line)}
-    checks['markdown_task_values'] = all(rows[key][2] == ('null' if task['owner'] is None else task['owner']) and rows[key][4] == ('null' if task['deadline'] is None else task['deadline']) for key, task in tasks.items())
-    checks['markdown_unknown_next_date'] = any('| next_meeting_date | null |' in line for line in markdown.splitlines())
-    checks['markdown_decision_and_proposal'] = all(x['text'] in markdown for x in d['decisions'] + d['proposals'])
-    checks['markdown_source_coverage'] = all('[' + key + ']' in markdown for key in expected_ids)
-    return checks
+def check_case(root, case):
+    checks = []
+
+    def check(name, passed, detail=None):
+        checks.append({'name': name, 'passed': bool(passed), 'detail': detail})
+
+    try:
+        if root.is_symlink() or not root.is_dir():
+            raise ValueError('Employee root must be a real directory')
+        root = root.resolve()
+        # The safe snapshot audit bounds every symlink before other file reads.
+        snap = copy.snapshot(root)
+        manifest = read(root / 'bundle-manifest.json')
+        check('bundle_all_entries_and_hashes', snap == {k: manifest[k] for k in ('files', 'symlinks')})
+        check('no_inert_sample_files', not any('.sample.md' in x for x in snap['files']))
+        for name in ('AGENTS.md', 'CLAUDE.md', 'README.md', 'interview.md', 'sample.json', 'records/definition.md'):
+            check('required.' + name, (root / name).is_file())
+        for name in ('inputs', 'outputs', 'records', '.agents/skills', '.claude/skills'):
+            check('required.' + name, (root / name).is_dir())
+        structure = layout.check_workspace(root)
+        check('native_employee_structure', structure['static_checks_passed'], structure['errors'])
+        data = read(root / 'sample.json')
+        check('identity', data['schema_version'] == 1 and data['layout_version'] == 'sample-layout-v002' and data['case'] == case)
+        check('human_acceptance_not_claimed', data['human_acceptance'] is False)
+        for key in ('hearing_index', 'definition_record'):
+            check('entry.' + key, local(root, root, data[key]).is_file())
+        # Scan actual files, not duplicate symlink trees. Archived .txt quotations
+        # retain historical paths and are not current navigation documents.
+        checked_links = 0
+        errors = []
+        for relative in snap['files']:
+            p = root / relative
+            if p.suffix not in ('.md', '.markdown'):
+                continue
+            refs, missing = layout.markdown_links(p.read_text(encoding='utf-8'))
+            errors.extend({'file': relative, 'undefined_reference': x} for x in missing)
+            for ref in refs:
+                if re.match(r'^[A-Za-z][A-Za-z0-9+.-]*:', ref) or ref.startswith('//'):
+                    if ref.lower().startswith('file:'):
+                        errors.append({'file': relative, 'nonportable_link': ref})
+                    continue
+                rel = unquote(ref.split('#', 1)[0].split('?', 1)[0])
+                if not rel:
+                    continue
+                checked_links += 1
+                try:
+                    local(root, p.parent, rel)
+                except (ValueError, OSError, RuntimeError) as exc:
+                    errors.append({'file': relative, 'link': ref, 'error': str(exc)})
+        check('employee_local_markdown_links', not errors, {'checked': checked_links, 'errors': errors})
+        run = data['latest_run']
+        run_dir = root / 'outputs' / run['id']
+        check('latest_run_directly_inside_employee', run_dir.is_dir() and run_dir.parent == root / 'outputs')
+        output_paths = [local(root, root, name) for name in run['outputs']]
+        check('output_location', all(p.parent == run_dir for p in output_paths))
+        check('output_coverage', set(output_paths) == set(run_dir.glob('report.*')) and {p.name for p in output_paths} >= {'report.html', 'report.json'})
+        rm_path = local(root, root, run['manifest'])
+        rm = read(rm_path)
+        check('run_identity', rm['case'] == case and rm['run_id'] == run['id'] and rm['definition_version'] == data['definition_version'])
+        check('run_human_acceptance_not_claimed', rm['human_acceptance'] is False)
+        check('run_workspace_location', local(root, rm_path.parent, rm['workspace_in_repository']) == root.resolve())
+        expected_configs = {'AGENTS.md', 'CLAUDE.md', 'records/definition.md'}
+        expected_configs.update(p for p in snap['files'] if p.startswith('.claude/skills/'))
+        check('run_configuration_coverage', set(rm['configuration']) == set(expected_configs))
+        for name, row in rm['configuration'].items():
+            check('run_config.' + name, sha(local(root, root, name)) == row['public_sha256'])
+        input_hashes = {p: h for p, h in snap['files'].items() if p.startswith('inputs/')}
+        check('run_inputs_match', rm['input_sha256'] == input_hashes)
+        bound_outputs = []
+        for row in rm['outputs']:
+            p = local(root, rm_path.parent, row['path'])
+            bound_outputs.append(p)
+            check('run_output.' + p.name, sha(p) == row['public_sha256'])
+        check('run_output_coverage', set(bound_outputs) == set(output_paths))
+        er = rm['execution_record']
+        check('execution_record_hash', sha(local(root, rm_path.parent, er['path'])) == er['public_sha256'])
+        independent_path = local(root, root, run['independent_verification'])
+        check('independent_record_location', local(root, rm_path.parent, rm['independent_verification']['path']) == independent_path)
+        check('independent_record_hash', sha(independent_path) == rm['independent_verification']['public_sha256'])
+        independent = read(independent_path)
+        check('saved_independent_record_passed', independent['all_passed'] is True and independent['human_acceptance'] is False and all(x['passed'] is True for x in independent['checks']))
+        check('saved_independent_check_count', len(independent['checks']) > 0 and len(independent['checks']) == rm['independent_verification']['checks'] and rm['independent_verification']['passed'] is True)
+        check('saved_independent_run_identity', independent['case'] == case and independent['run'] == run['id'])
+        source_hashes = set(independent['source_hashes'].values())
+        check('independent_original_report_binding', all(x['executed_sha256'] in source_hashes for x in rm['outputs'] if Path(x['path']).suffix in ('.html', '.json')))
+        report = read(run_dir / 'report.json')
+        check('report_identity_and_acceptance', report['run_id'] == run['id'] and report['human_acceptance'] is False)
+    except (OSError, ValueError, KeyError, TypeError, RuntimeError) as exc:
+        check('validation_completed', False, str(exc))
+    return {'case': case, 'all_passed': all(x['passed'] for x in checks), 'checks': checks}
 
 
-def sales_checks(d, e, source, html):
-    counts = d['row_counts']
-    actual = {
-        'period': [d['start_date'], d['end_date']],
-        'input_rows': counts['input_data_rows'],
-        'period_rows': counts['accepted'] + counts['pending_quantity'],
-        'included_rows': counts['accepted'],
-        'unresolved_rows': sorted(x['sale_id'] for x in d['trace'] if x['classification'] == 'pending_quantity'),
-        'out_of_period': sorted(x['sale_id'] for x in d['trace'] if x['classification'] == 'outside_period'),
-        'known_subtotal_jpy': d['known_totals']['amount_jpy'],
-        'included_quantity': d['known_totals']['quantity'],
-        'by_product_jpy': {x['product']: x['amount_jpy'] for x in d['by_product']},
-        'by_date_jpy': {x['date']: x['amount_jpy'] for x in d['by_date']},
-        'by_channel_jpy': {x['channel']: x['amount_jpy'] for x in d['by_channel']},
-        'line_amounts_jpy': {x['sale_id']: x['amount_jpy'] for x in d['trace'] if x['classification'] == 'accepted'},
-        'total_is_provisional': d['is_provisional'],
-    }
-    checks = {key: value == e[key] for key, value in actual.items()}
-    with source.open(newline='') as handle:
-        original = list(csv.DictReader(handle))
-    checks['original_rows'] = len(original) == len(d['trace']) and all(t['original'] == row and t['physical_line_start'] == i + 2 and t['physical_line_end'] == i + 2 for i, (t, row) in enumerate(zip(d['trace'], original)))
-    missing = [x for x in d['trace'] if x['sale_id'] == 'S006'][0]
-    checks['unknown_is_not_zero'] = missing['quantity'] is None and missing['amount_jpy'] is None and missing['original']['quantity'] == ''
-    checks['source_hash'] = sha(source) == e['source_sha256']
-    checks['human_acceptance_false'] = d['human_acceptance'] is False
-
-    class Scan(HTMLParser):
-        def __init__(self):
-            super().__init__()
-            self.tags, self.attrs = [], []
-
-        def handle_starttag(self, tag, attrs):
-            self.tags.append(tag)
-            self.attrs.extend(attrs)
-
-    scan = Scan()
-    scan.feed(html)
-    checks['three_svg_graphs'] = scan.tags.count('svg') == 3
-    checks['no_active_or_embedded_tags'] = not set(scan.tags) & {'script', 'iframe', 'object', 'embed', 'link', 'img'}
-    checks['no_event_handlers'] = not any(k.lower().startswith('on') for k, _ in scan.attrs)
-    checks['no_remote_resources'] = not any(k in {'src', 'href'} and v and v.startswith(('http:', 'https:', '//', 'data:')) for k, v in scan.attrs)
-    checks['html_critical_values'] = ('9,150' in html or '9150' in html) and '暫定' in html and all(row['sale_id'] in html for row in original)
-    return checks
-
-
-def product_checks(d, e, source, markdown):
-    original = json.loads(source.read_text())
-    actual = {x['sku']: x for x in d['products']}
-    expected = {x['sku']: x for x in e['products']}
-    decoded_markdown = unescape(markdown)
-    checks = {
-        'input_matches_heldout': original == e,
-        'dataset_id': d['dataset_id'] == e['dataset_id'],
-        'fictional': d['fictional'] is e['fictional'] is True,
-        'all_products_once': len(actual) == len(d['products']) == len(expected) and set(actual) == set(expected),
-        'input_hash': sha(source) == d['input_sha256'],
-        'human_acceptance_false': d['human_acceptance'] is False,
-        'no_excluded_products': d['excluded_products'] == [],
-    }
-    for sku, item in actual.items():
-        index = next(i for i, product in enumerate(original['products']) if product['sku'] == sku)
-        prefix = f'/products/{index}/'
-        checks[sku + '_original_facts'] = all(item[key] == value and type(item[key]) is type(value) for key, value in expected[sku].items())
-        checks[sku + '_field_references'] = all(item[key] == pointer(original, location) and location == prefix + key for key, location in item['field_sources'].items())
-        claims = item['claim_sources']
-        checks[sku + '_claim_coverage'] = 1 <= len(claims) <= 2 and ''.join(x['claim'] for x in claims) == item['introduction']
-        checks[sku + '_claim_references'] = all(x['sources'] and all(location.startswith((prefix + 'content', prefix + 'features/')) and isinstance(pointer(original, location), str) for location in x['sources']) for x in claims)
-        checks[sku + '_markdown_values'] = all(value in decoded_markdown for value in [item['name'], item['content'], item['introduction'], *item['features'], *item['unknowns']])
-        expected_price = '価格未定・要確認' if item['price_jpy'] is None else str(item['price_jpy']) + '円'
-        checks[sku + '_price_display'] = item['price_display'] == expected_price and f'| 価格 | {expected_price} | {prefix}price_jpy |' in decoded_markdown
-    checks['markdown_validation_table'] = all(f"| {x['label']} | {x['result']} | {x['detail']} |" in decoded_markdown for x in d['validation']['checks'])
-    return checks
+def verify(root):
+    root = Path(root).resolve()
+    sample = root / 'sample'
+    actual = sorted(p.name for p in sample.iterdir() if p.is_dir())
+    checks = [{'name': 'one_direct_folder_per_employee', 'passed': actual == sorted(CASES), 'actual': actual}]
+    results = {case: check_case(sample / case, case) for case in CASES}
+    return {'all_passed': all(c['passed'] for c in checks) and all(r['all_passed'] for r in results.values()),
+            'scope': __doc__, 'saved_samples_only': True, 'checks': checks, 'results': results,
+            'recognition_verified_by_this_script': False, 'business_recomputed': False, 'human_acceptance': False}
 
 
 def main():
-    root = Path(__file__).resolve().parents[1]
-    results = {}
-    for case in ['sales', 'minutes', 'product']:
-        base = root / 'sample' / case
-        report = json.loads((base / 'output/report.json').read_text())
-        expected = json.loads((base / 'expected.json').read_text())
-        provenance = json.loads((base / 'provenance.json').read_text())
-        source = list((base / 'input').iterdir())
-        if len(source) != 1:
-            raise ValueError(f'{case}: expected exactly one fixture')
-        suffix = 'html' if case == 'sales' else 'md'
-        rendered = (base / ('output/report.' + suffix)).read_text()
-        checks = globals()[case + '_checks'](report, expected, source[0], rendered)
-        recorded_files = provenance['public_files_sha256']
-        actual_files = {str(f.relative_to(base)) for f in base.rglob('*') if f.is_file() and f.name != 'provenance.json'}
-        checks['manifest_coverage'] = set(recorded_files) == actual_files
-        checks['public_file_hashes'] = all(sha(base / name) == digest for name, digest in recorded_files.items())
-        checks['original_report_identity'] = report['public_export']['original_report_sha256'] == provenance['original_files']['output/report.json']['sha256']
-        checks['reference_only'] = provenance['publication_form'] == 'inert_reference_sample' and report['public_export']['business_rerun'] is False
-        checks['no_human_acceptance_claim'] = provenance['human_acceptance'] is False and provenance['human_definition_review'] is False
-        checks['recorded_independent_result'] = json.loads((base / 'validation/result.json').read_text())['all_passed'] is True
-        results[case] = {'passed': all(checks.values()), 'checks': checks}
-    print(json.dumps({'saved_samples_only': True, 'human_acceptance': False, 'results': results}, ensure_ascii=False, indent=2))
-    raise SystemExit(0 if all(x['passed'] for x in results.values()) else 1)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root', type=Path, default=HERE.parent)
+    parser.add_argument('--output', type=Path)
+    args = parser.parse_args()
+    result = verify(args.root)
+    rendered = json.dumps(result, ensure_ascii=False, indent=2) + '\n'
+    if args.output:
+        args.output.write_text(rendered)
+        print(json.dumps({'all_passed': result['all_passed'], 'checks': sum(len(r['checks']) for r in result['results'].values()) + len(result['checks']), 'output': str(args.output)}))
+    else:
+        print(rendered, end='')
+    return 0 if result['all_passed'] else 1
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

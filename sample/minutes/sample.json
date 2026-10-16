@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "layout_version": "sample-layout-v002",
+  "case": "minutes",
+  "definition_version": "runtime-v001",
+  "generation_spec_version": "0.1.4-draft",
+  "qa_version": "0.1.2-draft",
+  "hearing_index": "interview.md",
+  "definition_record": "records/definition.md",
+  "latest_run": {
+    "id": "20261016T081240Z-b20b49b029d5",
+    "outputs": [
+      "outputs/20261016T081240Z-b20b49b029d5/report.html",
+      "outputs/20261016T081240Z-b20b49b029d5/report.json",
+      "outputs/20261016T081240Z-b20b49b029d5/report.md"
+    ],
+    "manifest": "records/runs/20261016T081240Z-b20b49b029d5/run-manifest.json",
+    "independent_verification": "records/verification/20261016T081240Z-b20b49b029d5/independent.json",
+    "recognition": "records/verification/20261016T081240Z-b20b49b029d5/recognition.json"
+  },
+  "human_acceptance": false
+}

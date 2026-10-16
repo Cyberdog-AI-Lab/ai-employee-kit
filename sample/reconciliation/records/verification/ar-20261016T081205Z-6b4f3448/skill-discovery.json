@@ -1,0 +1,16 @@
+{
+  "cwd": "EXECUTED_WORKSPACES/reconciliation",
+  "skills": [
+    {
+      "name": "work-001",
+      "description": "架空試験の毎日の請求・銀行入金照合を依頼されたとき、指定入力とR01〜R11から根拠付きのローカルHTML/JSONと記録を作る。会計更新・送信・実データ処理は行わない。",
+      "path": "EXECUTED_WORKSPACES/reconciliation/.claude/skills/work-001/SKILL.md",
+      "scope": "repo",
+      "enabled": true,
+      "pluginId": null
+    }
+  ],
+  "errors": [],
+  "total_skills_count": 34,
+  "kit_generator_in_list": false
+}

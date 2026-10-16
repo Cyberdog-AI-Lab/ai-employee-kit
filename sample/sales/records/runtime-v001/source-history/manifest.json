@@ -1,0 +1,31 @@
+{
+  "kind": "Historical hearing source snapshots, not current policy",
+  "files": [
+    {
+      "original_name": "interview.md",
+      "path": "interview.md.txt",
+      "original_sha256": "3c7f7ea9a76927be706e5b8d9d14ff7968b0a72f0513cb36fccd2b3ae6dc432e",
+      "public_sha256": "3c7f7ea9a76927be706e5b8d9d14ff7968b0a72f0513cb36fccd2b3ae6dc432e"
+    },
+    {
+      "original_name": "interview-v002.md",
+      "path": "interview-v002.md.txt",
+      "original_sha256": "b4b6048a79f07d5602efc5fecb5cc6b13889dcb9f64d273cecc8ec295b823442",
+      "public_sha256": "b4b6048a79f07d5602efc5fecb5cc6b13889dcb9f64d273cecc8ec295b823442"
+    },
+    {
+      "original_name": "answers.md",
+      "path": "answers.md.txt",
+      "original_sha256": "e1b920b3aea8b0fcb27751b1aa8c0b1eb310ebfb0fb97d61be1c05fb478e4d1c",
+      "public_sha256": "e1b920b3aea8b0fcb27751b1aa8c0b1eb310ebfb0fb97d61be1c05fb478e4d1c"
+    },
+    {
+      "original_name": "answers-v002.md",
+      "path": "answers-v002.md.txt",
+      "original_sha256": "4482793f44e8358907ecc72f65a50de8d724ab89342e5a0404faf8b159d749cb",
+      "public_sha256": "4482793f44e8358907ecc72f65a50de8d724ab89342e5a0404faf8b159d749cb"
+    }
+  ],
+  "transformation": "Personal local paths replaced with symbolic labels only",
+  "human_approval": false
+}

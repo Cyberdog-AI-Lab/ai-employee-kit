@@ -44,7 +44,7 @@ def manifest(src):
 
 def fixture(root):
     kit = root / 'kit'
-    src = kit / 'sample/workspaces/sales'
+    src = kit / 'sample/sales'
     write(src / 'AGENTS.md', '# Employee\nKeep source inputs unchanged.\n')
     write(src / 'CLAUDE.md', '@AGENTS.md\n')
     write(src / '.claude/skills/work-001/SKILL.md',
@@ -124,6 +124,16 @@ def main():
 
         run('copy_preserves_hidden_config_relative_link_and_inputs',
             lambda b, k, s: {'copy_content_matches': success(k, s, b / 'copied')['copy_content_matches']})
+
+        # The setup is performed before the source-preservation snapshot.
+        def legacy_setup(b, k, s):
+            old = k / 'sample/workspaces/sales'
+            old.parent.mkdir()
+            shutil.move(s, old)
+
+        run('no_fallback_to_legacy_workspaces',
+            lambda b, k, s: reject(lambda: copy.prepare('sales', b / 'copied', k), 'No such file', b / 'copied'),
+            legacy_setup)
 
         def existing(b, k, s):
             dst = b / 'existing'

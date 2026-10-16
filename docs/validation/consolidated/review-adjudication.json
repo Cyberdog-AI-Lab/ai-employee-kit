@@ -1,0 +1,43 @@
+{
+  "reviewer": "Claude Code, read-only",
+  "raw_review": "claude-review.md",
+  "raw_review_sha256": "dddd0c19460f00471d0ecea6d5c4e59dd4a8538df7394896481063f25c4d9f5d",
+  "findings": [
+    {
+      "id": 1,
+      "decision": "fixed",
+      "change": "Every file under the canonical skill directory is bound to run configuration; regression added for changed input-contract reference."
+    },
+    {
+      "id": 2,
+      "decision": "fixed",
+      "change": "Four sales hearing source snapshots bundled with original/public SHA map."
+    },
+    {
+      "id": 3,
+      "decision": "fixed",
+      "change": "README links point to .claude canonical files; .agents discovery path described separately."
+    },
+    {
+      "id": 4,
+      "decision": "fixed locally",
+      "change": "Untracked obsolete test scripts moved to verified external backup, not claimed as Git-tracked history."
+    },
+    {
+      "id": 5,
+      "decision": "fixed",
+      "change": "Independent record SHA and nonempty exact check count verified."
+    },
+    {
+      "id": 6,
+      "decision": "fixed",
+      "change": "Browser and screenshot operator explicitly Codex; no human acceptance."
+    },
+    {
+      "id": 7,
+      "decision": "fixed",
+      "change": "Four check commands consistent across compatibility and validation docs."
+    }
+  ],
+  "human_acceptance": false
+}

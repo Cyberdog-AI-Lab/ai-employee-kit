@@ -1,0 +1,16 @@
+{
+  "cwd": "EXECUTED_WORKSPACES/minutes",
+  "skills": [
+    {
+      "name": "work-002",
+      "description": "こもれび商店の体験販売会の架空会議メモから、正式決定と変更、未解決、担当別宿題、根拠発言をHTML/JSON/Markdownへ整理する試験用業務。曖昧な発言の補完や提案の決定化には使わない。",
+      "path": "EXECUTED_WORKSPACES/minutes/.claude/skills/work-002/SKILL.md",
+      "scope": "repo",
+      "enabled": true,
+      "pluginId": null
+    }
+  ],
+  "errors": [],
+  "total_skills_count": 34,
+  "kit_generator_in_list": false
+}

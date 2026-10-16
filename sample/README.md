@@ -1,46 +1,36 @@
-# キットを通したサンプル
+# KITで作成したAI社員
 
-**修正後の設定で生成した成果物を見る： [最新の売上・会議・請求入金レポート](results/README.md)。**
+**各フォルダが1人分の完成したAI社員です。** フォルダを開くと、AGENTS.md、Codexが発見するスキル、架空入力、実際の成果物、ヒアリングと生成・実行記録を一緒に確認できます。
 
-## 正式な設定で試す
-
-AI社員を実行する入口は [実行用workspaceの準備手順](workspaces/README.md) です。正式なAGENTS.mdとSkill、必要資料・架空入力を揃え、キット外へコピーして使います。
-
-| 実行用サンプル | 正式な設定 | 保存済み結果と検証 |
-| --- | --- | --- |
-| [売上workspace](workspaces/sales/) | [AGENTS](workspaces/sales/AGENTS.md)・[Skill](workspaces/sales/.claude/skills/work-001/SKILL.md) | [検証記録](workspace-validation/README.md) |
-| [会議workspace](workspaces/minutes/) | [AGENTS](workspaces/minutes/AGENTS.md)・[Skill](workspaces/minutes/.claude/skills/work-002/SKILL.md) | [検証記録](workspace-validation/README.md) |
-| [請求入金workspace](workspaces/reconciliation/) | [AGENTS](workspaces/reconciliation/AGENTS.md)・[Skill](workspaces/reconciliation/.claude/skills/work-001/SKILL.md) | [検証記録](workspace-validation/README.md) |
-
-## 過去の試験を読む（説明用資料）
-
-以下の `sales/`・`minutes/`・`product/` は、小規模な試験の記録です。この3フォルダ内の `.sample.md` は自動認識される設定ではなく、実行用workspaceとは別の資料です。商品紹介の実行用workspaceは現在未配布です。
-
-各サンプルは、実際の `ai-employee-interview` による質問、AIによる模擬回答、`ai-employee-generate` による草稿・試験配置を経て、別のCodex会話で架空資料の仕事を実行した記録です。本人の業務ヒアリングや人の検収を再現した記録ではありません。
-
-| 例 | 入力 | 生成結果 | 確認した挙動 |
+| AI社員 | 仕事 | 設定 | ヒアリング・成果物・使い方 |
 | --- | --- | --- | --- |
-| [売上](sales/README.md) | 8行のCSV | グラフ入りHTML・根拠付きJSON | 期間不足で停止・記録、既知分9,150円、数量空欄を保持 |
-| [議事録](minutes/README.md) | 根拠ID付き7行の会議メモ | Markdown・JSON | ID不足で停止・記録、担当未定・期限矛盾を保持 |
-| [商品紹介](product/README.md) | 2商品のJSON | 社内原稿のMarkdown・JSON | ID不足で停止・記録、不明価格・対応可否を保持 |
+| 店舗売上の見渡し担当 | 4店舗・3か月の売上と返品の照合 | [AGENTS](sales/AGENTS.md)・[Skill](sales/.claude/skills/work-001/SKILL.md) | [sales/](sales/README.md) |
+| 会議引継ぎ担当 | 決定・変更・宿題と未解決事項の整理 | [AGENTS](minutes/AGENTS.md)・[Skill](minutes/.claude/skills/work-002/SKILL.md) | [minutes/](minutes/README.md) |
+| 請求・入金照合担当 | 入金候補、未回収、確認事項の整理 | [AGENTS](reconciliation/AGENTS.md)・[Skill](reconciliation/.claude/skills/work-001/SKILL.md) | [reconciliation/](reconciliation/README.md) |
 
-各フォルダの interview.md → definition/ → input/ と expected.json → output/ → validation/ の順に読めます。インタビューは実際の依頼・質問・回答を公開用に要約し、質問の引用と要約を区別しています。売上・議事録の期待値は業務実装・実行前に別管理し、実行担当へ渡していません。商品紹介の期待値は入力事実そのもので、入力として実行担当にも見えています。機械検査はその保持と参照構造を確認し、紹介文の意味が入力の範囲に収まるかは取りまとめ担当AIと別担当Claude Codeが読んで確認しました。人の検収ではありません。
-
-## 保存済み結果を検査する
-
-リポジトリ直下でPython 3を使って実行します。標準ライブラリだけを使います。
-
-```sh
-python3 scripts/verify_samples.py
+```text
+sample/
+├── sales/
+├── minutes/
+└── reconciliation/
+    ├── AGENTS.md
+    ├── CLAUDE.md
+    ├── .agents/skills/work-001/SKILL.md  ← 同じ社員内の正本を参照
+    ├── .claude/skills/work-001/SKILL.md  ← スキルの正本
+    ├── interview.md                    ← ヒアリング・回答台帳の索引
+    ├── inputs/                         ← 架空の入力原本
+    ├── outputs/<run-id>/               ← 実際に作成したレポート
+    ├── records/                        ← 生成・実行・検証記録
+    ├── sample.json                     ← 現行版と成果物の対応
+    └── bundle-manifest.json            ← 配布内容のハッシュ
 ```
 
-このコマンドは収録済み入力・期待値・出力・公開ファイルのハッシュを照合します。AIへ新しく仕事を依頼したり、同じ結果が再生成されることを保証したりするものではありません。新しく試すときは[トップREADME](../README.md)の手順でキット外へ社員定義を作成してください。
+同じ構成を3社員に使います。`sample/<社員>/` 全体をKIT外へコピーし、そこを開いた新しいCodex会話で使います。各READMEに実行条件があります。隠しディレクトリを含むコピーと静的検査はKITの次のコマンドで行えます（Python 3.10+と `scripts/requirements-validation.txt` のPyYAMLが必要）。
 
-## 公開時に変えたもの
+```sh
+python3 scripts/prepare_sample_workspace.py minutes /path/outside-kit/minutes-employee
+```
 
-- 定義は自動読込みされないファイル名とコードブロックにし、これらの過去の参照フォルダへ実行用AGENTS/CLAUDE/SKILLを置いていません。新しい実行用はworkspaces/に分離しています。
-- ローカル絶対パスは記号的な保存先名に置き換えました。内部の会話運用情報は公開要約から除いています。
-- 仕事の入力、金額、未確定値、根拠IDは変えていません。出力JSONには公開複製を示すpublic_exportを加えました。
-- provenance.jsonは試験原本と公開複製のハッシュを分けます。匿名化されたファイルから元ファイルのハッシュを再計算することはできません。
+保存先は新しいフォルダを指定してください。コピーだけでは仕事を実行しません。過去のヒアリング・許可は履歴であり、新しい依頼を代替しません。全例が模擬回答と架空入力による試験用で、人の検収は未実施です。
 
-[検証記録](../docs/validation.md)に試験環境、失敗と修正、未検証事項をまとめています。
+以前の説明用 `.sample.md`、小規模な商品紹介例、別階層の配布物・結果は現行ツリーから除き、[移行前のGit履歴](https://github.com/Cyberdog-AI-Lab/ai-employee-kit/tree/78d1c233cf23c09bd9c87b727e59e6b58d53c53f/sample)に残しています。現行の検証範囲は [検証記録](../docs/validation.md) を参照してください。
