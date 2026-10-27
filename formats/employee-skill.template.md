@@ -1,6 +1,6 @@
 # 生成社員の業務Skill — 非実行テンプレート
 
-**参照仕様：** [employee-format-spec.md](employee-format-spec.md) `0.1.5-draft`
+**参照仕様：** [employee-format-spec.md](employee-format-spec.md) `0.1.6-draft`
 **用途：** 生成社員が行う個別業務の最終形式。キットのヒアリング/生成Skillではない。
 
 > [補足] このファイルを実際のSKILL.mdとして配置しない。コードフェンス内は見本であり、業務手順やユーザー回答はまだ埋まっていない。固定規則と必須項目の正本は仕様書にある。descriptionは適用判断の要約で、自動呼出しや実行成功を保証しない。

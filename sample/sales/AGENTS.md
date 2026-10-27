@@ -1,7 +1,7 @@
 # 店舗売上の見渡し担当
 
-**生成元：** runtime-v001 / ai-employee-format 0.1.4-draft / Q&A 0.1.2-draft / 両テンプレート参照仕様0.1.4-draft / 生成日時 2026-10-16T04:36:08.158150+00:00。実キット・テンプレートの内容識別子は定義記録のsource-manifestを参照。  
-**回答根拠・項目対応・定義/実環境の確認履歴：** [定義記録](records/definition.md)
+**生成元：** runtime-v001 / ai-employee-format 0.1.4-draft / Q&A 0.1.2-draft / 両テンプレート参照仕様0.1.4-draft / 生成日時 2026-10-16T04:36:08.158150+00:00。現在のhashと元の生成記録への参照は定義記録を参照。\
+**回答根拠・項目対応・定義と実環境の確認方法：** [定義記録](records/definition.md)
 
 この定義の配置承認、個別の業務実行依頼、成果物の検収は別に扱う。
 
@@ -40,7 +40,7 @@
 
 読取り原本は `inputs/`。その配下の販売CSV、返品CSV、master、notes、README、manifestだけを業務入力として扱う。正本・参照資料と定義記録も開始条件の確認に読む。
 
-業務成果は `outputs/` 直下に新規runディレクトリを作り、`report.html` と `report.json` を保存する。run-idはUTC日時と一意IDを組み合わせ、衝突時は別IDにする。業務記録は `records/runs/` 直下の同じrun-idへ、検査、停止、実行時間、入力/定義hash、部分成果と再開条件を残す。定義記録は `records/definition.md`、生成版の根拠は `records/runtime-v001/`、旧定義は `records/definition-history/` へ別版で保全する。この業務専用の処理コードが別途必要な場合は `scripts/` 内へ衝突しない新規名で保存する。
+業務成果は `outputs/` 直下に新規runディレクトリを作り、`report.html` と `report.json` を保存する。run-idはUTC日時と一意IDを組み合わせ、衝突時は別IDにする。業務記録は `records/runs/` 直下の同じrun-idへ、検査、停止、実行時間、入力/定義hash、部分成果と再開条件を残す。定義記録は `records/definition.md`、生成版の根拠と既存の旧定義は定義記録から辿れるGit版に保全している。今後の改訂ではEMP-011に従い、旧定義を `records/definition-history/` の新しい版へ保全する。この業務専用の処理コードが別途必要な場合は `scripts/` 内へ衝突しない新規名で保存する。
 
 入力を書き換えず、既存成果物・記録・コードへ重ねない。必須値不足等による開始前停止では、停止記録だけを新規保存し、業務出力ディレクトリを作らない。
 

@@ -1,6 +1,6 @@
 # 生成社員AGENTS — 非実行テンプレート
 
-**参照仕様：** [employee-format-spec.md](employee-format-spec.md) `0.1.5-draft`
+**参照仕様：** [employee-format-spec.md](employee-format-spec.md) `0.1.6-draft`
 **用途：** 最終フォーマットの文書レビュー。キット自身のAGENTSではない。
 
 > [補足] このファイルを実際のAGENTS.mdとして使用しない。以下のコードフェンスは生成後の形の見本であり、現在のworkspaceに対する指示ではない。`{{...}}` は未回答を含む差込み記号で、利用者の実回答ではない。固定規則の規範は仕様正本にあり、ここは対応する表示見本である。

@@ -72,13 +72,23 @@ def main():
     run('README_cannot_route_to_another_employee', lambda w: (w / 'README.md').write_text('[real config](../AGENTS.md)'), 'employee_local_markdown_links')
     run('missing_hearing_record', lambda w: (w / 'interview.md').unlink(), 'required.interview.md')
     run('modified_output_even_with_fresh_bundle_hash', lambda w: (next((w / 'outputs').glob('*/report.html'))).write_text('changed'), 'run_output.report.html')
-    run('modified_config_even_with_fresh_bundle_hash', lambda w: (w / 'AGENTS.md').write_text((w / 'AGENTS.md').read_text() + '\nNew policy.\n'), 'run_config.AGENTS.md')
-    run('modified_skill_reference_even_with_fresh_bundle_hash', lambda w: (w / '.claude/skills/work-002/references/input-contract.md').write_text('Changed business input contract.\n'), 'run_config..claude/skills/work-002/references/input-contract.md')
+    run('modified_config_even_with_fresh_bundle_hash', lambda w: (w / 'AGENTS.md').write_text((w / 'AGENTS.md').read_text() + '\nNew policy.\n'), 'current_config.AGENTS.md')
+    run('modified_skill_reference_even_with_fresh_bundle_hash', lambda w: (w / '.claude/skills/work-002/references/input-contract.md').write_text('Changed business input contract.\n'), 'current_config..claude/skills/work-002/references/input-contract.md')
     run('modified_input_even_with_fresh_bundle_hash', lambda w: (w / 'inputs/README.md').write_text('changed'), 'run_inputs_match')
-    run('failed_saved_independent_record', lambda w: change_json(next((w / 'records/verification').glob('*/independent.json')), lambda d: d.update(all_passed=False)), 'saved_independent_record_passed')
-    run('independent_record_bytes_bound_to_run', lambda w: change_json(next((w / 'records/verification').glob('*/independent.json')), lambda d: d.update(extra='changed')), 'independent_record_hash')
+    run('historical_summary_must_remain_unambiguous', lambda w: change_json(w / 'sample.json', lambda d: d['latest_run']['independent_verification'].update(passed_at_source_commit=False)), 'historical_summary_shape')
+    run('archived_evidence_requires_immutable_commit', lambda w: change_json(w / 'sample.json', lambda d: d['latest_run'].update(source_commit='main')), 'immutable_history_commit')
+    run('archived_evidence_cannot_route_to_wrong_run', lambda w: change_json(w / 'sample.json', lambda d: d['latest_run'].update(manifest_url='https://example.invalid/')), 'historical_record_locations')
+    run('latest_report_must_remain_bound_to_executed_definition', lambda w: change_json(w / 'sample.json', lambda d: d['latest_run']['executed_definition_sha256'].update({'AGENTS.md':'0'*64})), 'report_executed_definition_binding')
+    run('cannot_drop_historical_definition_dependency', lambda w: change_json(w / 'sample.json', lambda d: d['latest_run']['executed_definition_sha256'].pop('records/runtime-v001/definition-manifest.json')), 'executed_configuration_coverage')
+    def replace_input_and_its_current_hash(w):
+        p = w / 'inputs/README.md'
+        p.write_text('Changed input, with a rewritten current metadata hash.\n')
+        change_json(w / 'sample.json', lambda d: d['input_sha256'].update({'inputs/README.md':samples.sha(p)}))
+    run('report_input_binding_survives_resealed_metadata', replace_input_and_its_current_hash, 'report_input_binding')
+    run('cleanup_cannot_claim_business_rerun', lambda w: change_json(w / 'sample.json', lambda d: d['cleanup'].update(business_rerun=True)), 'cleanup_does_not_claim_rerun')
+    run('parameters_must_match_latest_report', lambda w: change_json(w / 'sample.json', lambda d: d['latest_run']['parameters'].update(as_of='2026-01-01')), 'run_parameters')
     run('sample_cannot_claim_human_acceptance', lambda w: change_json(w / 'sample.json', lambda d: d.update(human_acceptance=True)), 'human_acceptance_not_claimed')
-    run('mismatched_run_id', lambda w: change_json(next((w / 'records/runs').glob('*/run-manifest.json')), lambda d: d.update(run_id='wrong-run')), 'run_identity')
+    run('mismatched_run_id', lambda w: change_json(w / 'sample.json', lambda d: d['latest_run'].update(id='wrong-run')), 'latest_run_directly_inside_employee')
     run('tamper_without_resealing_bundle', lambda w: (w / 'README.md').write_text('changed'), 'bundle_all_entries_and_hashes', seal=False)
 
     with tempfile.TemporaryDirectory(prefix='employee-layout-test-', dir=args.temp_root) as directory:

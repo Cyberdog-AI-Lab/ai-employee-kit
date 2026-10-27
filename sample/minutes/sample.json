@@ -1,22 +1,65 @@
 {
-  "schema_version": 1,
-  "layout_version": "sample-layout-v002",
+  "schema_version": 2,
+  "layout_version": "sample-layout-v003",
   "case": "minutes",
   "definition_version": "runtime-v001",
-  "generation_spec_version": "0.1.4-draft",
-  "qa_version": "0.1.2-draft",
-  "hearing_index": "interview.md",
+  "hearing_record": "interview.md",
   "definition_record": "records/definition.md",
+  "current_definition_sha256": {
+    ".claude/skills/work-002/SKILL.md": "8005ac92e3df5fc67d1ad371fc55f5dd8f2dcce23adadcfe79d2e3bccdb2213a",
+    ".claude/skills/work-002/references/input-contract.md": "63015cb9ff1ee37191cfa9c92966138bc767fd7096737711b3c70db3c27afc8e",
+    "AGENTS.md": "1393191fd1a6b17f6eddabd6337ff585d415090158d2bb0eefac4e9dda95a53e",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "interview.md": "22da108279094649acd7672bee030c5fda36abce11ea0f857e22fc7c0a250f42",
+    "records/definition.md": "b592106e451e4493eec9ea146e41a3d3212fc8c15cebae2362d1ea2231ac3ab2"
+  },
+  "input_sha256": {
+    "inputs/README.md": "dcaccefe3c0f0871ae2dcf35cb659b17e215e2bd63f33696de6ff8e6236f3959",
+    "inputs/manifest.json": "5b446c63bbbc851b1df522276445c6d4aa8d2d966af2dfa094d237e5c8d86999",
+    "inputs/meetings/2026-09-01-meeting-01.md": "d919171fe4397a3477899e4c37950250ee57a6fac968344ec99ae3d4f239266a",
+    "inputs/meetings/2026-09-08-meeting-02.md": "009f2be84cdb0981a1eef52befba689c1089e7220457eff7bb0b9c7261c27d7c",
+    "inputs/meetings/2026-09-15-meeting-03.md": "dedb42a882ea7bb5eada9e276966b4478b839db54132d5bea1309a961c3654f0",
+    "inputs/meetings/2026-09-22-meeting-04.md": "13aede444dae4995414622a230c74e7c7693ffcd93b51d3a3c25eea897fcd119",
+    "inputs/meetings/2026-09-29-meeting-05.md": "bc431f476be2f4a79ebd1ae5b0a1cb63f0909dd72f1600e240efc2d84f4af675",
+    "inputs/meetings/2026-10-03-meeting-06.md": "0f49a2a7ed544c26ff2bd4ff7b08a2456d6dfe35ce4c9affbbb36294476b9713",
+    "inputs/meetings/2026-10-08-meeting-07.md": "e29783d701589b56a3535254e8e355c2b1965533f1bdc7c086566965a6d93aeb",
+    "inputs/meetings/2026-10-12-meeting-08.md": "507d3b7cb5d2e1d619b3ae10722a2ebedcf31c416e208f50460a421e29c73bd5"
+  },
   "latest_run": {
     "id": "20261016T081240Z-b20b49b029d5",
-    "outputs": [
-      "outputs/20261016T081240Z-b20b49b029d5/report.html",
-      "outputs/20261016T081240Z-b20b49b029d5/report.json",
-      "outputs/20261016T081240Z-b20b49b029d5/report.md"
-    ],
-    "manifest": "records/runs/20261016T081240Z-b20b49b029d5/run-manifest.json",
-    "independent_verification": "records/verification/20261016T081240Z-b20b49b029d5/independent.json",
-    "recognition": "records/verification/20261016T081240Z-b20b49b029d5/recognition.json"
+    "parameters": {
+      "input_dir": "inputs",
+      "project_id": "KOMOREBI-EVENT-2026",
+      "as_of": "2026-10-15"
+    },
+    "output_sha256": {
+      "outputs/20261016T081240Z-b20b49b029d5/report.html": "4ae0910a626f27dcf9ca125375e113db3dbc00506275930a10feca69ee9e2be9",
+      "outputs/20261016T081240Z-b20b49b029d5/report.json": "6be526f0099d45155e51a2f86e9b6811a23183b012a0dcccdd847b0c1cd7d660",
+      "outputs/20261016T081240Z-b20b49b029d5/report.md": "f4ad92cf3fe97c291afc28b16798a094bd3b3404f8503893e32e5404c168b415"
+    },
+    "source_commit": "8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1",
+    "executed_definition_sha256": {
+      "AGENTS.md": "5c8e921f54e4d3738badc8458fc2cdaa0725575c6cbe3440cc9c54a606277568",
+      "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      ".claude/skills/work-002/SKILL.md": "8271d5db5f2f327bc9473ccfccec25f194d09c38cb4cee35705f568b2adda31c",
+      ".claude/skills/work-002/references/input-contract.md": "63015cb9ff1ee37191cfa9c92966138bc767fd7096737711b3c70db3c27afc8e",
+      "records/definition.md": "ebe497c2995938bf2dd462ba4e85c2d7ee2266dbcc14898c4df701e3efbadbc3",
+      "records/runtime-v001/definition-manifest.json": "6ac88687c0d3e00517fbf52dcaa56ad8f3f0230121f2e75bead510685a985249",
+      "workspace-copy-receipt.json": "d0202b964c73cd31ede5076ffa0b19238b533dd86190d05ac6bd8d8d500a8995"
+    },
+    "records_url": "https://github.com/Cyberdog-AI-Lab/ai-employee-kit/tree/8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1/sample/minutes/records",
+    "manifest_url": "https://github.com/Cyberdog-AI-Lab/ai-employee-kit/blob/8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1/sample/minutes/records/runs/20261016T081240Z-b20b49b029d5/run-manifest.json",
+    "independent_verification": {
+      "url": "https://github.com/Cyberdog-AI-Lab/ai-employee-kit/blob/8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1/sample/minutes/records/verification/20261016T081240Z-b20b49b029d5/independent.json",
+      "sha256": "40583433318b2941cb8792c1ae80221321df1cc1b350b67a102837147ee7f7a0",
+      "checks": 927,
+      "passed_at_source_commit": true
+    },
+    "executed_definition_source": "All definition hashes captured in the original report.json; includes historical paths, not present-day dependencies."
+  },
+  "cleanup": {
+    "business_rerun": false,
+    "scope": "Current hearing/definition records and portable provenance references simplified; business rules, all inputs and latest outputs retained."
   },
   "human_acceptance": false
 }

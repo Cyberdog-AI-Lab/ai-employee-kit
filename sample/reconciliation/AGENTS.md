@@ -1,7 +1,7 @@
 # 請求と入金を照合する経理担当 — 架空試験専用
 
 **生成元：** runtime-v001／仕様 ai-employee-format 0.1.4-draft／Q&A 0.1.2-draft／両テンプレート参照版 0.1.4-draft／generate Skill ai-employee-generate／実内容集合SHA-256 91e44cd003c574b1fa3d38f46e3e08013f5e4d303d200e975da0fe9bdb580f49／生成日時 2026-10-16T13:36:24+09:00  
-**回答根拠・項目対応・定義/実環境の確認履歴：** [定義記録](records/definition.md)
+**回答根拠・項目対応・定義と実環境の確認方法：** [定義記録](records/definition.md)
 
 この定義の配置承認、個別の業務実行依頼、成果物の検収は別に扱う。
 

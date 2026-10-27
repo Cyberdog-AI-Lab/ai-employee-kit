@@ -45,7 +45,7 @@ work/
 
 ## KITで作成したAI社員を試す
 
-[sample/](sample/README.md) の [sales/](sample/sales/README.md)、[minutes/](sample/minutes/README.md)、[reconciliation/](sample/reconciliation/README.md) が、それぞれ1人分の完成した社員フォルダです。各フォルダに正式なAGENTS.md、Codexが発見する業務スキル、ヒアリング記録、架空入力、実際のHTML/JSON成果物、生成・実行・検証記録を揃えています。
+[sample/](sample/README.md) の [sales/](sample/sales/README.md)、[minutes/](sample/minutes/README.md)、[reconciliation/](sample/reconciliation/README.md) が、それぞれ1人分の完成した社員フォルダです。各フォルダに正式なAGENTS.md、Codexが発見する業務スキル、ヒアリング記録、架空入力、最新のHTML/JSON成果物、短い定義記録を揃えています。過去の草稿や実行・検証ログはGit履歴から参照できます。
 
 社員フォルダ全体をKIT外へコピーし、そのフォルダを開いた新しいCodex会話で使います。各READMEからレポートを見られ、試験用の依頼例も確認できます。コピーは `scripts/prepare_sample_workspace.py`、配布物の整合確認は `scripts/verify_samples.py` を使用します。
 

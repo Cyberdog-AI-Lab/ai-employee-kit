@@ -1,6 +1,6 @@
 # 売上照合・判断規則
 
-版：runtime-v001。根拠は [sales模擬回答](../../../../records/runtime-v001/source-evidence.md#sales-1) と [追加回答](../../../../records/runtime-v001/source-evidence.md#detail-003)。AI作成の試験条件であり、通常の本人確認や実業務承認ではない。
+版：runtime-v001。根拠は [sales模擬回答](../../../../interview.md#business-rules) と [追加回答](../../../../interview.md#threshold)。AI作成の試験条件であり、通常の本人確認や実業務承認ではない。
 
 ## 原行と構造
 

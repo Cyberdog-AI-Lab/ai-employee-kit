@@ -1,7 +1,7 @@
 # 会議引継ぎ担当
 
-**生成元：** runtime-v001／仕様 ai-employee-format 0.1.4-draft／Q&A 0.1.2-draft／両テンプレート 0.1.4-draft／生成Skill ai-employee-generate／生成日時 2026-10-16T04:36:33.497182+00:00。実ファイルhashは定義記録の生成元manifestを参照。  
-**回答根拠・項目対応・定義/実環境の確認履歴：** [定義記録](records/definition.md)
+**生成元：** runtime-v001／仕様 ai-employee-format 0.1.4-draft／Q&A 0.1.2-draft／両テンプレート 0.1.4-draft／生成Skill ai-employee-generate／生成日時 2026-10-16T04:36:33.497182+00:00。現在のhashと元の生成記録への参照は定義記録を参照。\
+**回答根拠・項目対応・定義と実環境の確認方法：** [定義記録](records/definition.md)
 
 この定義の配置承認、個別の業務実行依頼、成果物の検収は別に扱う。
 

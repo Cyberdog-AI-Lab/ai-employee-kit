@@ -1,6 +1,6 @@
 # KITで作成したAI社員
 
-**各フォルダが1人分の完成したAI社員です。** フォルダを開くと、AGENTS.md、Codexが発見するスキル、架空入力、実際の成果物、ヒアリングと生成・実行記録を一緒に確認できます。
+**各フォルダが1人分の完成したAI社員です。** フォルダを開くと、AGENTS.md、Codexが発見するスキル、架空入力、実際の成果物、現行ヒアリングを一緒に確認できます。
 
 | AI社員 | 仕事 | 設定 | ヒアリング・成果物・使い方 |
 | --- | --- | --- | --- |
@@ -17,12 +17,12 @@ sample/
     ├── CLAUDE.md
     ├── .agents/skills/work-001/SKILL.md  ← 同じ社員内の正本を参照
     ├── .claude/skills/work-001/SKILL.md  ← スキルの正本
-    ├── interview.md                    ← ヒアリング・回答台帳の索引
+    ├── interview.md                    ← 現行の質問・回答・未決
     ├── inputs/                         ← 架空の入力原本
     ├── outputs/<run-id>/               ← 実際に作成したレポート
-    ├── records/                        ← 生成・実行・検証記録
+    ├── records/definition.md          ← 実行に必要な版と確認方法
     ├── sample.json                     ← 現行版と成果物の対応
-    └── bundle-manifest.json            ← 配布内容のハッシュ
+    └── bundle-manifest.json            ← コピー検査用のハッシュ
 ```
 
 同じ構成を3社員に使います。`sample/<社員>/` 全体をKIT外へコピーし、そこを開いた新しいCodex会話で使います。各READMEに実行条件があります。隠しディレクトリを含むコピーと静的検査はKITの次のコマンドで行えます（Python 3.10+と `scripts/requirements-validation.txt` のPyYAMLが必要）。
@@ -33,4 +33,4 @@ python3 scripts/prepare_sample_workspace.py minutes /path/outside-kit/minutes-em
 
 保存先は新しいフォルダを指定してください。コピーだけでは仕事を実行しません。過去のヒアリング・許可は履歴であり、新しい依頼を代替しません。全例が模擬回答と架空入力による試験用で、人の検収は未実施です。
 
-以前の説明用 `.sample.md`、小規模な商品紹介例、別階層の配布物・結果は現行ツリーから除き、[移行前のGit履歴](https://github.com/Cyberdog-AI-Lab/ai-employee-kit/tree/78d1c233cf23c09bd9c87b727e59e6b58d53c53f/sample)に残しています。現行の検証範囲は [検証記録](../docs/validation.md) を参照してください。
+過去の草稿・生成記録・実行ログ・画面や検証の詳細は [Gitの保存済み版](https://github.com/Cyberdog-AI-Lab/ai-employee-kit/tree/8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1/sample) から回復できます。最新の入力37ファイル・成果物7ファイルはそのまま残しています。新しい実行の記録や必要なコードは実行時に作成します。現行の検証範囲は [検証記録](../docs/validation.md) を参照してください。

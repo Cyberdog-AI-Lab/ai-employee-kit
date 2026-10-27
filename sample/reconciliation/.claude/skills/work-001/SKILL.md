@@ -6,7 +6,7 @@ description: "架空試験の毎日の請求・銀行入金照合を依頼され
 # work-001
 
 **手順版・生成元・生成日時：** runtime-v001／仕様 ai-employee-format 0.1.4-draft／Q&A 0.1.2-draft／両テンプレート参照版 0.1.4-draft／generate Skill ai-employee-generate／実内容集合SHA-256 91e44cd003c574b1fa3d38f46e3e08013f5e4d303d200e975da0fe9bdb580f49／生成日時 2026-10-16T13:36:24+09:00  
-**回答根拠・項目対応・定義/実環境の確認履歴：** [定義記録](../../../records/definition.md)
+**回答根拠・項目対応・定義と実環境の確認方法：** [定義記録](../../../records/definition.md)
 
 ## 共通方針
 
@@ -24,7 +24,7 @@ description: "架空試験の毎日の請求・銀行入金照合を依頼され
 <a id="skl-004"></a>
 ## 入力と実行時パラメータ
 
-パラメータ定義と実行時の値を分ける。毎回必須の `input_dir`、`dataset_id`、`as_of` は実行依頼から受け取り、manifest・README・PCの日付から不足値を補わない。独立した期間引数は追加しない。各子要素の回答状態と確認出所は定義記録の台帳に置く。
+パラメータ定義と実行時の値を分ける。毎回必須の `input_dir`、`dataset_id`、`as_of` は実行依頼から受け取り、manifest・README・PCの日付から不足値を補わない。独立した期間引数は追加しない。各子要素の現行回答状態は定義記録GEN-003を参照し、元の確認出所・回答台帳はinterview.mdから固定Git版へ辿る。
 
 <a id="p01-invoice_source"></a>
 ### P01.invoice_source — invoices.csv

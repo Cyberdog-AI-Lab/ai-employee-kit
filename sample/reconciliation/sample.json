@@ -1,21 +1,58 @@
 {
-  "schema_version": 1,
-  "layout_version": "sample-layout-v002",
+  "schema_version": 2,
+  "layout_version": "sample-layout-v003",
   "case": "reconciliation",
   "definition_version": "runtime-v001",
-  "generation_spec_version": "0.1.4-draft",
-  "qa_version": "0.1.2-draft",
-  "hearing_index": "interview.md",
+  "hearing_record": "interview.md",
   "definition_record": "records/definition.md",
+  "current_definition_sha256": {
+    ".claude/skills/work-001/SKILL.md": "841b1d59b3451d172f8113577d1960230e58d0535296c4775c861dcdc9f9b21d",
+    "AGENTS.md": "3b60c01d727fb3608f0ce1757a535970041bfb4cc651f5b65390772e0cfc2e65",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "interview.md": "1f36e07e050b54b67f3c4182ee9f403b146ccb196dec290d10c3a5e6fdc2f947",
+    "records/definition.md": "a257f2bb78fae7300771dac81f456b9cd2702698d09ce5b9ef78a71be2ff33fb"
+  },
+  "input_sha256": {
+    "inputs/README.md": "00f813cc92ac2a5c92cc1f31d4363e24db9fd7fdf23ebd81b9ea9e43c3b94a78",
+    "inputs/bank-credits.csv": "8ab3e44f92e4f3b3449aa5013e6c0ecd58736b59b40ae908d7d5b5e960bb6004",
+    "inputs/customers.csv": "a6fe4916259bfc81947fd8060dd07de1c37482cc84405aa531902aec94e2fef6",
+    "inputs/invoices.csv": "63dca5233515d2132f482188799ee5d7a713b6e1e020e96eca477cbd8ca707af",
+    "inputs/manifest.json": "11d2cebcc03c73b2d4f9401a6656c6dfc5b999003d96bf9026c5a17102624106",
+    "inputs/matching-rules.md": "105ef9b70a54a3fed5d490d8ebfba62ff6d7e7f234366c5bbdfc57779a400987"
+  },
   "latest_run": {
     "id": "ar-20261016T081205Z-6b4f3448",
-    "outputs": [
-      "outputs/ar-20261016T081205Z-6b4f3448/report.html",
-      "outputs/ar-20261016T081205Z-6b4f3448/report.json"
-    ],
-    "manifest": "records/runs/ar-20261016T081205Z-6b4f3448/run-manifest.json",
-    "independent_verification": "records/verification/ar-20261016T081205Z-6b4f3448/independent.json",
-    "recognition": "records/verification/ar-20261016T081205Z-6b4f3448/recognition.json"
+    "parameters": {
+      "input_dir": "inputs",
+      "dataset_id": "AR-DEMO-2026",
+      "as_of": "2026-10-15"
+    },
+    "output_sha256": {
+      "outputs/ar-20261016T081205Z-6b4f3448/report.html": "bebd041522f632b273ff53fe0b869a848a296fc32d75969731bd05c545ccf84e",
+      "outputs/ar-20261016T081205Z-6b4f3448/report.json": "0033260302fbe0b8bb2f584ec16fc3c1147944e0c8dca9a31c5c73594e269245"
+    },
+    "source_commit": "8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1",
+    "executed_definition_sha256": {
+      "AGENTS.md": "099652675817b938a8861cbc70783c6cf339dd20fa08c16df0b321c9ac43a5dd",
+      ".claude/skills/work-001/SKILL.md": "c63056e1240d2d96bf10d82d59b49cf54892bfb87894bf6fa612cde3b6755ee7",
+      "records/definition.md": "fb009ccaf6345ac8a5d9d36df4d60e3d77fc47577d7d92fc211b92cfed931a69",
+      "records/provenance.runtime-v001.md": "ba11987c285bad680d24cda3d02974efcf0cf48bedaef70de85a62c8d22355b8",
+      "records/environment-observation.runtime-v001.json": "5a99e2cbe0db152412124300d8f2f93707182d4e7c37586d924f1778709ff0ab",
+      "workspace-copy-receipt.json": "10302000bc81b01bcdc4fdc08a0d7047d485e3d646395da3695aee6b33090191"
+    },
+    "records_url": "https://github.com/Cyberdog-AI-Lab/ai-employee-kit/tree/8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1/sample/reconciliation/records",
+    "manifest_url": "https://github.com/Cyberdog-AI-Lab/ai-employee-kit/blob/8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1/sample/reconciliation/records/runs/ar-20261016T081205Z-6b4f3448/run-manifest.json",
+    "independent_verification": {
+      "url": "https://github.com/Cyberdog-AI-Lab/ai-employee-kit/blob/8ed9ba51a3bf66ab8f8a009e6fbc3551b23394c1/sample/reconciliation/records/verification/ar-20261016T081205Z-6b4f3448/independent.json",
+      "sha256": "809a740c5fa09bab84f9d066a21966e81971daccff0bb750ce263ede278b21d2",
+      "checks": 4540,
+      "passed_at_source_commit": true
+    },
+    "executed_definition_source": "All definition hashes captured in the original report.json; includes historical paths, not present-day dependencies."
+  },
+  "cleanup": {
+    "business_rerun": false,
+    "scope": "Current hearing/definition records and portable provenance references simplified; business rules, all inputs and latest outputs retained."
   },
   "human_acceptance": false
 }

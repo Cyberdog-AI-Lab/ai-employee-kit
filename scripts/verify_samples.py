@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Validate complete sample employees and their saved evidence; never run their work.
+"""Validate minimal sample employees and latest-output provenance; never run their work.
 
 Python 3.10+ and PyYAML. Includes all bundle files/relative links, native layout,
-local Markdown file destinations, and saved run/config/input/output hash bindings.
+local Markdown file destinations, current configuration and saved input/output hashes.
+Historical evidence remains at an immutable Git commit; it is not fetched here.
 Does not independently recompute business outcomes, fetch remote links, verify all
 Markdown anchor syntax, discover skills in Codex, or claim human acceptance.
 """
@@ -70,9 +71,9 @@ def check_case(root, case):
         structure = layout.check_workspace(root)
         check('native_employee_structure', structure['static_checks_passed'], structure['errors'])
         data = read(root / 'sample.json')
-        check('identity', data['schema_version'] == 1 and data['layout_version'] == 'sample-layout-v002' and data['case'] == case)
+        check('identity', data['schema_version'] == 2 and data['layout_version'] == 'sample-layout-v003' and data['case'] == case)
         check('human_acceptance_not_claimed', data['human_acceptance'] is False)
-        for key in ('hearing_index', 'definition_record'):
+        for key in ('hearing_record', 'definition_record'):
             check('entry.' + key, local(root, root, data[key]).is_file())
         # Scan actual files, not duplicate symlink trees. Archived .txt quotations
         # retain historical paths and are not current navigation documents.
@@ -101,40 +102,59 @@ def check_case(root, case):
         run = data['latest_run']
         run_dir = root / 'outputs' / run['id']
         check('latest_run_directly_inside_employee', run_dir.is_dir() and run_dir.parent == root / 'outputs')
-        output_paths = [local(root, root, name) for name in run['outputs']]
+        output_paths = [local(root, root, name) for name in run['output_sha256']]
+        check('only_latest_output', set((root / 'outputs').iterdir()) == {run_dir})
         check('output_location', all(p.parent == run_dir for p in output_paths))
-        check('output_coverage', set(output_paths) == set(run_dir.glob('report.*')) and {p.name for p in output_paths} >= {'report.html', 'report.json'})
-        rm_path = local(root, root, run['manifest'])
-        rm = read(rm_path)
-        check('run_identity', rm['case'] == case and rm['run_id'] == run['id'] and rm['definition_version'] == data['definition_version'])
-        check('run_human_acceptance_not_claimed', rm['human_acceptance'] is False)
-        check('run_workspace_location', local(root, rm_path.parent, rm['workspace_in_repository']) == root.resolve())
-        expected_configs = {'AGENTS.md', 'CLAUDE.md', 'records/definition.md'}
+        check('output_coverage', set(output_paths) == set(run_dir.iterdir()) and {p.name for p in output_paths} >= {'report.html', 'report.json'})
+        expected_configs = {'AGENTS.md', 'CLAUDE.md', 'interview.md', 'records/definition.md'}
         expected_configs.update(p for p in snap['files'] if p.startswith('.claude/skills/'))
-        check('run_configuration_coverage', set(rm['configuration']) == set(expected_configs))
-        for name, row in rm['configuration'].items():
-            check('run_config.' + name, sha(local(root, root, name)) == row['public_sha256'])
+        check('current_configuration_coverage', set(data['current_definition_sha256']) == expected_configs)
+        for name, digest in data['current_definition_sha256'].items():
+            check('current_config.' + name, sha(local(root, root, name)) == digest)
         input_hashes = {p: h for p, h in snap['files'].items() if p.startswith('inputs/')}
-        check('run_inputs_match', rm['input_sha256'] == input_hashes)
-        bound_outputs = []
-        for row in rm['outputs']:
-            p = local(root, rm_path.parent, row['path'])
-            bound_outputs.append(p)
-            check('run_output.' + p.name, sha(p) == row['public_sha256'])
-        check('run_output_coverage', set(bound_outputs) == set(output_paths))
-        er = rm['execution_record']
-        check('execution_record_hash', sha(local(root, rm_path.parent, er['path'])) == er['public_sha256'])
-        independent_path = local(root, root, run['independent_verification'])
-        check('independent_record_location', local(root, rm_path.parent, rm['independent_verification']['path']) == independent_path)
-        check('independent_record_hash', sha(independent_path) == rm['independent_verification']['public_sha256'])
-        independent = read(independent_path)
-        check('saved_independent_record_passed', independent['all_passed'] is True and independent['human_acceptance'] is False and all(x['passed'] is True for x in independent['checks']))
-        check('saved_independent_check_count', len(independent['checks']) > 0 and len(independent['checks']) == rm['independent_verification']['checks'] and rm['independent_verification']['passed'] is True)
-        check('saved_independent_run_identity', independent['case'] == case and independent['run'] == run['id'])
-        source_hashes = set(independent['source_hashes'].values())
-        check('independent_original_report_binding', all(x['executed_sha256'] in source_hashes for x in rm['outputs'] if Path(x['path']).suffix in ('.html', '.json')))
+        check('run_inputs_match', data['input_sha256'] == input_hashes)
+        for name, digest in run['output_sha256'].items():
+            check('run_output.' + Path(name).name, sha(local(root, root, name)) == digest)
         report = read(run_dir / 'report.json')
         check('report_identity_and_acceptance', report['run_id'] == run['id'] and report['human_acceptance'] is False)
+        check('run_parameters', report['parameters'] == run['parameters'])
+        check('cleanup_does_not_claim_rerun', data['cleanup']['business_rerun'] is False)
+        commit = run['source_commit']
+        check('immutable_history_commit', isinstance(commit, str) and re.fullmatch(r'[0-9a-f]{40}', commit) is not None)
+        repository = 'https://github.com/Cyberdog-AI-Lab/ai-employee-kit'
+        base = f'{repository}/blob/{commit}/sample/{case}/records'
+        check('historical_record_locations', run['records_url'] == f'{repository}/tree/{commit}/sample/{case}/records'
+              and run['manifest_url'] == f"{base}/runs/{run['id']}/run-manifest.json"
+              and run['independent_verification']['url'] == f"{base}/verification/{run['id']}/independent.json")
+        # These are a compact summary of the saved run, not newly executed checks.
+        historical = run['independent_verification']
+        check('historical_summary_shape', historical['passed_at_source_commit'] is True
+              and type(historical['checks']) is int and historical['checks'] > 0
+              and isinstance(historical['sha256'], str) and re.fullmatch(r'[0-9a-f]{64}', historical['sha256']) is not None)
+        executed = run['executed_definition_sha256']
+        check('executed_configuration_hash_format', all(isinstance(x, str) and re.fullmatch(r'[0-9a-f]{64}', x) is not None for x in executed.values()))
+        if case == 'sales':
+            recorded = {row['file']:row['sha256'] for row in report['definition_hashes']}
+        elif case == 'minutes':
+            recorded = report['definition']['hashes']
+        else:
+            recorded = {name:row['sha256'] for name,row in report['definition_files'].items()}
+        # Historical definition paths need not exist in today's package. Bind
+        # ALL entries recorded by the original report, not merely current ones.
+        principal = {'AGENTS.md'} | {p for p in expected_configs if p.endswith('/SKILL.md')}
+        check('executed_configuration_coverage', set(executed) == set(recorded))
+        check('report_executed_definition_binding', principal <= set(recorded) and executed == recorded)
+        if case == 'sales':
+            input_rows = report['input_files']
+            reported_inputs = {row['file']:row['sha256'] for row in input_rows}
+        elif case == 'minutes':
+            input_rows = report['input_files']
+            reported_inputs = {row['path']:row['sha256'] for row in input_rows}
+        else:
+            input_rows = report['inputs']
+            reported_inputs = {name:row['sha256'] for name,row in input_rows.items()}
+        check('report_input_binding', len(input_rows) == len(reported_inputs) and reported_inputs == input_hashes)
+        check('minimal_records', set(p for p in snap['files'] if p.startswith('records/')) == {'records/definition.md'})
     except (OSError, ValueError, KeyError, TypeError, RuntimeError) as exc:
         check('validation_completed', False, str(exc))
     return {'case': case, 'all_passed': all(x['passed'] for x in checks), 'checks': checks}
@@ -148,7 +168,7 @@ def verify(root):
     results = {case: check_case(sample / case, case) for case in CASES}
     return {'all_passed': all(c['passed'] for c in checks) and all(r['all_passed'] for r in results.values()),
             'scope': __doc__, 'saved_samples_only': True, 'checks': checks, 'results': results,
-            'recognition_verified_by_this_script': False, 'business_recomputed': False, 'human_acceptance': False}
+            'recognition_verified_by_this_script': False, 'historical_evidence_fetched': False, 'business_recomputed': False, 'human_acceptance': False}
 
 
 def main():

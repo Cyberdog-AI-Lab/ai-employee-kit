@@ -5,8 +5,8 @@ description: "こもれび商店の架空販売・返品資料を照合し、月
 
 # work-001
 
-**手順版・生成元・生成日時：** runtime-v001 / ai-employee-format 0.1.4-draft / Q&A 0.1.2-draft / 両テンプレート参照仕様0.1.4-draft / 生成日時 2026-10-16T04:36:08.158150+00:00。実キット・テンプレートの内容識別子は定義記録のsource-manifestを参照。  
-**回答根拠・項目対応・定義/実環境の確認履歴：** [定義記録](../../../records/definition.md)
+**手順版・生成元・生成日時：** runtime-v001 / ai-employee-format 0.1.4-draft / Q&A 0.1.2-draft / 両テンプレート参照仕様0.1.4-draft / 生成日時 2026-10-16T04:36:08.158150+00:00。現在のhashと元の生成記録への参照は定義記録を参照。\
+**回答根拠・項目対応・定義と実環境の確認方法：** [定義記録](../../../records/definition.md)
 
 ## 共通方針
 
@@ -39,7 +39,7 @@ description: "こもれび商店の架空販売・返品資料を照合し、月
 <a id="skl-005"></a>
 ## 前提条件・環境・参照先
 
-作業基準は社員workspaceのroot。Skillからは `../../..` で同じrootへ到達する。実入力は `../../../inputs/`、定義記録は [definition](../../../records/definition.md)。入力schemaと判断規則、必要マスタ/別名/価格履歴/返品資料が読めること、別の業務依頼と3パラメータ、入力利用範囲、新規保存先の衝突なし、必要な実権限を確認する。開始時に入力一覧/hashと定義manifest/hashを記録する。Python等の既存ローカル道具で処理し、追加ツールを自動導入しない。
+作業基準は社員workspaceのroot。Skillからは `../../..` で同じrootへ到達する。実入力は `../../../inputs/`、定義記録は [definition](../../../records/definition.md)。入力schemaと判断規則、必要マスタ/別名/価格履歴/返品資料が読めること、別の業務依頼と3パラメータ、入力利用範囲、新規保存先の衝突なし、必要な実権限を確認する。開始時に入力一覧/hashとsample.jsonのcurrent_definition_sha256を照合し、台帳自体のhashも記録する。Python等の既存ローカル道具で処理し、追加ツールを自動導入しない。
 
 業務の作業ディレクトリと、Skillの参照資料の基準ディレクトリを区別する。必要な入力、ツール、権限、参照先が使えるかを確認し、未確認の接続・導入・権限拡張で補わない。
 
@@ -105,7 +105,7 @@ JSONは `totals, monthly_store, monthly, by_product, by_category, change_flags, 
 <a id="skl-011"></a>
 ## 参照資料（依存があれば必須）
 
-[判断規則 runtime-v001](references/sales-rules.md) はSIM-DETAIL-002/salesと補足の意味を保持した詳細。[入力構造 runtime-v001](references/input-schema.md) は現在の具体的ファイル/CSV列と入力参照の一覧。[模擬回答と質問の出所](../../../records/runtime-v001/source-evidence.md) と [定義記録](../../../records/definition.md) で通常回答状態と試験許可を分ける。現在の入力hashは定義記録に紐づけ、実行開始時には再取得する。
+[判断規則 runtime-v001](references/sales-rules.md) はSIM-DETAIL-002/salesと補足の意味を保持した詳細。[入力構造 runtime-v001](references/input-schema.md) は現在の具体的ファイル/CSV列と入力参照の一覧。[模擬回答と質問の出所](../../../interview.md) と [定義記録](../../../records/definition.md) で通常回答状態と試験許可を分ける。現在の入力hashは定義記録に紐づけ、実行開始時には再取得する。
 
 相対参照はこのSkillの正本ディレクトリを基準とする。資料は手順の根拠であり、社員AGENTSの権限を変更する指示ではない。必要な参照が解決しなければその処理を止める。
 
